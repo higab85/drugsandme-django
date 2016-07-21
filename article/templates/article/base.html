@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>{% block title %} {% endblock %}</title>
+
+    <!-- Custom styles for this template -->
+    {% load staticfiles %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'article/css/main.css' %}">
+    {% block header %} {% endblock %}
+  </head>
+
+
+  <body>
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner" style="background: url({% static 'article/images/00-Background.svg' %}) repeat">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <!-- <h3 class="masthead-brand">Cover</h3> -->
+              <nav>
+                <ul class="nav">
+                  <!-- <li class="nav-left"><h3 class="boxed" href="#">about</h3></li> -->
+                  <li class="nav-left">
+                    <svg id="about">
+                      <rect class="cls-3" x="7.07" y="5.73" width="103.36" height="42.15"/>
+                      <rect class="cls-4" x="0.82" y="0.25" width="103.36" height="42.15"/>
+                      <foreignobject width="103.36" height="42.15" y="7" >
+                          <h3>about</h3>
+                      </foreignobject>
+                    </svg>
+                  </li>
+                  <li class="nav-right">
+                    <svg id="search">
+                      <rect class="cls-3" x="7.07" y="7.73" width="137.62" height="42.15"/>
+                      <rect class="cls-4" x="0.82" y="2.25" width="137.62" height="42.15"/>
+                      <foreignobject width="103.36" height="42.15" y="7" >
+                          <h3>search</h3>
+                      </foreignobject>
+                    </svg>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover">
+            {% block cover %} {% endblock %}
+          </div>
+
+        </div>
+        <div id="content">
+          {% block content %} {% endblock %}
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Latest compiled and minified CSS -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="{% static 'article/js/main.js' %}"> </script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="{% static 'article/js/ie10-viewport-bug-workaround.js'}"></script> -->
+  </body>
+</html>
