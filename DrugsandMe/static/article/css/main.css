@@ -1,0 +1,423 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  color: #000;
+  text-align: center;
+  /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  /*vertical-align: top;*/
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  /* MY EDIT */
+  height: 200px;
+
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+@media (min-width: 300px) {
+  .nav-left {
+    float: left;
+  }
+  .nav-right {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+  /*MY EDIT*/
+  margin-top: 280px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: absolute;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1000px;
+  }
+}
+/*
+-----------------------------------------------------------------
+  MY STYLES
+-----------------------------------------------------------------
+*/
+
+/* Get first title */
+
+h1{
+  font-size: 75px;
+  display: inline-block;
+}
+
+.boxed{
+  border: 2px solid black;
+  padding: 5px;
+  background-color: white;
+}
+
+/*SVG sizes*/
+#title-background{
+  width: 630px;
+  height: 137px;
+}
+#about{
+  width: 113px;
+  height: 50px;
+}
+#search{
+  width: 147px;
+  height: 52px;
+}
+/*foreignObject h3{
+  margin: 0;
+}*/
+
+/* "drugs + me" title */
+
+.title{
+  width: 630px;
+  margin: auto;
+    -webkit-transform: translateZ(0);
+}
+
+
+#title-drugs-button{
+  width: 307px;
+}
+
+#title-me-button{
+  margin-left: 424px;
+  width: 186px;
+}
+
+.title-button{
+  height: 127px;
+  border: 5px solid black;
+  background: white;
+  position: absolute;
+}
+
+.title-button h1{
+  margin-top: 10px;
+}
+
+.title-collapse{
+  position: absolute;
+  display: inline-block;
+  margin-top: 133px;
+  width: 100%;
+  left: 0;
+  opacity: 0;
+}
+
+.title-collapse div{
+  box-shadow: none;
+  /*transition: 0.1s ease-in-out;*/
+  padding: 0 20px 8px 20px;
+  margin: -2px;
+  display: inline-block;
+  border: 5px solid black;
+}
+
+/*.title-collapse div:hover{
+  border: 3px solid black;
+  padding: 2px 22px 10px 22px;
+}*/
+
+#title-me-collapse div{
+  box-shadow: none;
+  /*transition: 0.1s ease-in-out;*/
+  padding: 0 20px 8px 20px;
+  margin: -2px;
+  display: inline-block;
+  border: 5px solid black;
+}
+
+#b-and-t{
+  background-color: #FCD08B;
+  color: #000;
+  transition: 0.1s ease-in-out;
+}
+#c-and-f{
+  color: #000;
+  background-color: #AC97B8;
+  transition: 0.1s ease-in-out;
+}
+#tc-of-f{
+  color: #000;
+  background-color: #73C4C6;
+  transition: 0.1s ease-in-out;
+}
+#addiction{
+  color: #000;
+  background-color: #D55C5E;
+  transition: 0.1s ease-in-out;
+}
+#b-and-t:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+#c-and-f:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+#tc-of-f:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+#addiction:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+
+
+#title-me-collapse div:hover{
+  background-color: #36434C;
+}
+
+#alcohol{
+  box-shadow: none;
+  transition: 0.1s ease-in-out;
+}
+
+#alcohol:hover{
+  box-shadow: 8px 8px 0px 2px #000;
+  border: 5px solid black;
+  padding: 0 20px 8px 20px;
+}
+
+#cannabis{
+  box-shadow: none;
+  transition: 0.1s ease-in-out;
+}
+
+#cannabis:hover{
+  box-shadow: 8px 8px 0px 2px #000;
+  border: 5px solid black;
+  padding: 0 20px 8px 20px;
+}
+
+#cocaine{
+  box-shadow: none;
+  transition: 0.1s ease-in-out;
+}
+
+#cocaine:hover{
+  box-shadow: 8px 8px 0px 2px #6B7A88;
+  border: 5px solid black;
+  padding: 0 20px 8px 20px;
+}
+
+#mdma{
+  box-shadow: none;
+  transition: 0.1s ease-in-out;
+}
+
+#mdma:hover{
+  box-shadow: 8px 8px 0px 2px #6B7A88;
+  border: 5px solid black;
+  padding: 0 20px 8px 20px;
+}
+
+
+/* Content */
+
+foreignObject h3{
+  margin: 0;
+}
+
+#content{
+  text-align: left;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px;
+  display: inline-block;
+  clear: both;
+}
+
+#content div{
+  border: 4px solid black;
+  margin: 10px;
+}
+#content h5, p{
+  color: white;
+}
+
+.news-about{
+  width: 200px;
+}
+
+#harm-reduction{
+  background-color: #67737C;
+}
+#news{
+  background-color: #D55C5E;
+}
+#about-us{
+  background-color: #85BE91;
+}
+#partners{
+  background-color: #EEAC61;
+  width: 420px;
+  height: 124px;
+}
+/*
+#content-background{
+  position: absolute;
+
+}
+
+.content-background{
+  position: absolute;
+  background: #67737C;
+  border: 4px solid black;
+  width: 100%;
+}
+
+
+#content-background-harm-reduction{
+  height:680;
+  width:134;
+}
+#content-background-news{
+  height:;
+  width:;
+}
+#content-background-about-us{
+  height:;
+  width:;
+}
+#content-background-partners{
+  height:;
+  width:;
+}*/
