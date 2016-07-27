@@ -206,15 +206,25 @@ h1{
 .title{
   width: 630px;
   margin: auto;
-  -webkit-font-smoothing: antialiased;
+  /*-webkit-font-smoothing: antialiased;*/
   /*-webkit-transform: rotateZ(360deg);*/
-  /*-webkit-transform: translate3d(0,0,0);*/
 }
 
 
 #title-drugs-button{
   width: 307px;
+  -webkit-transform: translate3d(0,0,0); /* Safari */
+  transform: translate3d(0,0,0);
+  /*-webkit-transition: -webkit-transform 1s; /* Safari
+  transition: transform 1s;
+  transition-delay: 0s;*/
 }
+
+/*#title-drugs-button:hover{
+  -webkit-transform:translate3d(9px,9px,0);
+  transform: translate3d(9px,9px,0);
+}*/
+
 
 #title-me-button{
   margin-left: 424px;
@@ -247,6 +257,11 @@ h1{
   margin: -2px;
   display: inline-block;
   border: 5px solid black;
+  background-color: white;
+  transition: background-color 0.1s;
+}
+.title-collapse div:hover{
+  background-color: #36434C;
 }
 
 #title-me-collapse div{
@@ -301,47 +316,43 @@ h1{
 }
 
 #alcohol{
-  box-shadow: none;
+  background-color: #7CCAD0;
   transition: 0.1s ease-in-out;
 }
 
 #alcohol:hover{
-  box-shadow: 8px 8px 0px 2px #000;
-  border: 5px solid black;
-  padding: 0 20px 8px 20px;
+  color: #fff;
+  background-color: #36434C;
 }
 
 #cannabis{
-  box-shadow: none;
+  background-color: #85BE91;
   transition: 0.1s ease-in-out;
 }
 
 #cannabis:hover{
-  box-shadow: 8px 8px 0px 2px #000;
-  border: 5px solid black;
-  padding: 0 20px 8px 20px;
+  color: #fff;
+  background-color: #36434C;
 }
 
 #cocaine{
-  box-shadow: none;
+  background-color: #D55C5E;
   transition: 0.1s ease-in-out;
 }
 
 #cocaine:hover{
-  box-shadow: 8px 8px 0px 2px #6B7A88;
-  border: 5px solid black;
-  padding: 0 20px 8px 20px;
+  color: #fff;
+  background-color: #36434C;
 }
 
 #mdma{
-  box-shadow: none;
+  background-color: #D6797A;
   transition: 0.1s ease-in-out;
 }
 
 #mdma:hover{
-  box-shadow: 8px 8px 0px 2px #6B7A88;
-  border: 5px solid black;
-  padding: 0 20px 8px 20px;
+  color: #fff;
+  background-color: #36434C;
 }
 
 
