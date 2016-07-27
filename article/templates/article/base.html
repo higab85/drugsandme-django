@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{% static 'article/css/bootstrap.min.css'%}">
     <!-- <script src="{% static 'article/js/libraries/jquery.min.js' %}"> </script> -->
     <script src="http://code.jquery.com/jquery-latest.min.js" charset="utf-8"></script>
+    <script src="{% static 'article/js/bootstrap.js' %}"> </script>
     <script src="{% static 'article/js/main.js' %}"> </script>
     <link rel="stylesheet" type="text/css" href="{% static 'article/css/main.css' %}">
     {% block header %} {% endblock %}
@@ -69,6 +70,24 @@
         </div>
 
       </div>
+      <nav id="footer">
+        <ul class="nav" id="footer-wrapper">
+          <li class="nav-left">
+            <p>
+              Copyright (c) 2016. All rights reserved
+            </p>
+          </li>
+          <li class="nav-right" id="footer-links">
+            <ul class="list-inline">
+              <li><a href="#">Disclaimer</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        </div>
+      </nav>
 
     </div>
 

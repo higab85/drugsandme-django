@@ -4,6 +4,7 @@ var $animationSpeed = 500;
 
 $(document).ready(function(){
 
+//------ cover drugs+me collapsable content ----------------------------------
   $("#title-drugs").hover(function() {
       $('#title-drugs-button').animate({
         marginTop:'+=9px',
@@ -53,5 +54,15 @@ $(document).ready(function(){
     });
     return false;
   });
+//------------------ front page bottom buttons ------------------------------
 
+  // $('.home-button').click(function(){
+  //   $('p', this).toggleClass('hidden');
+  //   $(this).siblings().find('p').addClass('hidden');
+  // })
+
+//   $('#home-buttons a').click(function (e) {
+//   e.preventDefault()
+//   $(this).tab('show')
+// })
 });

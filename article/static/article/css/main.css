@@ -363,31 +363,74 @@ foreignObject h3{
 }
 
 #content{
-  display: inline-block;
-  width: 100%;
+  padding-bottom: 200px;
 }
 
-#content div{
+#home-buttons>li{
   border: 4px solid black;
-  margin: 5px;
+  margin: -4px 32px -4px 0;
 }
-#content .pressed{
-  color: white;
-}
-
-#harm-reduction{
-  background-color: #67737C;
-}
-#news{
-  background-color: #D55C5E;
-}
-#about-us{
-  background-color: #85BE91;
-}
-#partners{
-  background-color: #EEAC61;
+#home-buttons>li.active{
+  border-bottom: 0px;
+  padding-bottom: 4px;
 }
 
-#donate{
-  background-color: yellow;
+#home-buttons h3{
+  margin: 5px 0;
 }
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover{
+  background-color: inherit;
+  color: #fff;
+}
+.nav-pills > li > a,
+.nav-pills > li > a:focus,
+.nav-pills > li > a:hover{
+  background-color: inherit;
+  color: #fff;
+}
+
+.tab-content{
+  border: 4px solid black;
+}
+.tab-content h4{
+  color: #fff;
+  margin: 0px;
+  font-weight: normal;
+  padding: 10px;
+}
+.harm-reduction{
+  background-color: #6C7B8A;
+}
+.news{
+  background-color: #F1924D;
+}
+.about-us{
+  background-color: #EF6767;
+}
+.partners{
+  margin-top: 20px;
+  background-color: #4CBA83;
+  border: 4px solid black;
+}
+
+.donate{
+  background-color: #F6DA5C;
+}
+
+/*------------ Footer ----------------------------*/
+
+#footer{
+  background: #939598;
+  margin: 0;
+  height: 80px;
+}
+#footer-wrapper{
+  padding: 30px 30px 20px 30px;
+}
+
+/*#footer ul{
+  top: 30px;
+}*/

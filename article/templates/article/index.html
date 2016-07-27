@@ -62,51 +62,102 @@
 {% endblock %}
 
 {% block content %}
-  <div class="col-md-4 col-sm-4 info-box" id="harm-reduction">
-    <h4 class="info-box-title">What is harm reduction?</h4>
-    <p class="info-box-text hidden">
-      Each year, thousands of drug-related deaths occur in the UK. It’s
-      not easy to find safe and reliable drug info, leaving us vulnerable
-      to overdosing, dangerous drug combinations, or uncomfortable
-      experiences. Harm reduction is an approach that neither encourages,
-      nor discourages drug use. Instead, it aims to lower the possible
-      risks & harms of using drugs.
-    </p>
-  </div>
-  <div class="col-md-2 col-sm-2 info-box" id="news">
-    <h4 class="info-box-title">News</h4>
-    <p class="info-box-text hidden">
-      News year, thousands of drug-related deaths occur in the UK. It’s
-      not easy to find safe and reliable drug info, leaving us vulnerable
-      to overdosing, dangerous drug combinations, or uncomfortable
-      experiences. Harm reduction is an approach that neither encourages,
-      nor discourages drug use. Instead, it aims to lower the possible
-      risks & harms of using drugs.
-    </p>
-  </div>
-  <div class="col-md-2  col-sm-2 info-box" id="about-us">
-    <h4 class="info-box-title">About</h4>
-    <p class="info-box-text hidden">
-      About year, thousands of drug-related deaths occur in the UK. It’s
-      not easy to find safe and reliable drug info, leaving us vulnerable
-      to overdosing, dangerous drug combinations, or uncomfortable
-      experiences. Harm reduction is an approach that neither encourages,
-      nor discourages drug use. Instead, it aims to lower the possible
-      risks & harms of using drugs.
-    </p>
 
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="pilllist" id="home-buttons">
+    <li role="presentation" class="active harm-reduction">
+      <a href="#harm-reduction" aria-controls="harm-reduction" role="tab" data-toggle="pill"><h3>What is harm reduction?</h3></a>
+    </li>
+    <li role="presentation" class="news">
+      <a href="#news" aria-controls="news" role="tab" data-toggle="pill"><h3>News</h3></a>
+    </li>
+    <li role="presentation" class="about-us">
+      <a href="#about-us" aria-controls="about-us" role="tab" data-toggle="pill"><h3>About us</h3></a>
+    </li>
+    <li role="presentation" class="donate">
+      <a href="#donate" aria-controls="donate" role="tab" data-toggle="pill"><h3>Donate</h3></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content" >
+    <div role="tabpanel" class=" harm-reduction tab-pane fade in active" id="harm-reduction">
+      <h4>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet sapien eu nisi dignissim, sed congue elit condimentum. Maecenas velit arcu, placerat eget velit nec, congue eleifend velit. In quis sodales arcu. Duis vitae blandit urna, eget egestas orci. Phasellus vel ante vitae dui faucibus pretium ac a neque. Vestibulum aliquam mauris vitae consequat dignissim. Vivamus varius ullamcorper ante a aliquam.
+      </h4>
+    </div>
+    <div role="tabpanel" class="news tab-pane fade" id="news">
+      <h4>
+       Praesent tempor elementum nisi non aliquet. Pellentesque at urna tincidunt nisl molestie eleifend nec eget lacus. Duis a vestibulum lectus. Maecenas venenatis scelerisque lorem a maximus. Morbi suscipit lorem non nisl aliquam, ut rhoncus turpis lacinia. Pellentesque accumsan, lacus sit amet suscipit condimentum, erat purus varius purus, quis mattis erat metus at sapien. Cras tempus tortor sit amet libero cursus, et hendrerit mauris suscipit. Vivamus nec ullamcorper dolor.
+      </h4>
+    </div>
+    <div role="tabpanel" class="about-us tab-pane fade" id="about-us">...</div>
+    <div role="tabpanel" class="donate tab-pane fade" id="donate">...</div>
   </div>
-  <div class="col-md-2 col-sm-2 info-box" id="donate">
-    <h4 class="info-box-title">Donate</h4>
-    <p class="info-box-text hidden">
-      Donate year, thousands of drug-related deaths occur in the UK. It’s
-      not easy to find safe and reliable drug info, leaving us vulnerable
-      to overdosing, dangerous drug combinations, or uncomfortable
-      experiences. Harm reduction is an approach that neither encourages,
-      nor discourages drug use. Instead, it aims to lower the possible
-      risks & harms of using drugs.
-    </p>
-  </div>
+
+</div>
+
+<div class="partners">
+  <h3>Partners</h3>
+  <h4>Volteface beckleyfoundation londonpsychotropics</h4>
+</div>
+
+
+  <!-- <a class="home-button" href="#harm-reduction">
+    <div class="col-md-4 col-sm-4 info-box" id="harm-reduction">
+      <h4 class=" info-box-title"> What is harm reduction?</h4>
+      <p class="info-box-text hidden">
+        Each year, thousands of drug-related deaths occur in the UK. It’s
+        not easy to find safe and reliable drug info, leaving us vulnerable
+        to overdosing, dangerous drug combinations, or uncomfortable
+        experiences. Harm reduction is an approach that neither encourages,
+        nor discourages drug use. Instead, it aims to lower the possible
+        risks & harms of using drugs.
+      </p>
+    </div>
+  </a>
+  <a href="#news" class="home-button">
+    <div class="col-md-2 col-sm-2 info-box" id="news">
+      <h4 class="info-box-title">News</h4>
+      <p class="info-box-text hidden">
+        News year, thousands of drug-related deaths occur in the UK. It’s
+        not easy to find safe and reliable drug info, leaving us vulnerable
+        to overdosing, dangerous drug combinations, or uncomfortable
+        experiences. Harm reduction is an approach that neither encourages,
+        nor discourages drug use. Instead, it aims to lower the possible
+        risks & harms of using drugs.
+      </p>
+    </div>
+  </a>
+  <a href="#about-us" class="home-button">
+    <div class="col-md-2  col-sm-2 info-box" id="about-us">
+      <h4 class="info-box-title">About</h4>
+      <p class="info-box-text hidden">
+        About year, thousands of drug-related deaths occur in the UK. It’s
+        not easy to find safe and reliable drug info, leaving us vulnerable
+        to overdosing, dangerous drug combinations, or uncomfortable
+        experiences. Harm reduction is an approach that neither encourages,
+        nor discourages drug use. Instead, it aims to lower the possible
+        risks & harms of using drugs.
+      </p>
+
+    </div>
+  </a>
+  <a href="#donate" class="home-button">
+    <div class="col-md-2 col-sm-2 info-box" id="donate">
+      <h4 class="info-box-title">Donate</h4>
+      <p class="info-box-text hidden">
+        Donate year, thousands of drug-related deaths occur in the UK. It’s
+        not easy to find safe and reliable drug info, leaving us vulnerable
+        to overdosing, dangerous drug combinations, or uncomfortable
+        experiences. Harm reduction is an approach that neither encourages,
+        nor discourages drug use. Instead, it aims to lower the possible
+        risks & harms of using drugs.
+      </p>
+    </div>
+  </a>
   <div class="col-md-11 col-sm-11 info-box" id="partners">
     <h5 class="info-box-title">partners</h5>
     <p class="info-box-text hidden">
@@ -116,7 +167,7 @@
       experiences. Harm reduction is an approach that neither encourages,
       nor discourages drug use. Instead, it aims to lower the possible
       risks & harms of using drugs.
-    </p>
+    </p> -->
 
   </div>
   {% endblock %}
