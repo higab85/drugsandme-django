@@ -113,6 +113,12 @@ body {
   }
 }
 
+h3 .small{
+  color: black;
+}
+#search>div h3{
+  margin: 0;
+}
 
 /*
  * Cover
@@ -195,11 +201,28 @@ h1{
   width: 113px;
   height: 50px;
 }
-#search{
+#search>svg{
   width: 147px;
   height: 52px;
 }
 
+#search{
+  background-color: #fff;
+}
+#search>div,svg{
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+#social-search{
+  top: 5px;
+  height: 32px;
+  width: 110px;
+}
+.placeholder{
+  width: 32px;
+  display: inline-block;
+}
 
 /* "drugs + me" title */
 
