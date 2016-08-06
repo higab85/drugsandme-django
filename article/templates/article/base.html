@@ -25,11 +25,9 @@
 
 
   <body>
-    <div class="site-wrapper" style="background: url({% static 'article/images/00-Background.svg' %}) repeat">
-
-      <div class="site-wrapper-inner">
-
-        <div class="cover-container">
+    <div class="site-wrapper">
+      {% block cover_background %} {% endblock %}
+        <div class="cover-container site-wrapper-inner">
 
           <div class="masthead clearfix">
             <div class="inner">
@@ -48,30 +46,93 @@
                   </li>
                   <li class="nav-right" id="search">
                     <div id="social-search">
-                      <div class="placeholder"><h3><span class="glyphicon glyphicon-search" aria-hidden="true"></span></h3></div>
-                      <div class="placeholder"><h3><span class="glyphicon glyphicon-search" aria-hidden="true"></span></h3></div>
-                      <div class="placeholder"><h3><span class="glyphicon glyphicon-search" aria-hidden="true"></span></h3></div>
+                      <div class="search-button"><a href="https://facebook.com/"><img src="{% static 'article/images/search-Facebook.png' %}" alt="facebook"></a></div>
+                      <div class="search-button"><a href="https://twitter.com/"><img src="{% static 'article/images/search-Twitter.png' %}" alt="twitter"></a></div>
 
                     </div>
-                    <svg>
-                      <rect class="cls-3" x="7.07" y="7.73" width="137.62" height="42.15"/>
-                      <rect class="cls-4" x="0.82" y="2.25" width="137.62" height="42.15"/>
-                      <foreignobject width="143.36" height="42.15" y="7" >
-                          <h3>search <span class="small glyphicon glyphicon-search" aria-hidden="true"></span></h3>
-                      </foreignobject>
-                    </svg>
+                    <!-- START SEARCH ----------------------------------------->
+                    <div id="search">
+                      <input id="searchText" placeholder="search"/>
+                      <!-- <i class="glyphicon glyphicon-search"></i> -->
+                      <div id="item-picker" class="hidden pull-left">
+                        <div class="item">
+                          <a href="alcohol.html" class="item-link">
+                            <h5 class="item-name hidden">Alcohol</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">wine</li>
+                            <li class="tag">beer</li>
+                            <li class="tag">booze</li>
+                            <li class="tag">alcohol</li>
+                          </ul>
+                        </div>
+                        <div class="item">
+                          <a href="cannabis.html" class="item-link">
+                            <h5 class="item-name hidden">Cannabis</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">ganja</li>
+                            <li class="tag">skunk</li>
+                            <li class="tag">marihuana</li>
+                            <li class="tag">mary jane</li>
+                            <li class="tag">grass</li>
+                            <li class="tag">pot</li>
+                            <li class="tag">dank</li>
+                            <li class="tag">chronic</li>
+                            <li class="tag">resin</li>
+                            <li class="tag">weed</li>
+                            <li class="tag">buds</li>
+                            <li class="tag">kush</li>
+                            <li class="tag">cannabis</li>
+                          </ul>
+                        </div>
+                        <div class="item">
+                          <a href="cocaine.html" class="item-link">
+                            <h5 class="item-name hidden">Cocaine</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">white</li>
+                            <li class="tag">coke</li>
+                            <li class="tag">snow</li>
+                            <li class="tag">speedball</li>
+                            <li class="tag">dust</li>
+                            <li class="tag">nose candy</li>
+                            <li class="tag">flake</li>
+                            <li class="tag">cocaine</li>
+                          </ul>
+
+                        </div>
+                        <div class="item">
+                          <a href="mdma.html" class="item-link">
+                            <h5 class="item-name hidden">MDMA</h5>
+                          </a>
+                          <ul>
+                            <li class="tag">X</li>
+                            <li class="tag">XTC</li>
+                            <li class="tag">E</li>
+                            <li class="tag">molly</li>
+                            <li class="tag">mandy</li>
+                            <li class="tag">ecstasy</li>
+                            <li class="tag">MDMA</li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <!-- END SEARCH-->
                   </li>
                 </ul>
               </nav>
             </div>
           </div>
 
-          <div class="inner cover">
+          <div class="inner cover site-wrapper-inner">
             {% block cover %} {% endblock %}
           </div>
 
         </div>
-        <div id="content">
+      </div>
+        <div id="content" class="site-wrapper-inner">
           {% block content %} {% endblock %}
         </div>
 

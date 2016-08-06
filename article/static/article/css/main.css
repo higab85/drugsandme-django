@@ -58,7 +58,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   /* MY EDIT */
-  height: 200px;
+  height: 700px;
 
 }
 
@@ -168,7 +168,7 @@ h3 .small{
   .mastfoot,
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
-    height: 500px;
+    /*height: 500px;*/
   }
 }
 
@@ -190,6 +190,99 @@ h3 .small{
 h1{
   font-size: 75px;
   display: inline-block;
+}
+
+/*search styles*/
+
+
+.no-display{
+	display: none;
+}
+.force-display{
+	display: inline-block;
+}
+
+#search{
+	/*position: relative;*/
+  z-index: 5;
+  height: 50px;
+}
+
+#searchText{
+  display: block;
+  height: 50px;
+}
+
+#search.visible-xs{
+	/*top: 2em;*/
+}
+
+#search i{
+	right: 2em;
+  display: inline-block;
+}
+
+#search li{
+  display: none;
+}
+
+#item-picker{
+  min-height: 0px;
+  background-color: #eee;
+  border-style: solid;
+  border-color: black;
+  width: 140px;
+  border-width: 0px 4px 2px 4px;
+  margin-top: -2px;
+
+}
+#search input{
+  background: transparent;
+  text-align: center;
+  font-size: 2em;
+  width: 140px;
+  border: 4px solid black;
+}
+
+#search a{
+  color: black;
+  text-decoration: none;
+  z-index: 5;
+}
+
+input:focus {
+  border: 0;
+  outline:none;
+}
+
+.item{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px 0;
+}
+::-webkit-input-placeholder {
+   color: #000;
+   font-size: 1em;
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+   font-size: 1em;
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000 ;
+   font-size: 1em;
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   color: #000;
+   font-size: 1em;
+   text-align: center;
+
 }
 
 /*SVG sizes*/
@@ -219,7 +312,7 @@ h1{
   height: 32px;
   width: 110px;
 }
-.placeholder{
+.search-button{
   width: 32px;
   display: inline-block;
 }
@@ -229,8 +322,6 @@ h1{
 .title{
   width: 630px;
   margin: auto;
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-webkit-transform: rotateZ(360deg);*/
 }
 
 
@@ -238,16 +329,7 @@ h1{
   width: 307px;
   -webkit-transform: translate3d(0,0,0); /* Safari */
   transform: translate3d(0,0,0);
-  /*-webkit-transition: -webkit-transform 1s; /* Safari
-  transition: transform 1s;
-  transition-delay: 0s;*/
 }
-
-/*#title-drugs-button:hover{
-  -webkit-transform:translate3d(9px,9px,0);
-  transform: translate3d(9px,9px,0);
-}*/
-
 
 #title-me-button{
   margin-left: 424px;
@@ -386,7 +468,7 @@ foreignObject h3{
 }
 
 #content{
-  padding-bottom: 200px;
+  padding: 200px 0;
 }
 
 #home-buttons>li{
@@ -433,10 +515,15 @@ foreignObject h3{
 .about-us{
   background-color: #EF6767;
 }
-.partners{
+#partners{
   margin-top: 20px;
-  background-color: #4CBA83;
+  /*background-color: #4CBA83;*/
   border: 4px solid black;
+}
+
+#partners a img{
+  height: 140px;
+  padding: 20px;
 }
 
 .donate{

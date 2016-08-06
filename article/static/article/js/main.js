@@ -1,6 +1,13 @@
 
 var $animationSpeed = 500;
 
+//Makes new selector (icontains) which is a case insensitive contains for Jquery
+//(needed for search)
+jQuery.expr[':'].icontains = function(a, i, m) {
+  return jQuery(a).text().toUpperCase()
+      .indexOf(m[3].toUpperCase()) >= 0;
+};
+
 
 $(document).ready(function(){
 
@@ -54,6 +61,44 @@ $(document).ready(function(){
     });
     return false;
   });
+
+// ---------- Search -------------------------------------------
+
+  $('#searchText').on('input', function(){
+      //unentitle item if any is entitled
+      if($('.item-link').hasClass('entitled')){
+          $('.entitled').unEntitle();
+      }
+
+      $(window).keyup(function(event){
+          "use strict";
+          var searchquery = document.getElementById("searchText").value.toLowerCase();
+
+          //hide and show items
+          $(".item ul:icontains('" + searchquery + "')").parentsUntil(this, '.item').removeClass('hidden');
+          $(".item ul:not(:icontains('" + searchquery + "'))").parentsUntil(this, '.item').addClass('hidden');
+          if(searchquery == ""){
+            $("#item-picker").addClass('hidden');
+          }
+          else {
+            $("#item-picker").removeClass('hidden');
+            if(event.keyCode == 13){
+                window.location.href = $(".tag:icontains('" + searchquery + "')").parentsUntil(this, '.item').find(">:first-child").attr("href");
+              }
+
+          }
+
+         //changes h5 to tag names
+          $(".tag:icontains('" + searchquery + "')").each(function(){
+              var current = $(this).text();
+              $(this).parentsUntil(this, '.item').find(">:first-child").find(">:first-child").replaceWith('<h5 class="item-name">'+ current +' </h5>');
+            //capitalise first letter of element
+            $('.item-name').css('textTransform', 'capitalize');
+          });
+
+      });
+  });
+
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){
