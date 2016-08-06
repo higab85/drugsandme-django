@@ -20,7 +20,7 @@ urlpatterns = [
     # /admin/
     url(r'^admin/', admin.site.urls),
 
-    # /drugs/
-    url(r'^$', include('article.urls')),
+    # /
+    url(r'^', include('article.urls')),
 
 ]

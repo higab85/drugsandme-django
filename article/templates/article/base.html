@@ -28,21 +28,14 @@
     <div class="site-wrapper">
       {% block cover_background %} {% endblock %}
         <div class="cover-container site-wrapper-inner">
-
           <div class="masthead clearfix">
             <div class="inner">
-              <!-- <h3 class="masthead-brand">Cover</h3> -->
               <nav>
                 <ul class="nav">
-                  <!-- <li class="nav-left"><h3 class="boxed" href="#">about</h3></li> -->
                   <li class="nav-left">
-                    <svg id="about">
-                      <rect class="cls-3" x="7.07" y="5.73" width="103.36" height="42.15"/>
-                      <rect class="cls-4" x="0.82" y="0.25" width="103.36" height="42.15"/>
-                      <foreignobject width="103.36" height="42.15" y="7" >
-                          <h3>about</h3>
-                      </foreignobject>
-                    </svg>
+                    <div id="about" class>
+                      <h3 class="boxed">about</h3>
+                    </div>
                   </li>
                   <li class="nav-right" id="search">
                     <div id="social-search">
@@ -52,7 +45,7 @@
                     </div>
                     <!-- START SEARCH ----------------------------------------->
                     <div id="search">
-                      <input id="searchText" placeholder="search"/>
+                      <input id="searchText" class="boxed "placeholder="search"onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
                       <!-- <i class="glyphicon glyphicon-search"></i> -->
                       <div id="item-picker" class="hidden pull-left">
                         <div class="item">
@@ -125,13 +118,11 @@
               </nav>
             </div>
           </div>
-
-          <div class="inner cover site-wrapper-inner">
-            {% block cover %} {% endblock %}
+            <div class="inner cover site-wrapper-inner">
+              {% block cover %} {% endblock %}
+            </div>
           </div>
-
         </div>
-      </div>
         <div id="content" class="site-wrapper-inner">
           {% block content %} {% endblock %}
         </div>

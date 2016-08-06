@@ -204,8 +204,8 @@ h1{
 
 #search{
 	/*position: relative;*/
-  z-index: 5;
-  height: 50px;
+  /*z-index: 5;
+  height: 50px;*/
 }
 
 #searchText{
@@ -237,11 +237,10 @@ h1{
 
 }
 #search input{
-  background: transparent;
+  background: #fff;
   text-align: center;
   font-size: 2em;
   width: 140px;
-  border: 4px solid black;
 }
 
 #search a{
@@ -294,23 +293,18 @@ input:focus {
   width: 113px;
   height: 50px;
 }
-#search>svg{
-  width: 147px;
-  height: 52px;
-}
 
-#search{
-  background-color: #fff;
-}
-#search>div,svg{
+#search,
+#search>div{
     display: inline-block;
-    vertical-align: text-bottom;
 }
 
 #social-search{
   top: 5px;
   height: 32px;
   width: 110px;
+  vertical-align: top;
+  margin-top: 13px
 }
 .search-button{
   width: 32px;
@@ -462,6 +456,15 @@ input:focus {
 
 
 /* Content */
+
+.boxed,
+.boxed:focus{
+  border: 4px solid black;
+  padding: 6px 0;
+  margin: 0;
+  background-color: #fff;
+}
+
 
 foreignObject h3{
   margin: 0;
