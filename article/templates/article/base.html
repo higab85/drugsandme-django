@@ -34,7 +34,7 @@
                 <ul class="nav">
                   <li class="nav-left">
                     <div id="about" class>
-                      <h3 class="boxed">about</h3>
+                      <p class="boxed searchbarbox">about</p>
                     </div>
                   </li>
                   <li class="nav-right" id="search">
@@ -44,11 +44,14 @@
 
                     </div>
                     <!-- START SEARCH ----------------------------------------->
-                    <div id="search">
-                      <input id="searchText" class="boxed "placeholder="search"onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
-                      <!-- <i class="glyphicon glyphicon-search"></i> -->
+                    <div id="search-bar">
+                      <div class="has-feedback">
+                        <input id="searchText" type="text" class="form-control boxed searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
+                        <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
+                      </div>
+
                       <div id="item-picker" class="hidden pull-left">
-                        <div class="item">
+                        <div class="item alcohol">
                           <a href="alcohol.html" class="item-link">
                             <h5 class="item-name hidden">Alcohol</h5>
                           </a>
@@ -59,7 +62,7 @@
                             <li class="tag">alcohol</li>
                           </ul>
                         </div>
-                        <div class="item">
+                        <div class="item cannabis">
                           <a href="cannabis.html" class="item-link">
                             <h5 class="item-name hidden">Cannabis</h5>
                           </a>
@@ -79,7 +82,7 @@
                             <li class="tag">cannabis</li>
                           </ul>
                         </div>
-                        <div class="item">
+                        <div class="item cocaine">
                           <a href="cocaine.html" class="item-link">
                             <h5 class="item-name hidden">Cocaine</h5>
                           </a>
@@ -95,7 +98,7 @@
                           </ul>
 
                         </div>
-                        <div class="item">
+                        <div class="item mdma">
                           <a href="mdma.html" class="item-link">
                             <h5 class="item-name hidden">MDMA</h5>
                           </a>

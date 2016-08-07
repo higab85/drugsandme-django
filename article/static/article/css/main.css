@@ -210,7 +210,7 @@ h1{
 
 #searchText{
   display: block;
-  height: 50px;
+  height: 34px;
 }
 
 #search.visible-xs{
@@ -218,7 +218,6 @@ h1{
 }
 
 #search i{
-	right: 2em;
   display: inline-block;
 }
 
@@ -227,26 +226,27 @@ h1{
 }
 
 #item-picker{
+  position: absolute;
   min-height: 0px;
   background-color: #eee;
   border-style: solid;
   border-color: black;
   width: 140px;
-  border-width: 0px 4px 2px 4px;
-  margin-top: -2px;
+  border-width: 0px 2px 1px 2px;
+  margin-top: -1px;
+  box-shadow: 2px 2px 1px #6B7A88;
 
 }
 #search input{
   background: #fff;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.3em;
   width: 140px;
 }
 
 #search a{
-  color: black;
+  color: inherit;
   text-decoration: none;
-  z-index: 5;
 }
 
 input:focus {
@@ -257,8 +257,12 @@ input:focus {
 .item{
   border-style: solid;
   border-color: black;
-  border-width: 2px 0;
+  border-width: 1px 0;
 }
+.item-name{
+  font-weight: bold;
+}
+
 ::-webkit-input-placeholder {
    color: #000;
    font-size: 1em;
@@ -291,7 +295,7 @@ input:focus {
 }
 #about{
   width: 113px;
-  height: 50px;
+  /*height: 50px;*/
 }
 
 #search,
@@ -299,13 +303,26 @@ input:focus {
     display: inline-block;
 }
 
-#social-search{
-  top: 5px;
-  height: 32px;
-  width: 110px;
-  vertical-align: top;
-  margin-top: 13px
+#search-bar>div{
+  display: block;
+
 }
+
+#social-search{
+  width: 110px;
+  position: relative;
+}
+#social-search img{
+  line-height: 50px;
+  display: inline;
+}
+
+@-moz-document url-prefix() {
+    #social-search img {
+        vertical-align: baseline;
+    }
+}
+
 .search-button{
   width: 32px;
   display: inline-block;
@@ -356,7 +373,6 @@ input:focus {
   margin: -2px;
   display: inline-block;
   border: 5px solid black;
-  background-color: white;
   transition: background-color 0.1s;
 }
 .title-collapse div:hover{
@@ -414,64 +430,66 @@ input:focus {
   background-color: #36434C;
 }
 
-#alcohol{
+.alcohol{
+  color: #000;
   background-color: #7CCAD0;
   transition: 0.1s ease-in-out;
 }
 
-#alcohol:hover{
+.alcohol:hover{
   color: #fff;
   background-color: #36434C;
 }
 
-#cannabis{
+.cannabis{
   background-color: #85BE91;
   transition: 0.1s ease-in-out;
 }
 
-#cannabis:hover{
+.cannabis:hover{
   color: #fff;
   background-color: #36434C;
 }
 
-#cocaine{
+.cocaine{
   background-color: #D55C5E;
   transition: 0.1s ease-in-out;
 }
 
-#cocaine:hover{
+.cocaine:hover{
   color: #fff;
   background-color: #36434C;
 }
 
-#mdma{
+.mdma{
   background-color: #D6797A;
   transition: 0.1s ease-in-out;
 }
 
-#mdma:hover{
+.mdma:hover{
   color: #fff;
   background-color: #36434C;
 }
-
 
 /* Content */
 
 .boxed,
 .boxed:focus{
-  border: 4px solid black;
-  padding: 6px 0;
+  border: 2px solid black;
+  padding: 3px 0;
   margin: 0;
   background-color: #fff;
+  box-shadow: 2px 2px 1px #6B7A88;
+  border-radius: 0px;
 }
-
-
-foreignObject h3{
-  margin: 0;
+.searchbarbox{
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 #content{
-  padding: 200px 0;
+  padding: 50px 0;
+  text-align: left;
 }
 
 #home-buttons>li{

@@ -91,7 +91,8 @@ $(document).ready(function(){
          //changes h5 to tag names
           $(".tag:icontains('" + searchquery + "')").each(function(){
               var current = $(this).text();
-              $(this).parentsUntil(this, '.item').find(">:first-child").find(">:first-child").replaceWith('<h5 class="item-name">'+ current +' </h5>');
+              $(this).parentsUntil(this, '.item').find("h5").html(current);
+              $(this).parentsUntil(this, '.item').find("h5").removeClass('hidden');
             //capitalise first letter of element
             $('.item-name').css('textTransform', 'capitalize');
           });
