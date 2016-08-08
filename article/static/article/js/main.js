@@ -108,7 +108,7 @@ $(document).ready(function(){
 // This is to make the sidebar fixed only after the cover
   $("#sidebar").affix({
     offset: {
-      top: 700
+      top: 480
     }
 });
 
