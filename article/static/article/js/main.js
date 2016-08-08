@@ -112,6 +112,12 @@ $(document).ready(function(){
     }
 });
 
+// flips .thing-to-take
+$('.thing-to-take').click(function(){
+  console.log("tworked");
+  $(this).toggleClass('flipped');
+  $(this).children().toggleClass('hidden');
+});
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

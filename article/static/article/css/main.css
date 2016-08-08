@@ -213,7 +213,7 @@ h3 .small{
 -----------------------------------------------------------------
 */
 
-/* Get first title */
+/*--- Globals -------------------------------------------------*/
 
 h1{
   font-size: 75px;
@@ -235,7 +235,8 @@ h4{
 p{
   font-size: 15px;
 }
-/*search styles*/
+/*--- end Globals ----------------------------------------------------*/
+/*--- navbar styles --------------------------------------------------*/
 
 
 .no-display{
@@ -330,8 +331,6 @@ input:focus {
    text-align: center;
 
 }
-
-/*SVG sizes*/
 #title-background{
   width: 630px;
   height: 137px;
@@ -371,7 +370,9 @@ input:focus {
   display: inline-block;
 }
 
-/* "drugs + me" title */
+/*--- end navbar -----------------------------------------------------*/
+
+/* "drugs + me" title --------------------------------------------------*/
 
 .title{
   width: 630px;
@@ -430,6 +431,10 @@ input:focus {
   border: 5px solid black;
 
 }
+
+/*--- end "drugs + me" title ----------------------------------------*/
+
+/*--- page linking styles -------------------------------------------*/
 
 #b-and-t{
   background-color: #FCD08B;
@@ -514,7 +519,9 @@ input:focus {
   background-color: #36434C;
 }
 
-/*---------- Sidebar styles -------------------------------------*/
+/*--- end page linking styles ---------------------------------------*/
+
+/*--- Sidebar styles ------------------------------------------------*/
 
 #sidebar{
   top: 40px;
@@ -537,15 +544,14 @@ input:focus {
   box-shadow: 2px 2px 1px #6B7A88;
   background-color: #fff;
 }
-/*---------- End sidebar styles -------------------------------------*/
+/*--- End sidebar styles -------------------------------------*/
 
-/* Content */
+/*--- Content ------------------------------------------------*/
 
 .boxed,
 .boxed:focus{
   border: 2px solid black;
   padding: 3px 0;
-  margin: 0;
   background-color: #fff;
   box-shadow: 2px 2px 1px #6B7A88;
   border-radius: 0px;
@@ -614,9 +620,36 @@ input:focus {
   height: 140px;
   padding: 20px;
 }
-
 .donate{
   background-color: #F6DA5C;
+}
+.thing-to-take{
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  vertical-align: middle;
+}
+
+.thing-to-take.flipped{
+  background-color: #6B7A87;
+  color: #fff;
+}
+.thing-to-take p{
+  padding: 15px;
+}
+.funky{
+  padding: 2px 20px;
+  font-family: "Bebas-Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+h3.funky{
+  color: #97D6DD;
+  font-size: 60px;
+}
+h4.funky{
+  font-size: 24px;
 }
 
 /*------------ Footer ----------------------------*/
