@@ -471,6 +471,31 @@ input:focus {
   background-color: #36434C;
 }
 
+/*---------- Sidebar styles -------------------------------------*/
+
+#sidebar{
+  top: 40px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+  color: #4CBA83;
+  border: 2px solid black;
+  box-shadow: 2px 2px 1px #6B7A88;
+  background-color: #fff;
+}
+/*---------- End sidebar styles -------------------------------------*/
+
 /* Content */
 
 .boxed,

@@ -1,0 +1,82 @@
+{% extends 'article/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - Alcohol
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock %}
+
+{% block cover_background %}
+  <div style="background-color: #7AD1DF">
+{% endblock %}
+
+{% block cover %}
+<div class="jumbotron">
+  {% block cover-contents %} {% endblock %}
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-md-9" role="main">
+
+    <div id="intro">
+      {% block intro-content %} {% endblock %}
+    </div>
+    <div id="effects">
+      <h2> Effects</h2>
+      {% block effects-content %} {% endblock %}
+    </div>
+
+    <div id="dose-and-onset">
+      <h2>Dose and Onset</h2>
+      {% block dose-and-onset-content %} {% endblock %}
+    </div>
+
+    <div id="interactions">
+      <h2>Interactions</h2>
+      {% block interactions-content %} {% endblock %}
+    </div>
+
+    <div id="harm-reduction">
+      <h2>Harm reduction</h2>
+      {% block harm-reduction-content %} {% endblock %}
+    </div>
+
+    <div id="risks">
+      <h2>Risks</h2>
+      {% block risks-content %} {% endblock %}
+    </div>
+
+    <div id="the-law">
+      <h2>The Law</h2>
+      {% block the-law-content %} {% endblock %}
+    </div>
+
+    <div id="more-info">
+      <h2>More information, references, useful links...</h2>
+      {% block more-info-content %} {% endblock %}
+    </div>
+  </div>
+  <div class="col-md-3" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <ul class="nav">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#dose-and-onset">Dose and Onset</a></li>
+        <li><a href="#interactions">Interactions</a></li>
+        <li><a href="#harm-reduction">Harm Reduction</a></li>
+        <li><a href="#risks">Risks</a></li>
+        <li><a href="#the-law">The Law</a></li>
+        <li><a href="#more-info">More information, references, useful links...</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+{% endblock %}

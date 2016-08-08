@@ -100,6 +100,18 @@ $(document).ready(function(){
       });
   });
 
+// This is part of the contents page which will highlight when we scroll
+  $('body').scrollspy({
+    target: '.bs-docs-sidebar',
+    offset: 40
+  });
+// This is to make the sidebar fixed only after the cover
+  $("#sidebar").affix({
+    offset: {
+      top: 700
+    }
+});
+
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

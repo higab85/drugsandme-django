@@ -1,4 +1,4 @@
-{% extends 'article/base.html' %}
+{% extends 'article/drug.html' %}
 {% load staticfiles %}
 
 {% block title %}
@@ -14,22 +14,16 @@
   <div style="background-color: #7AD1DF">
 {% endblock %}
 
-{% block cover %}
-<div class="jumbotron">
+{% block cover-contents %}
   <h1>Alcohol</h1>
   <p>
     pretty dope stuff
   </p>
-</div>
 {% endblock %}
 
-{% block content %}
-<div class="row">
-
-  <div class="col-md-9" role="main">
-    <h2>Text for title</h2>
-    <p>
-      Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+{% block intro-content %}
+  <p>
+    Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
 
 Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
 
@@ -38,22 +32,102 @@ Dolorum ullam autem velit. Esse facere ut ut veritatis in. Quos eos unde officii
 Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi possimus. Hic et sint ea.
 
 Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae necessitatibus voluptatibus dolor et aut quod repudiandae quia. Adipisci eum iusto dolor eveniet laboriosam velit et. Dolor debitis modi placeat soluta commodi culpa reiciendis.
-    </p>
-  </div>
-  <div class="col-md-3" role="complementary">
-    <nav class="bs-docs-sidebar hidden-print hidden-sm hidden-xs affix">
-      <ul class="nav bs-docs-sidenav">
-      <li>Intro</li>
-      <li>Effects</li>
-      <li>Risks</li>
-      <li>Dosage</li>
-      <li>Onset</li>
-      <li>Interactions</li>
-      <li>Facts and Myths</li>
-      <li>The Law</li>
-      </ul>
-    </nav>
-  </div>
-</div>
+  </p>
 
+
+  <div id="3-things-to-take">
+    <div class="thing-to-take"></div>
+    <div class="thing-to-take"></div>
+    <div class="thing-to-take"></div>
+  </div>
+{% endblock %}
+
+{% block effects-content %}
+  <p>
+    Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+Dolorum ullam autem velit. Esse facere ut ut veritatis in. Quos eos unde officiis aut et ut reiciendis. Voluptatem inventore ut odit laudantium asperiores consectetur sint. Qui id sunt quia temporibus odio.
+
+Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi possimus. Hic et sint ea.
+
+Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae necessitatibus voluptatibus dolor et aut quod repudiandae quia. Adipisci eum iusto dolor eveniet laboriosam velit et. Dolor debitis modi placeat soluta commodi culpa reiciendis.
+
+  </p>
+
+  <img src="http://www.placekitten.com/742/300" alt="effects graph">
+{% endblock %}
+
+{% block dose-and-onset-content %}
+  <p>
+        Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  Dolorum ullam autem velit. Esse facere ut ut veritatis in. Quos eos unde officiis aut et ut reiciendis. Voluptatem inventore ut odit laudantium asperiores consectetur sint. Qui id sunt quia temporibus odio.
+
+  Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi possimus. Hic et sint ea.
+
+  Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae necessitatibus voluptatibus dolor et aut quod repudiandae quia. Adipisci eum iusto dolor eveniet laboriosam velit et. Dolor debitis modi placeat soluta commodi culpa reiciendis.
+
+  </p>
+  <h5>How many units of alcohol are in your drink?</h5>
+  <img src="http://placekitten.com/400/200" alt="">
+{% endblock%}
+
+{% block interactions-content %}
+  <p>
+  Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  </p>
+
+{% endblock %}
+
+{% block harm-reduction-content %}
+  <p>
+    Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  </p>
+{% endblock %}
+
+
+{% block risks-content %}
+  <p>
+  Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  </p>
+{% endblock %}
+
+{% block the-law-content %}
+  <p>
+  Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  </p>
+{% endblock %}
+
+{% block more-info-content %}
+  <p>
+  Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+
+  Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+
+  </p>
+  <ul>
+    <li>link 1</li>
+    <li>thing 2<ul>
+      <li>link 2</li>
+      <li>link 3</li>
+    </ul></li>
+    <li>link 4</li>
+    <li>link 5</li>
+  </ul>
 {% endblock %}
