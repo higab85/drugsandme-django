@@ -1,4 +1,4 @@
-{% extends 'article/base.html' %}
+<!-- {% extends 'article/base.html' %} -->
 {% load staticfiles %}
 
 {% block title %}
@@ -23,15 +23,26 @@
       </h1>
     </div>
     <div class="title-collapse hidden" id="title-drugs-collapse">
-      <div class="alcohol">
-        <h3>Alcohol</h3>
-      </div><div class="cannabis">
-        <h3>Cannabis</h3>
-      </div><div class="cocaine">
-        <h3>Cocaine</h3>
-      </div><div class="mdma">
-        <h3>MDMA</h3>
-      </div>
+      <a href="/alcohol">
+        <div class="alcohol">
+          <h3>Alcohol</h3>
+        </div>
+      </a>
+      <a href="/cannabis">
+        <div class="cannabis">
+          <h3>Cannabis</h3>
+        </div>
+      </a>
+      <a href="/cocaine">
+        <div class="cocaine">
+          <h3>Cocaine</h3>
+        </div>
+      </a>
+      <a href="/mdma">
+        <div class="mdma">
+          <h3>MDMA</h3>
+        </div>
+      </a>
     </div>
   </div>
   <div class="title" id="title-me">

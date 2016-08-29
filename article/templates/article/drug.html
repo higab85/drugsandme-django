@@ -21,7 +21,7 @@
 {% block content %}
 <div class="row">
 
-  <div class="col-md-9" role="main">
+  <div class="col-md-10" role="main">
 
     <div id="intro">
       {% block intro-content %} {% endblock %}
@@ -39,11 +39,74 @@
     <div id="interactions">
       <h2>Interactions</h2>
       {% block interactions-content %} {% endblock %}
+      <div id="interactions-combo">
+        <div id="interactions-combo-addition" class="col-md-6">
+          <h4 class="funky"> CURRENT-DRUG + TEMP-DRUG =</h4>
+          <img src="http://placekitten.com/500/10" alt="dangerous to synergy bar">
+        </div>
+        <div id="interactions-combo-result" class="boxed col-md-5">
+          <h4 class="funky"> --COMBO-- </h4>
+          <p>
+            above info is to be changed, and this text will explain what
+            you should expect from any given combo.
+          </p>
+        </div>
+      </div>
+      <div id="interactions-table">
+        <a href="#" class="drug-to-combine boxed"><h5>Amphetamines</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Benzos</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Caffeine</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Cannabis</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Cocaine</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>DMT</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Heroin</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Ketamine</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>LSD</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Meth</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>MDMA</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Mushrooms</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>Nitrous Oxide</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>something1</h5></a>
+        <a href="#" class="drug-to-combine boxed"><h5>something2</h5></a>
+      </div>
     </div>
-
     <div id="harm-reduction">
       <h2>Harm reduction</h2>
       {% block harm-reduction-content %} {% endblock %}
+      <div id="harm-reduction-timeline">
+        <div id="harm-reduction-stage-indicators" class="col-md-2">
+          <div class="harm-reduction-stage-indicator active boxed harm-reduction-stage-1">
+            <h3 class="funky">BEFORE</h3>
+          </div>
+          <div class="harm-reduction-stage-indicator boxed harm-reduction-stage-2">
+            <h3 class="funky">DURING</h3>
+          </div>
+          <div class="harm-reduction-stage-indicator boxed harm-reduction-stage-3">
+            <h3 class="funky">AFTER</h3>
+          </div>
+        </div>
+        <div id="harm-reduction-stage-descriptions" class="boxed col-md-8 ">
+          <div class="harm-reduction-stage-description active harm-reduction-stage-1">
+            <p>
+              Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+              Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+            </p>
+          </div>
+          <div class="harm-reduction-stage-description hidden harm-reduction-stage-2">
+            <p>
+              Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+              Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+            </p>
+          </div>
+          <div class="harm-reduction-stage-description hidden harm-reduction-stage-3">
+            <p>
+              Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+              Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <div id="risks">
@@ -61,7 +124,7 @@
       {% block more-info-content %} {% endblock %}
     </div>
   </div>
-  <div class="col-md-3" role="complementary">
+  <div class="col-md-2" role="complementary">
     <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
       <ul class="nav">
         <li><a href="#intro">Intro</a></li>
@@ -71,7 +134,7 @@
         <li><a href="#harm-reduction">Harm Reduction</a></li>
         <li><a href="#risks">Risks</a></li>
         <li><a href="#the-law">The Law</a></li>
-        <li><a href="#more-info">More information, references, useful links...</a></li>
+        <li><a href="#more-info">More information...</a></li>
       </ul>
     </nav>
   </div>

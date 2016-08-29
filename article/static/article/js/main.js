@@ -114,10 +114,14 @@ $(document).ready(function(){
 
 // flips .thing-to-take
 $('.thing-to-take').click(function(){
-  console.log("tworked");
   $(this).toggleClass('flipped');
   $(this).children().toggleClass('hidden');
 });
+
+$('.harm-reduction-stage-indicator').click(function(){
+  $(this).parents().children().removeClass('active');
+  $(this).addClass('active');
+})
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

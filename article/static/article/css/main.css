@@ -87,7 +87,7 @@ body {
   width: 530px;
 }
 .cover-container{
-  height: 480px;
+  height: 584px;
 }
 
 /* Padding for spacing */
@@ -220,13 +220,6 @@ h1{
   display: inline-block;
 }
 
-h2{
-  font-size: 24px;
-  border-bottom: 1px solid #A4ACB5;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-}
 h4{
   padding: 20px 0;
   font-size: 17px;
@@ -414,7 +407,7 @@ input:focus {
 .title-collapse div{
   box-shadow: none;
   padding: 0 20px 8px 20px;
-  margin: -2px;
+  margin: 0 -4px;
   display: inline-block;
   border: 5px solid black;
   transition: background-color 0.1s;
@@ -490,6 +483,7 @@ input:focus {
 }
 
 .cannabis{
+  color: #000;
   background-color: #85BE91;
   transition: 0.1s ease-in-out;
 }
@@ -500,6 +494,7 @@ input:focus {
 }
 
 .cocaine{
+  color: #000;
   background-color: #D55C5E;
   transition: 0.1s ease-in-out;
 }
@@ -510,6 +505,7 @@ input:focus {
 }
 
 .mdma{
+  color: #000;
   background-color: #D6797A;
   transition: 0.1s ease-in-out;
 }
@@ -543,6 +539,8 @@ input:focus {
   border: 2px solid black;
   box-shadow: 2px 2px 1px #6B7A88;
   background-color: #fff;
+  font-size: 18px;
+  width: 200px;
 }
 /*--- End sidebar styles -------------------------------------*/
 
@@ -555,6 +553,9 @@ input:focus {
   background-color: #fff;
   box-shadow: 2px 2px 1px #6B7A88;
   border-radius: 0px;
+}
+.boxed p{
+  padding: 15px;
 }
 .searchbarbox{
   font-size: 1.3em;
@@ -577,6 +578,14 @@ input:focus {
 
 #home-buttons h3{
   margin: 5px 0;
+}
+
+h2.title{
+  font-size: 24px;
+  border-bottom: 1px solid #A4ACB5;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .nav-pills > li.active > a,
@@ -636,22 +645,64 @@ input:focus {
   background-color: #6B7A87;
   color: #fff;
 }
-.thing-to-take p{
-  padding: 15px;
-}
+
 .funky{
   padding: 2px 20px;
   font-family: "Bebas-Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
-h3.funky{
+h2.funky{
   color: #97D6DD;
   font-size: 60px;
 }
-h4.funky{
+h3.funky{
   font-size: 24px;
 }
 
+/*--- Interactions --- */
+#interactions-combo{
+  display: inline-block;
+}
+#interactions-table{
+  padding: 5px;
+  display: inline-block;
+}
+.drug-to-combine{
+  display: inline-block;
+  width: 120px;
+  margin: 5px;
+}
+.drug-to-combine h5{
+  color: black;
+  text-align: center;
+}
+/*--- Harm reduction --- */
+#harm-reduction-stage-indicators{
+  display: inline-block;
+  margin-top: 2px;
+  width: 175px;
+}
+
+.harm-reduction-stage-indicator{
+  width: 175px;
+  margin-top: -2px;
+  background-color: #6B7A87;
+  color: #97D6DD;
+}
+.harm-reduction-stage-indicator.active{
+  background-color: #86CED5;
+  margin-left: -10px;
+  height: 80px;
+}
+.harm-reduction-stage-indicator.active h3{
+  color: #fff;
+}
+.harm-reduction-stage-indicator h3{
+  color: #97D6DD;
+}
+#harm-reduction-stage-descriptions{
+  height: 350px;
+}
 /*------------ Footer ----------------------------*/
 
 #footer{
