@@ -122,6 +122,7 @@ $(document).ready(function(){
   $('.harm-reduction-stage-indicator').click(function(){
     $(this).parents().children().removeClass('active');
     $(this).addClass('active');
+    $('#harm-reduction-stage-descriptions p').text( $(this).find("p").html());
   })
 
   // Makes first drug in #interactions-combo-addition the current drug
