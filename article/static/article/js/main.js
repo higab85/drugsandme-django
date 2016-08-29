@@ -100,28 +100,40 @@ $(document).ready(function(){
       });
   });
 
-// This is part of the contents page which will highlight when we scroll
+  // This is part of the contents page which will highlight when we scroll
   $('body').scrollspy({
     target: '.bs-docs-sidebar',
     offset: 40
   });
-// This is to make the sidebar fixed only after the cover
+  // This is to make the sidebar fixed only after the cover
   $("#sidebar").affix({
     offset: {
       top: 480
     }
-});
+  });
 
-// flips .thing-to-take
-$('.thing-to-take').click(function(){
-  $(this).toggleClass('flipped');
-  $(this).children().toggleClass('hidden');
-});
+  // Flips .thing-to-take
+  $('.thing-to-take').click(function(){
+    $(this).toggleClass('flipped');
+    $(this).children().toggleClass('hidden');
+  });
 
-$('.harm-reduction-stage-indicator').click(function(){
-  $(this).parents().children().removeClass('active');
-  $(this).addClass('active');
-})
+  // Toggles stages on harm-reduction table
+  $('.harm-reduction-stage-indicator').click(function(){
+    $(this).parents().children().removeClass('active');
+    $(this).addClass('active');
+  })
+
+  // Makes first drug in #interactions-combo-addition the current drug
+  $('#interactions-combo-addition-const').text( $('meta[name=drug-name]').attr("content"));
+  // Selects drug in combo chart:
+  // - makes selected drug background-color change to color
+  // - adds new info to #interactions-combo
+  $('.drug-to-combine').click(function(){
+    $('.drug-to-combine').addClass('combo-not-active');
+    $(this).removeClass('combo-not-active');
+    $('#interactions-combo-addition-temp').text($(this).find('h5').html());
+  })
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

@@ -41,8 +41,8 @@
       {% block interactions-content %} {% endblock %}
       <div id="interactions-combo">
         <div id="interactions-combo-addition" class="col-md-6">
-          <h4 class="funky"> CURRENT-DRUG + TEMP-DRUG =</h4>
-          <img src="http://placekitten.com/500/10" alt="dangerous to synergy bar">
+          <h4 class="funky"> <span id="interactions-combo-addition-const"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
+          <img src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
         </div>
         <div id="interactions-combo-result" class="boxed col-md-5">
           <h4 class="funky"> --COMBO-- </h4>
@@ -53,21 +53,21 @@
         </div>
       </div>
       <div id="interactions-table">
-        <a href="#" class="drug-to-combine boxed"><h5>Amphetamines</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Benzos</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Caffeine</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Cannabis</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Cocaine</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>DMT</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Heroin</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Ketamine</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>LSD</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Meth</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>MDMA</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Mushrooms</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>Nitrous Oxide</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>something1</h5></a>
-        <a href="#" class="drug-to-combine boxed"><h5>something2</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Amphetamines</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Benzos</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>Caffeine</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Cannabis</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Cocaine</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>DMT</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Heroin</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Ketamine</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>LSD</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Meth</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>MDMA</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Mushrooms</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Nitrous Oxide</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>something1</h5></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>something2</h5></a>
       </div>
     </div>
     <div id="harm-reduction">

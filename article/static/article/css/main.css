@@ -7,6 +7,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -675,6 +676,18 @@ h3.funky{
 .drug-to-combine h5{
   color: black;
   text-align: center;
+}
+.dangerous{
+  background-color: #FF3C51;
+}
+.caution{
+  background-color: #FEE152;
+}
+.synergy{
+  background-color: #60CF6F;
+}
+.combo-not-active{
+  background-color: #fff !important;
 }
 /*--- Harm reduction --- */
 #harm-reduction-stage-indicators{

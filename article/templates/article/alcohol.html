@@ -7,7 +7,7 @@
 
 
 {% block header %}
-
+<meta name="drug-name" content="Alcohol">
 {% endblock %}
 
 
@@ -16,7 +16,7 @@
 {% endblock %}
 
 {% block cover-contents %}
-  <img src="http://placekitten.com/400/300" alt="">
+  <img src="{% static 'article/images/alcohol/alcohol-illustration.png' %}" alt="alcohol">
   <div id="cover-text">
     <h1>Alcohol</h1>
     <h4>Booze, liquor, spirits, wine, beer, cocktails, long drinks</h4>
@@ -75,8 +75,9 @@ Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi po
 Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae necessitatibus voluptatibus dolor et aut quod repudiandae quia. Adipisci eum iusto dolor eveniet laboriosam velit et. Dolor debitis modi placeat soluta commodi culpa reiciendis.
 
   </p>
-
-  <img src="http://www.placekitten.com/742/300" alt="effects graph">
+  <div class="text-center">
+    <img src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
+  </div>
 {% endblock %}
 
 {% block dose-and-onset-content %}
@@ -93,7 +94,9 @@ Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae neces
 
   </p>
   <h4>How many units of alcohol are in your drink?</h4>
-  <img src="http://placekitten.com/400/200" alt="">
+  <div class="text-center">
+    <img src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
+  </div>
 {% endblock%}
 
 {% block interactions-content %}
