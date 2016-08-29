@@ -703,6 +703,9 @@ h3.funky{
 #harm-reduction-stage-descriptions{
   height: 350px;
 }
+#harm-reduction-timeline{
+  display: inline-block;
+}
 /*------------ Footer ----------------------------*/
 
 #footer{
