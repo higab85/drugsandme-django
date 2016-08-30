@@ -88,7 +88,7 @@ body {
   width: 530px;
 }
 .cover-container{
-  height: 584px;
+  height: 484px;
 }
 
 /* Padding for spacing */
@@ -660,14 +660,17 @@ h2.title{
 
 .funky{
   padding: 2px 20px;
-  font-family: "Bebas-Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 h2.funky{
   font-size: 60px;
 }
 h3.funky{
-  font-size: 24px;
+  font-size: 32px;
+}
+h4.funky{
+  font-size: 25px;
 }
 
 /*--- Interactions --- */
