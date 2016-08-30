@@ -112,6 +112,15 @@ $(document).ready(function(){
     }
   });
 
+  // adds theme-light-color to hovered content item, and only removes the class
+  // if that element isn't active
+  $('#sidebar a').hover(function(){
+    $(this).addClass('theme-light-color');
+  },function(){
+    if(!$(this).parent().hasClass('active'))
+      $(this).removeClass('theme-light-color');
+  });
+
   // Flips .thing-to-take
   $('.thing-to-take').click(function(){
     $(this).toggleClass('flipped');
@@ -121,7 +130,9 @@ $(document).ready(function(){
   // Toggles stages on harm-reduction table
   $('.harm-reduction-stage-indicator').click(function(){
     $(this).parents().children().removeClass('active');
+    $(this).parents().children().removeClass('theme-light-bg');
     $(this).addClass('active');
+    $(this).addClass('theme-light-bg');
     $('#harm-reduction-stage-descriptions p').text( $(this).find("p").html());
   })
 

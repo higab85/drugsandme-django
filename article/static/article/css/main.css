@@ -229,6 +229,18 @@ h4{
 p{
   font-size: 15px;
 }
+
+/*--- Themes ---------------------------------------------------------*/
+
+.theme.leave-bg,
+.theme-light.leave-bg{
+  background-color: inherit !important;
+}
+.theme.leave-color
+.theme-light.leave-color{
+  color: inherit !important;
+}
+
 /*--- end Globals ----------------------------------------------------*/
 /*--- navbar styles --------------------------------------------------*/
 
@@ -536,7 +548,6 @@ input:focus {
 .bs-docs-sidebar .nav>.active>a,
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
-  color: #4CBA83;
   border: 2px solid black;
   box-shadow: 2px 2px 1px #6B7A88;
   background-color: #fff;
@@ -653,7 +664,6 @@ h2.title{
 }
 
 h2.funky{
-  color: #97D6DD;
   font-size: 60px;
 }
 h3.funky{
@@ -700,18 +710,13 @@ h3.funky{
   width: 175px;
   margin-top: -2px;
   background-color: #6B7A87;
-  color: #97D6DD;
 }
 .harm-reduction-stage-indicator.active{
-  background-color: #86CED5;
   margin-left: -10px;
   height: 80px;
 }
-.harm-reduction-stage-indicator.active h3{
-  color: #fff;
-}
 .harm-reduction-stage-indicator h3{
-  color: #97D6DD;
+  color: #fff;
 }
 #harm-reduction-stage-descriptions{
   height: 350px;

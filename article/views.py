@@ -8,3 +8,7 @@ def index(request):
 def alcohol(request):
     # context = {}
     return render(request, 'article/alcohol.html')
+
+def mdma(request):
+    # context = {}
+    return render(request, 'article/mdma.html')

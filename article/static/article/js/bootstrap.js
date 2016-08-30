@@ -1982,14 +1982,19 @@ if (typeof jQuery === 'undefined') {
       '[data-target="' + target + '"],' +
       this.selector + '[href="' + target + '"]'
 
+    // added the theme-light-color feature. To go back to original get rid of
+    // the lines marked by: // my edit
+
     var active = $(selector)
       .parents('li')
       .addClass('active')
+      .find('a').addClass('theme-light-color')        // my edit
 
     if (active.parent('.dropdown-menu').length) {
       active = active
         .closest('li.dropdown')
         .addClass('active')
+        .find('a').addClass('theme-light-color')      // my edit
     }
 
     active.trigger('activate.bs.scrollspy')
@@ -1999,6 +2004,7 @@ if (typeof jQuery === 'undefined') {
     $(this.selector)
       .parentsUntil(this.options.target, '.active')
       .removeClass('active')
+      .find('a').removeClass('theme-light-color')     // my edit
   }
 
 

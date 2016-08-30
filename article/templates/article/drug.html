@@ -18,6 +18,10 @@
 </div>
 {% endblock %}
 
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
 {% block content %}
 <div class="row">
 
@@ -75,7 +79,7 @@
       {% block harm-reduction-content %} {% endblock %}
       <div id="harm-reduction-timeline">
         <div id="harm-reduction-stage-indicators" class="col-md-2">
-          <div class="harm-reduction-stage-indicator active boxed">
+          <div class="harm-reduction-stage-indicator active boxed theme-light-bg">
             <h3 class="funky">BEFORE</h3>
             <p class="hidden">
               {% block harm-reduction-stage-1 %} {% endblock %}
