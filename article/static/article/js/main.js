@@ -126,7 +126,7 @@ $(document).ready(function(){
   })
 
   // Makes first drug in #interactions-combo-addition the current drug
-  $('#interactions-combo-addition-const').text( $('meta[name=drug-name]').attr("content"));
+  $('.current-drug-name').text( $('meta[name=drug-name]').attr("content"));
   // Selects drug in combo chart:
   // - makes selected drug background-color change to color
   // - adds new info to #interactions-combo
@@ -134,6 +134,7 @@ $(document).ready(function(){
     $('.drug-to-combine').addClass('combo-not-active');
     $(this).removeClass('combo-not-active');
     $('#interactions-combo-addition-temp').text($(this).find('h5').html());
+    $('#interactions-combo-result').html($(this).find('div').html());
   })
 //------------------ front page bottom buttons ------------------------------
 
