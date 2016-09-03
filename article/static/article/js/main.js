@@ -168,6 +168,22 @@ $(document).ready(function(){
       $(this).addClass('combo-not-active');
   })
 
+  // will add activate boxes on mobile startpage:
+  // - add class active
+  // - expand information box
+  // - make sure only one box is activated
+  $('#mobile-info-boxes>div').click(function(){
+    if($(this).hasClass('active')){
+      $(this).find('p').addClass('hidden');
+      $(this).removeClass('active');
+    }else{
+      $('#mobile-info-boxes .active').find('p').addClass('hidden');
+      $('#mobile-info-boxes .active').removeClass('active');
+      $(this).addClass('active');
+      $(this).find('p').removeClass('hidden');
+    }
+  })
+
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

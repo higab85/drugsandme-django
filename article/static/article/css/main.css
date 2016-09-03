@@ -716,7 +716,7 @@ input:focus {
 
 #home-buttons>li{
   border: 4px solid black;
-  margin: -4px 32px -4px 0;
+  margin: -4px -4px -4px 0;
 }
 #home-buttons>li.active{
   border-bottom: 0px;
@@ -766,14 +766,12 @@ h2.title{
 .about-us{
   background-color: #EF6767;
 }
-#partners{
+.partners{
   padding: 0 20px;
   margin-top: 20px;
-  background-color: #fff;
-  border: 4px solid black;
 }
 
-#partners a img{
+.partners a img{
   height: 140px;
   padding: 20px;
 }
@@ -886,3 +884,43 @@ h4.funky{
 /*#footer ul{
   top: 30px;
 }*/
+
+/*--- Page specific ---------------------------------------------------------*/
+
+#site-index .cover-container{
+  height: 684px;
+}
+#site-index #content{
+  width: 70%;
+}
+#mobile-info-boxes>div{
+  margin: -2px 0;
+}
+#mobile-info-boxes p,
+#mobile-info-boxes h5{
+  padding: 0 10px;
+}
+#mobile-info-boxes h5{
+  display: inline-block;
+  font-weight: bold;
+}
+#mobile-info-boxes .active h5{
+  color: #fff;
+}
+#mobile-info-boxes .partners{
+  padding: 15px 10px;
+}
+#mobile-info-boxes .partners img{
+  height: 50px;
+  padding: 0;
+}
+#mobile-info-boxes .partners h5{
+  display: block;
+  margin-left: -10px;
+}
+.partners-logos{
+  text-align: center;
+}
+.partners-logos a{
+  margin: 0 20px;
+}
