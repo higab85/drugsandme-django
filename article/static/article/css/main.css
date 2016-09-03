@@ -209,9 +209,40 @@ h3 .small{
    #interactions-table{
      text-align: center;
    }
+   .harm-reduction-stage-indicator {
+    width: 30%;
+    margin-top: -2px;
+    background-color: #6B7A87 !important;
+    display: inline-block;
+    margin: -3px -5px;
+  }
+  #harm-reduction-stage-indicators{
+    display: inline-block;
+    margin-top: 2px;
+    left: 0;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .harm-reduction-stage-indicator{
+    width: 30%;
+    margin-top: -2px;
+    background-color: #6B7A87;
+  }
+  .harm-reduction-stage-indicator.active{
+    margin-left: -10px;
+    height: 80px;
+  }
  }
 
 @media (min-width: 768px) {
+
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 1000px;
+  }
 
   #interactions-table{
     text-align: left;
@@ -237,6 +268,22 @@ h3 .small{
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
     /*height: 500px;*/
+  }
+
+  #harm-reduction-stage-indicators{
+    /*display: inline-block;*/
+    margin-top: 2px;
+    width: 175px;
+  }
+
+  .harm-reduction-stage-indicator{
+    width: 175px;
+    margin-top: -2px;
+    background-color: #6B7A87 !important;
+  }
+  .harm-reduction-stage-indicator.active{
+    margin-left: -10px;
+    height: 80px;
   }
 }
 
@@ -781,8 +828,13 @@ h4.funky{
 }
 /*--- Interactions --- */
 #interactions-combo{
-  display: inline-block;
+  display: inline;
+  text-align: center;
 }
+#interactions-combo-result{
+  text-align: left;
+}
+
 #interactions-table{
   padding: 5px;
   display: inline-block;
@@ -809,23 +861,10 @@ h4.funky{
   background-color: #fff !important;
 }
 /*--- Harm reduction --- */
-#harm-reduction-stage-indicators{
-  display: inline-block;
-  margin-top: 2px;
-  width: 175px;
-}
 
-.harm-reduction-stage-indicator{
-  width: 175px;
-  margin-top: -2px;
-  background-color: #6B7A87;
-}
-.harm-reduction-stage-indicator.active{
-  margin-left: -10px;
-  height: 80px;
-}
 .harm-reduction-stage-indicator h3{
   color: #fff;
+  padding-left: 10%;
 }
 #harm-reduction-stage-descriptions{
   height: 350px;
