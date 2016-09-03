@@ -26,7 +26,7 @@
 
 
 {% block cover-contents %}
-  <img src="{% static 'article/images/alcohol/alcohol-illustration.png' %}" alt="alcohol">
+  <img class="img-responsive" src="{% static 'article/images/alcohol/alcohol-illustration.png' %}" alt="alcohol">
   <div id="cover-text">
     <h1>Alcohol</h1>
     <h4>Booze, liquor, spirits, wine, beer, cocktails, long drinks</h4>
@@ -46,30 +46,25 @@ Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi po
 Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae necessitatibus voluptatibus dolor et aut quod repudiandae quia. Adipisci eum iusto dolor eveniet laboriosam velit et. Dolor debitis modi placeat soluta commodi culpa reiciendis.
   </p>
 
+{% endblock %}
 
-  <div id="3-things-to-take">
-    <div class="thing-to-take boxed">
-      <h2 class="funky theme-light-color">1</h2>
-      <h3 class="funky"> DO THIS</h3>
-      <p class="hidden">
-        Now how about you read this text, I promise it will do you well. Pinky promise.
-      </p>
-    </div>
-    <div class="thing-to-take boxed">
-      <h2 class="funky theme-light-color">2</h2>
-      <h3 class="funky"> TAKE CARE AT BARS & CLUBS</h3>
-      <p class="hidden">
-        Now how about you read this text, I promise it will do you well. Pinky promise.
-      </p>
-    </div>
-    <div class="thing-to-take boxed">
-      <h2 class="funky theme-light-color">3</h2>
-      <h3 class="funky"> REHYDRATE AND REPLENISH</h3>
-      <p class="hidden">
-        Now how about you read this text, I promise it will do you well. Pinky promise.
-      </p>
-    </div>
-  </div>
+{% block intro-content-1 %}
+  <h3 class="funky"> DO THIS</h3>
+  <p class="hidden">
+    Now how about you read this text, I promise it will do you well. Pinky promise.
+  </p>
+{% endblock %}
+{% block intro-content-2 %}
+  <h3 class="funky"> TAKE CARE AT BARS & CLUBS</h3>
+  <p class="hidden">
+    Now how about you read this text, I promise it will do you well. Pinky promise.
+  </p>
+{% endblock %}
+{% block intro-content-3 %}
+  <h3 class="funky"> REHYDRATE AND REPLENISH</h3>
+  <p class="hidden">
+    Now how about you read this text, I promise it will do you well. Pinky promise.
+  </p>
 {% endblock %}
 
 {% block effects-content %}
@@ -86,8 +81,26 @@ Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae neces
 
   </p>
   <div class="text-center">
-    <img src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
+    <img class="img-responsive" src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
   </div>
+{% endblock %}
+{% block effects-list-positive %}
+  <li><span>positive effect 1</span></li>
+  <li><span>positive effect 2</span></li>
+  <li><span>positive effect 3</span></li>
+  <li><span>positive effect 4</span></li>
+{% endblock %}
+{% block effects-list-neutral %}
+  <li><span>neutral effect 1</span></li>
+  <li><span>neutral effect 2</span></li>
+  <li><span>neutral effect 3</span></li>
+  <li><span>neutral effect 4</span></li>
+{% endblock %}
+{% block effects-list-negative %}
+  <li><span>negative effect 1</span></li>
+  <li><span>negative effect 2</span></li>
+  <li><span>negative effect 3</span></li>
+  <li><span>negative effect 4</span></li>
 {% endblock %}
 
 {% block dose-and-onset-content %}
@@ -105,7 +118,7 @@ Eveniet sint commodi nihil accusamus eos et ad exercitationem. Repudiandae neces
   </p>
   <h4>How many units of alcohol are in your drink?</h4>
   <div class="text-center">
-    <img src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
+    <img class="img-responsive" src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
   </div>
 {% endblock%}
 

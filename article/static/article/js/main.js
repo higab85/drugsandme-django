@@ -11,13 +11,15 @@ jQuery.expr[':'].icontains = function(a, i, m) {
 
 $(document).ready(function(){
 
+  var $currentDrug = $('meta[name=drug-name]').attr("content");
+
 //------ cover drugs+me collapsable content ----------------------------------
   $("#title-drugs").hover(function() {
       $('#title-drugs-button').animate({
-        marginTop:'+=9px',
-        marginLeft:'+=9px'
+        marginTop:'9px',
+        marginLeft:'9px'
       }, $animationSpeed);
-      $("#title-drugs-collapse").removeClass("hidden");
+      // $("#title-drugs-collapse").removeClass("hidden");
       $("#title-drugs-collapse").animate({
         opacity: 1
       }, $animationSpeed);
@@ -25,40 +27,40 @@ $(document).ready(function(){
     },function(){
 
       $( this ).removeClass( "anim" );
-      $('#title-drugs-button').animate({
-        marginTop:'-=9px',
-        marginLeft:'-=9px'
+      $('#title-drugs-button').stop().animate({
+        marginTop:'0px',
+        marginLeft:'0px'
       }, $animationSpeed);
-      $("#title-drugs-collapse").animate({
+      $("#title-drugs-collapse").stop().animate({
         opacity: 0
       }, $animationSpeed, function(){
-        $("#title-drugs-collapse").addClass("hidden");
+        // $("#title-drugs-collapse").addClass("hidden");
         return false;
       });
       return false;
   });
 
-  $("#title-me").hover(function(){
-      $('#title-me-button').animate({
-        marginTop:'+=9px',
-        marginLeft:'+=9px'
-      }, $animationSpeed);
+  $("#title-me").stop().hover(function(){
       $("#title-me-collapse").removeClass("hidden");
-      $("#title-me-collapse").animate({
+      $("#title-me-collapse").stop().animate({
         opacity: 1
+      }, $animationSpeed);
+      $('#title-me-button').stop().animate({
+        marginTop:'9px',
+        marginLeft:'433px'
       }, $animationSpeed);
       return false;
     },function(){
-      $('#title-me-button').animate({
-        marginTop:'-=9px',
-        marginLeft:'-=9px'
-      }, $animationSpeed);
-      $("#title-me-collapse").animate({
+      $("#title-me-collapse").stop().animate({
         opacity: 0
       }, $animationSpeed, function(){
         $("#title-me-collapse").addClass("hidden");
         return false;
     });
+      $('#title-me-button').stop().animate({
+        marginTop:'0px',
+        marginLeft:'424px'
+      }, $animationSpeed);
     return false;
   });
 
@@ -137,16 +139,35 @@ $(document).ready(function(){
   })
 
   // Makes first drug in #interactions-combo-addition the current drug
-  $('.current-drug-name').text( $('meta[name=drug-name]').attr("content"));
+  $('.current-drug-name').text( $currentDrug);
+
   // Selects drug in combo chart:
   // - makes selected drug background-color change to color
   // - adds new info to #interactions-combo
-  $('.drug-to-combine').click(function(){
+  $('#interactions-table').on("click", ".drug-to-combine", function(){
     $('.drug-to-combine').addClass('combo-not-active');
+    $('.drug-to-combine.active').removeClass('active');
     $(this).removeClass('combo-not-active');
+    $(this).addClass('active');
     $('#interactions-combo-addition-temp').text($(this).find('h5').html());
     $('#interactions-combo-result').html($(this).find('div').html());
   })
+  // Deactivates an activated drug if it is clicked on.
+  $('#interactions-table').on("click", '.active', function(){
+    $(this).addClass('combo-not-active');
+    $(this).removeClass('active');
+    $('#interactions-combo-addition-temp').text("?");
+    $('#interactions-combo-result').html("<h4 class=\"funky\">SELECT A DRUG</h4><p>Click one of the drugs below and see how it mixes with " + $currentDrug + "</p>");
+  })
+
+  // Lets you peek into the colour of the drug by only hovering over it
+  $(".combo-not-active").hover(function(){
+    $(this).removeClass('combo-not-active');
+  },function(){
+    if(!$(this).hasClass('active'))
+      $(this).addClass('combo-not-active');
+  })
+
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

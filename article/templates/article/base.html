@@ -34,15 +34,10 @@
     <div class="site-wrapper">
       {% block cover_background %} {% endblock %}
         <div class="cover-container site-wrapper-inner">
-          <div class="masthead clearfix">
+          <div class="masthead clearfix" id="navbar">
             <div class="inner">
               <nav>
                 <ul class="nav">
-                  <li class="nav-left">
-                    <div id="about" class>
-                      <p class="boxed searchbarbox">about</p>
-                    </div>
-                  </li>
                   <li class="nav-right" id="search">
                     <div id="social-search">
                       <div class="search-button"><a href="https://facebook.com/"><img src="{% static 'article/images/search-Facebook.png' %}" alt="facebook"></a></div>
@@ -132,7 +127,7 @@
             </div>
           </div>
         </div>
-        <div id="content" class="site-wrapper-inner">
+        <div id="content" class=" container-fluid site-wrapper-inner">
           {% block content %} {% endblock %}
         </div>
 

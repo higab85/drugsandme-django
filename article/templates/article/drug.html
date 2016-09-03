@@ -12,7 +12,7 @@
 
 
 {% block cover %}
-<div id="cover">
+<div id="cover" class="col-xs-12 col-md-9">
 
   {% block cover-contents %} {% endblock %}
 </div>
@@ -29,28 +29,52 @@
 
     <div id="intro">
       {% block intro-content %} {% endblock %}
+      <div class="text-center">
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">1</h2>
+          {% block intro-content-1 %} {% endblock %}
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">2</h2>
+          {% block intro-content-2 %} {% endblock %}
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">3</h2>
+          {% block intro-content-3 %} {% endblock %}
+        </div>
+      </div>
     </div>
     <div id="effects">
-      <h2> Effects</h2>
+      <h2 class="section-title"> Effects</h2>
 
       {% block effects-content %} {% endblock %}
+      <h4>The effects entail (from <span style="color: #26E224">positive</span> to <span style="color: #E50000">negative</span>):</h4>
+      <ul class="effects" id="effects-positive">
+        {% block effects-list-positive %} {% endblock %}
+      </ul>
+      <ul class="effects" id="effects-neutral">
+        {% block effects-list-neutral %} {% endblock %}
+      </ul>
+      <ul class="effects" id="effects-negative">
+        {% block effects-list-negative %} {% endblock %}
+      </ul>
     </div>
 
     <div id="dose-and-onset">
-      <h2>Dose and Onset</h2>
+      <h2 class="section-title">Dose and Onset</h2>
       {% block dose-and-onset-content %} {% endblock %}
     </div>
 
     <div id="interactions">
-      <h2>Interactions</h2>
+      <h2 class="section-title">Interactions</h2>
       {% block interactions-content %} {% endblock %}
       <div id="interactions-combo" class="col-md-12">
         <div id="interactions-combo-addition" class="col-md-6">
           <h4 class="funky"> <span class="current-drug-name"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
-          <img src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
+          <img class="img-responsive" src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
         </div>
         <div id="interactions-combo-result" class="boxed col-md-5">
-          <h4 class="funky"> --COMBO-- </h4>
+          <h4 class="funky"> SELECT A DRUG </h4>
           <p id="interactions-combo-result-description">
             Click one of the drugs below and see how it mixes with <span class="current-drug-name"></span>.
           </p>
@@ -75,7 +99,7 @@
       </div>
     </div>
     <div id="harm-reduction">
-      <h2>Harm reduction</h2>
+      <h2 class="section-title">Harm reduction</h2>
       {% block harm-reduction-content %} {% endblock %}
       <div id="harm-reduction-timeline">
         <div id="harm-reduction-stage-indicators" class="col-md-2">
@@ -111,17 +135,17 @@
     </div>
 
     <div id="risks">
-      <h2>Risks</h2>
+      <h2 class="section-title">Risks</h2>
       {% block risks-content %} {% endblock %}
     </div>
 
     <div id="the-law">
-      <h2>The Law</h2>
+      <h2 class="section-title">The Law</h2>
       {% block the-law-content %} {% endblock %}
     </div>
 
     <div id="more-info">
-      <h2>More information, references, useful links...</h2>
+      <h2 class="section-title">More information, references, useful links...</h2>
       {% block more-info-content %} {% endblock %}
     </div>
   </div>

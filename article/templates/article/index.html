@@ -16,14 +16,14 @@
 
 {% block cover %}
 <div>
-  <div>
+  <div id="title">
     <div class="title" id="title-drugs">
       <div class="title-button" id="title-drugs-button">
         <h1>
           <span style="color: #40AF81;">d</span><span style="color: #E97C39;">r</span><span style="color: #5898BB;">u</span><span style="color: #E48084;">g</span><span style="color: #C43830;">s</span>
         </h1>
       </div>
-      <div class="title-collapse hidden" id="title-drugs-collapse">
+      <div class="title-collapse" id="title-drugs-collapse">
         <a href="/alcohol">
           <div class="alcohol">
             <h3>Alcohol</h3>
@@ -52,7 +52,7 @@
           me
         </h1>
       </div>
-      <div class="title-collapse hidden" id="title-me-collapse">
+      <div class="title-collapse" id="title-me-collapse">
         <div id="b-and-t">
           <h3>Buying + testing</h3>
         </div><div id="c-and-f">
@@ -64,21 +64,13 @@
         </div>
       </div>
     </div>
-    <svg id="title-background">
-      <rect class="cls-14" x="436" y="17" width="182" height="118"/>
-      <rect class="cls-14" x="14" y="17" width="301" height="118"/>
-      <foreignobject width="120" height="118" x=303>
-        <body>
-          <h1>
-            +
-          </h1>
-        </body>
-      </foreignobject>
-    </svg>
-
-    <p class="lead">A <b>harm reduction</b> guide to safe drug use</p>
-
+    <div id="title-static">
+      <div class="title-background" id="title-drugs-background"></div>
+      <div id="title-plus"><h1>+</h1></div>
+      <div class="title-background" id="title-me-background"></div>
+    </div>
   </div>
+  <p class="lead">A <b>harm reduction</b> guide to safe drug use</p>
 {% endblock %}
 
 {% block content %}
@@ -120,77 +112,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque laoreet sa
 </div>
 
 <div id="partners">
-  <h3>Partners</h3>
+  <h3>Our partners</h3>
   <a href="http://volteface.me"><img src="{% static 'article/images/partners/VFlogo.png' %}" alt="volteface"></a>
   <a href="http://beckleyfoundation.org"><img src="{% static 'article/images/partners/beckley-logo--home.png' %}" alt="beckleyfoundation"></a>
   <a href="https://www.facebook.com/londonpsychotropics/"><img src="{% static 'article/images/partners/LPG.png' %}" alt="london psychotropics"></a>
   <a href="https://stoptheharm.org"><img src="{% static 'article/images/partners/STH.jpg' %}" alt="stop the harm"></a>
 </div>
-
-
-  <!-- <a class="home-button" href="#harm-reduction">
-    <div class="col-md-4 col-sm-4 info-box" id="harm-reduction">
-      <h4 class=" info-box-title"> What is harm reduction?</h4>
-      <p class="info-box-text hidden">
-        Each year, thousands of drug-related deaths occur in the UK. It’s
-        not easy to find safe and reliable drug info, leaving us vulnerable
-        to overdosing, dangerous drug combinations, or uncomfortable
-        experiences. Harm reduction is an approach that neither encourages,
-        nor discourages drug use. Instead, it aims to lower the possible
-        risks & harms of using drugs.
-      </p>
-    </div>
-  </a>
-  <a href="#news" class="home-button">
-    <div class="col-md-2 col-sm-2 info-box" id="news">
-      <h4 class="info-box-title">News</h4>
-      <p class="info-box-text hidden">
-        News year, thousands of drug-related deaths occur in the UK. It’s
-        not easy to find safe and reliable drug info, leaving us vulnerable
-        to overdosing, dangerous drug combinations, or uncomfortable
-        experiences. Harm reduction is an approach that neither encourages,
-        nor discourages drug use. Instead, it aims to lower the possible
-        risks & harms of using drugs.
-      </p>
-    </div>
-  </a>
-  <a href="#about-us" class="home-button">
-    <div class="col-md-2  col-sm-2 info-box" id="about-us">
-      <h4 class="info-box-title">About</h4>
-      <p class="info-box-text hidden">
-        About year, thousands of drug-related deaths occur in the UK. It’s
-        not easy to find safe and reliable drug info, leaving us vulnerable
-        to overdosing, dangerous drug combinations, or uncomfortable
-        experiences. Harm reduction is an approach that neither encourages,
-        nor discourages drug use. Instead, it aims to lower the possible
-        risks & harms of using drugs.
-      </p>
-
-    </div>
-  </a>
-  <a href="#donate" class="home-button">
-    <div class="col-md-2 col-sm-2 info-box" id="donate">
-      <h4 class="info-box-title">Donate</h4>
-      <p class="info-box-text hidden">
-        Donate year, thousands of drug-related deaths occur in the UK. It’s
-        not easy to find safe and reliable drug info, leaving us vulnerable
-        to overdosing, dangerous drug combinations, or uncomfortable
-        experiences. Harm reduction is an approach that neither encourages,
-        nor discourages drug use. Instead, it aims to lower the possible
-        risks & harms of using drugs.
-      </p>
-    </div>
-  </a>
-  <div class="col-md-11 col-sm-11 info-box" id="partners">
-    <h5 class="info-box-title">partners</h5>
-    <p class="info-box-text hidden">
-      partners year, thousands of drug-related deaths occur in the UK. It’s
-      not easy to find safe and reliable drug info, leaving us vulnerable
-      to overdosing, dangerous drug combinations, or uncomfortable
-      experiences. Harm reduction is an approach that neither encourages,
-      nor discourages drug use. Instead, it aims to lower the possible
-      risks & harms of using drugs.
-    </p> -->
 
   </div>
   {% endblock %}

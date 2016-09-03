@@ -33,6 +33,7 @@ body {
 body {
   color: #000;
   text-align: center;
+  overflow-x: hidden;
   /*text-shadow: 0 1px 3px rgba(0,0,0,.5);*/
 }
 
@@ -49,7 +50,7 @@ body {
   /*display: table-cell;*/
   /* MY EDIT */
   vertical-align: middle;
-  width: 1000px;
+  margin: 0 10%;
   text-align: center;
   display: inline-block;
 
@@ -74,18 +75,21 @@ body {
   font-style: italic;
 }
 #cover{
-  position: absolute;
+  /*position: absolute;*/
 }
 #cover img{
   top: -250px;
   position: absolute;
-  left: 300px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 #cover-text{
   top: 30px;
   text-align: left;
   position: absolute;
-  width: 530px;
+  width: 100%;
 }
 .cover-container{
   height: 484px;
@@ -100,6 +104,9 @@ body {
 /*
  * Header
  */
+ #navbar{
+   z-index: 5;
+ }
 .masthead-brand {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -178,7 +185,39 @@ h3 .small{
  * Affix and center
  */
 
+ @media (max-width: 767px) {
+   /* Pull out the header and footer */
+   .masthead {
+     position: absolute;
+     top: 0;
+   }
+   .mastfoot {
+     position: fixed;
+     bottom: 0;
+   }
+   /* Start the vertical centering */
+   .site-wrapper-inner {
+     vertical-align: middle;
+   }
+   /* Handle the widths */
+   .masthead,
+   .mastfoot,
+   .cover-container {
+     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+     /*height: 500px;*/
+   }
+   #interactions-table{
+     text-align: center;
+   }
+ }
+
 @media (min-width: 768px) {
+
+  #interactions-table{
+    text-align: left;
+  }
+
+
   /* Pull out the header and footer */
   .masthead {
     position: absolute;
@@ -214,6 +253,11 @@ h3 .small{
 -----------------------------------------------------------------
 */
 
+/*--- Bootstrap overwrites ------------------------------------*/
+.img-responsive{
+  display: inline-block;
+}
+
 /*--- Globals -------------------------------------------------*/
 
 h1{
@@ -230,6 +274,8 @@ p{
   font-size: 15px;
 }
 
+
+/*--- end Globals ----------------------------------------------------*/
 /*--- Themes ---------------------------------------------------------*/
 
 .theme.leave-bg,
@@ -240,8 +286,15 @@ p{
 .theme-light.leave-color{
   color: inherit !important;
 }
+/*--- end themes -----------------------------------------------------*/
+/*--- all sections ---------------------------------------------------*/
+.section-title{
+  border-bottom: 2px solid #AFB8C0;
+  padding-bottom: 20px;
+  margin: 35px 0px;
+}
 
-/*--- end Globals ----------------------------------------------------*/
+/*--- end all sections -----------------------------------------------*/
 /*--- navbar styles --------------------------------------------------*/
 
 
@@ -337,10 +390,7 @@ input:focus {
    text-align: center;
 
 }
-#title-background{
-  width: 630px;
-  height: 137px;
-}
+
 #about{
   width: 113px;
   /*height: 50px;*/
@@ -380,16 +430,29 @@ input:focus {
 
 /* "drugs + me" title --------------------------------------------------*/
 
-.title{
+#title{
   width: 630px;
-  margin: auto;
+  height: 150px;
 }
 
+#title>div{
+  position: absolute;
+  width: 630px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title{
+}
+.title-button{
+  position: absolute;
+  z-index: 2;
+
+}
 
 #title-drugs-button{
   width: 307px;
-  -webkit-transform: translate3d(0,0,0); /* Safari */
-  transform: translate3d(0,0,0);
 }
 
 #title-me-button{
@@ -399,7 +462,7 @@ input:focus {
 
 .title-button{
   height: 127px;
-  border: 5px solid black;
+  border: 4px solid black;
   background: white;
   position: absolute;
 }
@@ -422,7 +485,7 @@ input:focus {
   padding: 0 20px 8px 20px;
   margin: 0 -4px;
   display: inline-block;
-  border: 5px solid black;
+  border: 4px solid black;
   transition: background-color 0.1s;
 }
 .title-collapse div:hover{
@@ -432,10 +495,35 @@ input:focus {
 #title-me-collapse div{
   box-shadow: none;
   padding: 0 20px 8px 20px;
-  margin: -2px;
+  margin: -1px -2px -4px -2px;
   display: inline-block;
-  border: 5px solid black;
+  border: 4px solid black;
+}
+#title-static{
 
+}
+#title-static>div{
+  vertical-align: middle;
+  position: absolute;
+}
+
+.title-background{
+  top: 9px;
+  left: 9px;
+  background-color: #687A89;
+  border: 4px solid #000;
+}
+#title-drugs-background{
+  width: 307px;
+  height: 127px;
+}
+#title-me-background{
+  width: 186px;
+  height: 127px;
+  margin-left: 424px;
+}
+#title-plus{
+  left: 345px;
 }
 
 /*--- end "drugs + me" title ----------------------------------------*/
@@ -632,8 +720,9 @@ h2.title{
   background-color: #EF6767;
 }
 #partners{
+  padding: 0 20px;
   margin-top: 20px;
-  /*background-color: #4CBA83;*/
+  background-color: #fff;
   border: 4px solid black;
 }
 
@@ -644,6 +733,7 @@ h2.title{
 .donate{
   background-color: #F6DA5C;
 }
+
 .thing-to-take{
   width: 200px;
   height: 200px;
@@ -670,9 +760,25 @@ h3.funky{
   font-size: 32px;
 }
 h4.funky{
-  font-size: 25px;
+  font-weight: normal;
+  font-size: 35px;
 }
 
+/*--- Effects ---*/
+
+#effects-positive > li{
+  color: #26E224;
+}
+#effects-neutral > li{
+  color: #FBEA00;
+}
+#effects-negative > li{
+  color: #E50000;
+}
+
+.effects > li > span {
+  color: black;
+}
 /*--- Interactions --- */
 #interactions-combo{
   display: inline-block;
