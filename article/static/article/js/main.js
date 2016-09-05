@@ -15,18 +15,23 @@ $(document).ready(function(){
 
 //------ cover drugs+me collapsable content ----------------------------------
   $("#title-drugs").hover(function() {
+      var $displacedMarginLeft = "9px";
+      var $displacedMarginTop = "9px";
+      if($(window).width() < 768){
+          $displacedMarginLeft = "1.5vw";
+          $displacedMarginTop = "1.5vw";
+        }
+
+      $("#title-drugs-collapse").stop().removeClass("hidden");
       $('#title-drugs-button').animate({
-        marginTop:'9px',
-        marginLeft:'9px'
+        marginTop: $displacedMarginTop,
+        marginLeft: $displacedMarginLeft
       }, $animationSpeed);
-      // $("#title-drugs-collapse").removeClass("hidden");
       $("#title-drugs-collapse").animate({
         opacity: 1
       }, $animationSpeed);
       return false;
     },function(){
-
-      $( this ).removeClass( "anim" );
       $('#title-drugs-button').stop().animate({
         marginTop:'0px',
         marginLeft:'0px'
@@ -34,33 +39,47 @@ $(document).ready(function(){
       $("#title-drugs-collapse").stop().animate({
         opacity: 0
       }, $animationSpeed, function(){
-        // $("#title-drugs-collapse").addClass("hidden");
+        $("#title-drugs-collapse").stop().addClass("hidden");
         return false;
       });
       return false;
   });
 
   $("#title-me").stop().hover(function(){
-      $("#title-me-collapse").removeClass("hidden");
+      var $displacedMarginLeft = "433px";
+      var $displacedMarginTop = "9px";
+      if($(window).width() < 768){
+          $displacedMarginLeft = "57.9vw";
+          $displacedMarginTop = "1.5vw";
+        }
+      $("#title-me-collapse").stop().removeClass("hidden");
       $("#title-me-collapse").stop().animate({
         opacity: 1
       }, $animationSpeed);
       $('#title-me-button').stop().animate({
-        marginTop:'9px',
-        marginLeft:'433px'
+        marginTop: $displacedMarginTop,
+        marginLeft: $displacedMarginLeft
       }, $animationSpeed);
       return false;
     },function(){
+      var $originalMarginLeft = "424px";
+      var $originalMarginTop = "0px";
+      if($(window).width() < 768){
+          $originalMarginLeft = "56.5vw";
+          $originalMarginTop = "0vw";
+        }
       $("#title-me-collapse").stop().animate({
         opacity: 0
       }, $animationSpeed, function(){
-        $("#title-me-collapse").addClass("hidden");
+        $("#title-me-collapse").stop().addClass("hidden");
         return false;
     });
       $('#title-me-button').stop().animate({
-        marginTop:'0px',
-        marginLeft:'424px'
-      }, $animationSpeed);
+        marginTop: $originalMarginTop,
+        marginLeft: $originalMarginLeft
+      }, $animationSpeed, function(){
+        $('#title-me-button').stop().removeAttr('style');
+      });
     return false;
   });
 

@@ -206,6 +206,8 @@ h3 .small{
      width: 100%; /* Must be percentage or pixels for horizontal alignment */
      /*height: 500px;*/
    }
+
+
    #interactions-table{
      text-align: center;
    }
@@ -233,6 +235,120 @@ h3 .small{
   .harm-reduction-stage-indicator.active{
     margin-left: -10px;
     height: 80px;
+  }
+  /*--- Startpage title ---------------------------------*/
+
+  #title{
+    width: 100%;
+    height: 20.5vw;
+  }
+
+  #title>div{
+    position: absolute;
+    width: 84%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title-button{
+    position: absolute;
+    z-index: 2;
+
+  }
+  #title-drugs>div{
+    width: 40.5vw;
+  }
+
+  #title-me-button{
+    margin-left: 56.5vw;
+    width: 24.5vw;
+  }
+
+  .title-button{
+    height: 17vw;
+    border: 4px solid black;
+    background: white;
+    position: absolute;
+  }
+
+  #title h1{
+    margin-top: 1vw;
+    font-size: 11vw;
+  }
+
+  .title-collapse{
+    position: absolute;
+    display: inline-block;
+    margin-top: 17.7vw;
+    margin-left: 1.5vw;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+
+  .title-collapse div{
+    box-shadow: none;
+    width: 100%;
+    margin: -2px 0;
+    display: inline-block;
+    border: 4px solid black;
+    transition: background-color 0.1s;
+  }
+  .title-collapse h3{
+    font-size: 4vw;
+    margin: 10px;
+  }
+
+  #title-me-collapse{
+    top: 0.4vw;
+  }
+/* ------------------------------------ */
+
+  .title-collapse div:hover{
+    background-color: #36434C;
+  }
+
+  #title-me-collapse div{
+    box-shadow: none;
+    padding: 0 20px 8px 20px;
+    margin: -1px -2px -4px -2px;
+    display: inline-block;
+    border: 4px solid black;
+  }
+  #title-static{
+
+  }
+  #title-static>div{
+    vertical-align: middle;
+    position: absolute;
+  }
+
+/* ----------------------------------- */
+  .title-background{
+    height: 17vw;
+    top: 1.5vw;
+    left: 1.5vw;
+    background-color: #687A89;
+    border: 4px solid #000;
+  }
+
+  #title-drugs-background{
+    width: 40.5vw;
+  }
+  #title-me-background{
+    margin-left: 56.5vw;
+    width: 24.5vw;
+  }
+  #title-plus{
+    left: 46vw;
+  }
+
+  #site-index .cover{
+    margin-top: 37vw;
+  }
+  #site-index .cover-container{
+    height: 80vw;
   }
  }
 
@@ -284,6 +400,106 @@ h3 .small{
   .harm-reduction-stage-indicator.active{
     margin-left: -10px;
     height: 80px;
+  }
+  /* "drugs + me" title --------------------------------------------------*/
+
+  #title{
+    width: 630px;
+    height: 150px;
+  }
+
+  #title>div{
+    position: absolute;
+    width: 630px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title{
+  }
+  .title-button{
+    position: absolute;
+    z-index: 2;
+
+  }
+
+  #title-drugs-button{
+    width: 307px;
+  }
+
+  #title-me-button{
+    margin-left: 424px;
+    width: 186px;
+  }
+
+  .title-button{
+    height: 127px;
+    border: 4px solid black;
+    background: white;
+    position: absolute;
+  }
+
+  .title-button h1{
+    margin-top: 10px;
+  }
+
+  .title-collapse{
+    position: absolute;
+    display: inline-block;
+    margin-top: 133px;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+  }
+
+  .title-collapse div{
+    box-shadow: none;
+    padding: 0 20px 8px 20px;
+    margin: 0 -4px;
+    display: inline-block;
+    border: 4px solid black;
+    transition: background-color 0.1s;
+  }
+  .title-collapse div:hover{
+    background-color: #36434C;
+  }
+
+  #title-me-collapse div{
+    box-shadow: none;
+    padding: 0 20px 8px 20px;
+    margin: -1px -2px -4px -2px;
+    display: inline-block;
+    border: 4px solid black;
+  }
+  #title-static{
+
+  }
+  #title-static>div{
+    vertical-align: middle;
+    position: absolute;
+  }
+
+  .title-background{
+    top: 9px;
+    left: 9px;
+    background-color: #687A89;
+    border: 4px solid #000;
+  }
+  #title-drugs-background{
+    width: 307px;
+    height: 127px;
+  }
+  #title-me-background{
+    width: 186px;
+    height: 127px;
+    margin-left: 424px;
+  }
+  #title-plus{
+    left: 345px;
+  }
+  #site-index .cover-container{
+    height: 684px;
   }
 }
 
@@ -475,105 +691,11 @@ input:focus {
 
 /*--- end navbar -----------------------------------------------------*/
 
-/* "drugs + me" title --------------------------------------------------*/
+ /*--- start "drugs + me" title -------------------------------------*/
 
-#title{
-  width: 630px;
-  height: 150px;
-}
-
-#title>div{
-  position: absolute;
-  width: 630px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.title{
-}
-.title-button{
-  position: absolute;
-  z-index: 2;
-
-}
-
-#title-drugs-button{
-  width: 307px;
-}
-
-#title-me-button{
-  margin-left: 424px;
-  width: 186px;
-}
-
-.title-button{
-  height: 127px;
-  border: 4px solid black;
-  background: white;
-  position: absolute;
-}
-
-.title-button h1{
-  margin-top: 10px;
-}
-
-.title-collapse{
-  position: absolute;
-  display: inline-block;
-  margin-top: 133px;
-  width: 100%;
-  left: 0;
-  opacity: 0;
-}
-
-.title-collapse div{
-  box-shadow: none;
-  padding: 0 20px 8px 20px;
-  margin: 0 -4px;
-  display: inline-block;
-  border: 4px solid black;
-  transition: background-color 0.1s;
-}
-.title-collapse div:hover{
-  background-color: #36434C;
-}
-
-#title-me-collapse div{
-  box-shadow: none;
-  padding: 0 20px 8px 20px;
-  margin: -1px -2px -4px -2px;
-  display: inline-block;
-  border: 4px solid black;
-}
-#title-static{
-
-}
-#title-static>div{
-  vertical-align: middle;
-  position: absolute;
-}
-
-.title-background{
-  top: 9px;
-  left: 9px;
-  background-color: #687A89;
-  border: 4px solid #000;
-}
-#title-drugs-background{
-  width: 307px;
-  height: 127px;
-}
-#title-me-background{
-  width: 186px;
-  height: 127px;
-  margin-left: 424px;
-}
-#title-plus{
-  left: 345px;
-}
 
 /*--- end "drugs + me" title ----------------------------------------*/
+
 
 /*--- page linking styles -------------------------------------------*/
 
@@ -887,9 +1009,6 @@ h4.funky{
 
 /*--- Page specific ---------------------------------------------------------*/
 
-#site-index .cover-container{
-  height: 684px;
-}
 #site-index #content{
   width: 70%;
 }

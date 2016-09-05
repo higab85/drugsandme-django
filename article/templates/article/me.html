@@ -1,0 +1,185 @@
+{% extends 'article/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - Alcohol
+{% endblock %}
+
+
+{% block header %}
+
+{% endblock %}
+
+
+{% block cover %}
+<div id="cover" class="col-xs-12 col-md-9">
+
+  {% block cover-contents %} {% endblock %}
+</div>
+{% endblock %}
+
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-md-10" role="main">
+
+    <div id="intro">
+      <h2 class="section-title">The Essentials</h2>
+      {% block intro-content %} {% endblock %}
+      <div class="text-center">
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">Getting them</h2>
+          <h3>Do you trust them?</h3>
+          <p class="hidden">If the dealer smells funny, walk away.</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">What's inside</h2>
+          <h3>What's in the box?</h3>
+          <p class="hidden">HOUSE</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">Getting them</h2>
+          <h3>Do you trust them?</h3>
+          <p class="hidden">If the dealer smells funny, walk away.</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">What's inside</h2>
+          <h3>What's in the box?</h3>
+          <p class="hidden">a MOUSE</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">What's inside</h2>
+          <h3>What's in the box?</h3>
+          <p class="hidden">a SCOUSE</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">What's inside</h2>
+          <h3>What's in the box?</h3>
+          <p class="hidden">some COWS</p>
+        </div>
+        <div class="thing-to-take boxed">
+          <h2 class="funky theme-light-color">What's inside</h2>
+          <h3>What's in the box?</h3>
+          <p class="hidden">techno maus</p>
+        </div>
+      </div>
+    </div>
+    <div id="getting-them">
+      <h2 class="section-title"> Getting them</h2>
+      <h3>Don't get conned</h3>
+      <h3>
+        You've set your heart on a drug, here's about gettting it to ensure
+        a maximal chance of getting what you asked for.
+      </h3>
+    </div>
+
+    <div id="dose-and-onset">
+      <h2 class="section-title">Dose and Onset</h2>
+      {% block dose-and-onset-content %} {% endblock %}
+    </div>
+
+    <div id="interactions">
+      <h2 class="section-title">Interactions</h2>
+      {% block interactions-content %} {% endblock %}
+      <div id="interactions-combo" class="col-md-12">
+        <div id="interactions-combo-addition" class="col-md-6">
+          <h4 class="funky"> <span class="current-drug-name"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
+          <img class="img-responsive" src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
+        </div>
+        <div id="interactions-combo-result" class="boxed col-md-5">
+          <h4 class="funky"> SELECT A DRUG </h4>
+          <p id="interactions-combo-result-description">
+            Click one of the drugs below and see how it mixes with <span class="current-drug-name"></span>.
+          </p>
+        </div>
+      </div>
+      <div id="interactions-table">
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Amphetamines</h5><div class="hidden">{% block combo-amphetamines %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Benzos</h5><div class="hidden">{% block combo-benzos %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>Caffeine</h5><div class="hidden">{% block combo-caffeine %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Cannabis</h5><div class="hidden">{% block combo-cannabis %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Cocaine</h5><div class="hidden">{% block combo-cocaine %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>DMT</h5><div class="hidden">{% block combo-dmt %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Heroin</h5><div class="hidden">{% block combo-heroin %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Ketamine</h5><div class="hidden">{% block combo-ketamine %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>LSD</h5><div class="hidden">{% block combo-lsd %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Meth</h5><div class="hidden">{% block combo-meth %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>MDMA</h5><div class="hidden">{% block combo-mdma %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Mushrooms</h5><div class="hidden">{% block combo-mushrooms %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Nitrous Oxide</h5><div class="hidden">{% block combo-nos %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>something1</h5><div class="hidden">{% block combo-st1 %}{% endblock %}</div></a>
+        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>something2</h5><div class="hidden">{% block combo-st2 %}{% endblock %}</div></a>
+      </div>
+    </div>
+    <div id="harm-reduction">
+      <h2 class="section-title">Harm reduction</h2>
+      {% block harm-reduction-content %} {% endblock %}
+      <div id="harm-reduction-timeline" class="row">
+        <div id="harm-reduction-stage-indicators" class="col-md-2 col-sm-2">
+          <div class="harm-reduction-stage-indicator active boxed theme-light-bg">
+            <h3 class="funky">BEFORE</h3>
+            <p class="hidden">
+              {% block harm-reduction-stage-1 %} {% endblock %}
+            </p>
+          </div>
+          <div class="harm-reduction-stage-indicator boxed">
+            <h3 class="funky">DURING</h3>
+            <p class="hidden">
+              {% block harm-reduction-stage-2 %} {% endblock %}
+            </p>
+          </div>
+          <div class="harm-reduction-stage-indicator boxed">
+            <h3 class="funky">AFTER</h3>
+            <p class="hidden">
+              {% block harm-reduction-stage-3 %} {% endblock %}
+            </p>
+          </div>
+        </div>
+        <div id="harm-reduction-stage-descriptions" class="boxed col-md-8 col-sm-8">
+          <div class="harm-reduction-stage-description">
+            <p>
+              ONE Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
+              Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="risks">
+      <h2 class="section-title">Risks</h2>
+      {% block risks-content %} {% endblock %}
+    </div>
+
+    <div id="the-law">
+      <h2 class="section-title">The Law</h2>
+      {% block the-law-content %} {% endblock %}
+    </div>
+
+    <div id="more-info">
+      <h2 class="section-title">More information, references, useful links...</h2>
+      {% block more-info-content %} {% endblock %}
+    </div>
+  </div>
+  <div class="col-md-2" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <ul class="nav">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#effects">Effects</a></li>
+        <li><a href="#dose-and-onset">Dose and Onset</a></li>
+        <li><a href="#interactions">Interactions</a></li>
+        <li><a href="#harm-reduction">Harm Reduction</a></li>
+        <li><a href="#risks">Risks</a></li>
+        <li><a href="#the-law">The Law</a></li>
+        <li><a href="#more-info">More information...</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+{% endblock %}
