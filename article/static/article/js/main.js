@@ -8,11 +8,20 @@ jQuery.expr[':'].icontains = function(a, i, m) {
       .indexOf(m[3].toUpperCase()) >= 0;
 };
 
+//smooth scroll on links
+// $(function() {
+// });
 
 $(document).ready(function(){
 
   var $currentDrug = $('meta[name=drug-name]').attr("content");
 
+  // $("a[href='#*']:not([href='#'])").click(function(event){
+  $("#sidebar li a").click(function(event){
+          console.log('in the löp');
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+      });
 //------ cover drugs+me collapsable content ----------------------------------
   $("#title-drugs").hover(function() {
       var $displacedMarginLeft = "9px";
