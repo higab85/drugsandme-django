@@ -267,7 +267,7 @@ h3 .small{
 
   .title-button{
     height: 17vw;
-    border: 4px solid black;
+    border: 0.7vw solid black;
     background: white;
     position: absolute;
   }
@@ -292,7 +292,7 @@ h3 .small{
     width: 100%;
     margin: -2px 0;
     display: inline-block;
-    border: 4px solid black;
+    border: 0.7vw solid black;
     transition: background-color 0.1s;
   }
   .title-collapse h3{
@@ -314,7 +314,7 @@ h3 .small{
     padding: 0 20px 8px 20px;
     margin: -1px -2px -4px -2px;
     display: inline-block;
-    border: 4px solid black;
+    border: 0.7vw solid black;
   }
   #title-static{
 
@@ -330,7 +330,7 @@ h3 .small{
     top: 1.5vw;
     left: 1.5vw;
     background-color: #687A89;
-    border: 4px solid #000;
+    border: 0.7vw solid #000;
   }
 
   #title-drugs-background{
