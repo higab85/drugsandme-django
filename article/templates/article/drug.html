@@ -68,34 +68,36 @@
     <div id="interactions">
       <h2 class="section-title">Interactions</h2>
       {% block interactions-content %} {% endblock %}
-      <div id="interactions-combo" class="col-md-12">
-        <div id="interactions-combo-addition" class="col-md-6">
-          <h4 class="funky"> <span class="current-drug-name"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
-          <img class="img-responsive" src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
+      <div id="interactions-interactive">
+        <div id="interactions-combo" class="col-md-12">
+          <div id="interactions-combo-addition" class="col-md-6">
+            <h4 class="funky"> <span class="current-drug-name"></span> + <span id="interactions-combo-addition-temp">?</span> =</h4>
+            <img class="img-responsive" src="{% static 'article/images/drug/interactions-gradient-with-text.png' %}" alt="dangerous to synergy bar">
+          </div>
+          <div id="interactions-combo-result" class="boxed col-md-5">
+            <h4 class="funky"> SELECT A DRUG </h4>
+            <p id="interactions-combo-result-description">
+              Click one of the drugs below and see how it mixes with <span class="current-drug-name"></span>.
+            </p>
+          </div>
         </div>
-        <div id="interactions-combo-result" class="boxed col-md-5">
-          <h4 class="funky"> SELECT A DRUG </h4>
-          <p id="interactions-combo-result-description">
-            Click one of the drugs below and see how it mixes with <span class="current-drug-name"></span>.
-          </p>
+        <div id="interactions-table">
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Amphetamines</h5><div class="hidden">{% block combo-amphetamines %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Benzos</h5><div class="hidden">{% block combo-benzos %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>Caffeine</h5><div class="hidden">{% block combo-caffeine %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Cannabis</h5><div class="hidden">{% block combo-cannabis %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Cocaine</h5><div class="hidden">{% block combo-cocaine %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>DMT</h5><div class="hidden">{% block combo-dmt %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Heroin</h5><div class="hidden">{% block combo-heroin %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Ketamine</h5><div class="hidden">{% block combo-ketamine %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>LSD</h5><div class="hidden">{% block combo-lsd %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Meth</h5><div class="hidden">{% block combo-meth %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>MDMA</h5><div class="hidden">{% block combo-mdma %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Mushrooms</h5><div class="hidden">{% block combo-mushrooms %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Nitrous Oxide</h5><div class="hidden">{% block combo-nos %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>something1</h5><div class="hidden">{% block combo-st1 %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>something2</h5><div class="hidden">{% block combo-st2 %}{% endblock %}</div></a>
         </div>
-      </div>
-      <div id="interactions-table">
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Amphetamines</h5><div class="hidden">{% block combo-amphetamines %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Benzos</h5><div class="hidden">{% block combo-benzos %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>Caffeine</h5><div class="hidden">{% block combo-caffeine %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Cannabis</h5><div class="hidden">{% block combo-cannabis %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Cocaine</h5><div class="hidden">{% block combo-cocaine %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>DMT</h5><div class="hidden">{% block combo-dmt %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Heroin</h5><div class="hidden">{% block combo-heroin %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Ketamine</h5><div class="hidden">{% block combo-ketamine %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>LSD</h5><div class="hidden">{% block combo-lsd %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>Meth</h5><div class="hidden">{% block combo-meth %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>MDMA</h5><div class="hidden">{% block combo-mdma %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Mushrooms</h5><div class="hidden">{% block combo-mushrooms %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active caution"><h5>Nitrous Oxide</h5><div class="hidden">{% block combo-nos %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active dangerous"><h5>something1</h5><div class="hidden">{% block combo-st1 %}{% endblock %}</div></a>
-        <a href="javascript:;" class="drug-to-combine boxed combo-not-active synergy"><h5>something2</h5><div class="hidden">{% block combo-st2 %}{% endblock %}</div></a>
       </div>
     </div>
     <div id="harm-reduction">

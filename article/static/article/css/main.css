@@ -186,6 +186,17 @@ h3 .small{
  */
 
  @media (max-width: 767px) {
+
+/* Beginning of moble nav bar */
+  /*#navbar{
+    z-index: 5;
+    background: #667887;
+    left: 0;
+    height:
+    width: 100%;
+  }*/
+
+
    /* Pull out the header and footer */
    .masthead {
      position: absolute;
@@ -203,7 +214,7 @@ h3 .small{
    .masthead,
    .mastfoot,
    .cover-container {
-     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+     width: 90vw; /* Must be percentage or pixels for horizontal alignment */
      /*height: 500px;*/
    }
 
@@ -357,7 +368,7 @@ h3 .small{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 1000px;
+    width: 88vw;
   }
 
   #interactions-table{
@@ -382,7 +393,7 @@ h3 .small{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 85vw; /* Must be percentage or pixels for horizontal alignment */
     /*height: 500px;*/
   }
 
@@ -507,7 +518,16 @@ h3 .small{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 1000px;
+    width: 85vw;
+  }
+  .col-md-10>div{
+    padding-right: 11vw;
+  }
+  #interactions-interactive {
+      width: 57vw;
+  }
+  #interactions-combo-result{
+    float: right;
   }
 }
 /*
@@ -947,12 +967,22 @@ h4.funky{
   color: black;
 }
 /*--- Interactions --- */
+
 #interactions-combo{
   display: inline;
+  margin-top: 35px;
   text-align: center;
 }
+
+#interactions-combo-addition>h4{
+  margin-top: 15px;
+}
+
 #interactions-combo-result{
   text-align: left;
+  height: 220px;
+  width: 267px;
+  margin: 0 auto;
 }
 
 #interactions-table{
