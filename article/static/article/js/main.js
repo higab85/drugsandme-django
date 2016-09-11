@@ -94,24 +94,25 @@ $(document).ready(function(){
 
 // ---------- Search -------------------------------------------
 
-  $('#searchText').on('input', function(){
+  $('.searchtext').on('input', function(){
       //unentitle item if any is entitled
       if($('.item-link').hasClass('entitled')){
           $('.entitled').unEntitle();
       }
 
+      var thisSearchBox = this;
       $(window).keyup(function(event){
           "use strict";
-          var searchquery = document.getElementById("searchText").value.toLowerCase();
+          var searchquery = thisSearchBox.value.toLowerCase();
 
           //hide and show items
           $(".item ul:icontains('" + searchquery + "')").parentsUntil(this, '.item').removeClass('hidden');
           $(".item ul:not(:icontains('" + searchquery + "'))").parentsUntil(this, '.item').addClass('hidden');
           if(searchquery == ""){
-            $("#item-picker").addClass('hidden');
+            $(".item-picker").addClass('hidden');
           }
           else {
-            $("#item-picker").removeClass('hidden');
+            $(".item-picker").removeClass('hidden');
             if(event.keyCode == 13){
                 window.location.href = $(".tag:icontains('" + searchquery + "')").parentsUntil(this, '.item').find(">:first-child").attr("href");
               }
@@ -212,6 +213,43 @@ $(document).ready(function(){
     }
   })
 
+  // ------------- Mobile nav bar-----------
+
+  $('.mobile-nav-collapse-menu-collapsible').click(function(){
+    $(this).find('img').toggleClass('box_rotate');
+    $(this).find('ul').toggleClass('hidden');
+  })
+  // navbar buttons :
+    $('#mobile-nav-buttons-menu').click(function(){
+      if ($('#mobile-nav-collapse').hasClass('hidden')) {
+        $('#mobile-nav-collapse').removeClass('hidden');
+        $('#mobile-nav-collapse-menu').removeClass('hidden');
+      }
+      else if( $('#mobile-nav-collapse-search').hasClass('hidden') ){
+        $('#mobile-nav-collapse-menu').addClass('hidden');
+        $('#mobile-nav-collapse').addClass('hidden');
+      }
+      else if( $('#mobile-nav-collapse-menu').hasClass('hidden') ){
+        $('#mobile-nav-collapse-search').addClass('hidden');
+        $('#mobile-nav-collapse-menu').removeClass('hidden');
+      }
+    })
+
+    $('#mobile-nav-buttons-search').click(function(){
+      if ($('#mobile-nav-collapse').hasClass('hidden')) {
+        $('#mobile-nav-collapse').removeClass('hidden');
+        $('#mobile-nav-collapse-search').removeClass('hidden');
+      }
+      else if( $('#mobile-nav-collapse-menu').hasClass('hidden') ){
+        $('#mobile-nav-collapse-search').addClass('hidden');
+        $('#mobile-nav-collapse').addClass('hidden');
+      }
+      else if( $('#mobile-nav-collapse-search').hasClass('hidden') ){
+        $('#mobile-nav-collapse-menu').addClass('hidden');
+        $('#mobile-nav-collapse-search').removeClass('hidden');
+      }
+    })
+  // end navbar buttons
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

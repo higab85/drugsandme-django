@@ -35,7 +35,8 @@
       {% block cover_background %} {% endblock %}
         <div class="cover-container site-wrapper-inner">
           <div class="masthead clearfix" id="navbar">
-            <div class="inner">
+
+            <div class="inner hidden-xs">
               <nav>
                 <ul class="nav">
                   <li class="nav-right" id="search">
@@ -47,11 +48,11 @@
                     <!-- START SEARCH ----------------------------------------->
                     <div id="search-bar">
                       <div class="has-feedback">
-                        <input id="searchText" type="text" class="form-control boxed searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
+                        <input id="mobile-searchText" type="text" class=" searchtext form-control boxed searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
                         <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
                       </div>
 
-                      <div id="item-picker" class="hidden pull-left">
+                      <div id="item-picker" class="item-picker hidden pull-left">
                         <div class="item alcohol">
                           <a href="/alcohol" class="item-link">
                             <h5 class="item-name hidden">Alcohol</h5>
@@ -120,6 +121,117 @@
                   </li>
                 </ul>
               </nav>
+            </div>
+            <!--  Navbar for mobile -->
+            <div class="visible-xs">
+              <ul class="nav visible-xs">
+                <li class="pull-left">
+                  <a href="/"><img src="http://www.placekitten.com/55/50" alt="Drugs and Me" /> </a>
+                </li>
+                <li id="mobile-nav-buttons-right" class="pull-right">
+                  <div class="mobile-nav-button" id="mobile-nav-buttons-search">
+                    <img src="http://www.placekitten.com/50/50" alt="Search" />
+                  </div>
+                  <div class="mobile-nav-button" id="mobile-nav-buttons-menu">
+                    <img src="http://www.placekitten.com/50/50" alt="Menu" />
+                  </div>
+                </li>
+              </ul>
+              <div id="mobile-nav-collapse" class="hidden">
+                <div id="mobile-nav-collapse-search" class="hidden">
+                  <!-- START SEARCH ----------------------------------------->
+                  <div id="mobile-search-bar">
+                    <div class="has-feedback">
+                      <input id="searchText" type="text" class=" searchtext form-control searchbarbox" placeholder="search" onfocus="this.placeholder=''" onblur="this.placeholder='search'"/>
+                      <i class="glyphicon glyphicon-search form-control-feedback text-right"></i>
+                    </div>
+
+                    <div id="mobile-item-picker" class="item-picker hidden pull-left">
+                      <div class="item alcohol">
+                        <a href="/alcohol" class="item-link">
+                          <h5 class="item-name hidden">Alcohol</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">wine</li>
+                          <li class="tag">beer</li>
+                          <li class="tag">booze</li>
+                          <li class="tag">alcohol</li>
+                        </ul>
+                      </div>
+                      <div class="item cannabis">
+                        <a href="/cannabis" class="item-link">
+                          <h5 class="item-name hidden">Cannabis</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">ganja</li>
+                          <li class="tag">skunk</li>
+                          <li class="tag">marihuana</li>
+                          <li class="tag">mary jane</li>
+                          <li class="tag">grass</li>
+                          <li class="tag">pot</li>
+                          <li class="tag">dank</li>
+                          <li class="tag">chronic</li>
+                          <li class="tag">resin</li>
+                          <li class="tag">weed</li>
+                          <li class="tag">buds</li>
+                          <li class="tag">kush</li>
+                          <li class="tag">cannabis</li>
+                        </ul>
+                      </div>
+                      <div class="item cocaine">
+                        <a href="/cocaine" class="item-link">
+                          <h5 class="item-name hidden">Cocaine</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">white</li>
+                          <li class="tag">coke</li>
+                          <li class="tag">snow</li>
+                          <li class="tag">speedball</li>
+                          <li class="tag">dust</li>
+                          <li class="tag">nose candy</li>
+                          <li class="tag">flake</li>
+                          <li class="tag">cocaine</li>
+                        </ul>
+
+                      </div>
+                      <div class="item mdma">
+                        <a href="/mdma" class="item-link">
+                          <h5 class="item-name hidden">MDMA</h5>
+                        </a>
+                        <ul>
+                          <li class="tag">X</li>
+                          <li class="tag">XTC</li>
+                          <li class="tag">E</li>
+                          <li class="tag">molly</li>
+                          <li class="tag">mandy</li>
+                          <li class="tag">ecstasy</li>
+                          <li class="tag">MDMA</li>
+                        </ul>
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- END SEARCH-->
+                </div>
+                <div id="mobile-nav-collapse-menu" class="hidden">
+                  <ul>
+                    <li><a href="/">Home</a></li>
+                    <li id="mobile-nav-collapse-menu-drugs-collapse" class="mobile-nav-collapse-menu-collapsible">
+                      <span>Drugs</span> <img src="http://placekitten.com/20/20" alt="" class="pull-right">
+                      <ul class="hidden">
+                        <li><a href="/alcohol">Alcohol</a></li>
+                        <li><a href="/cannabis">Cannabis</a></li>
+                        <li><a href="/cocaine">Cocaine</a></li>
+                        <li><a href="/mdma">MDMA</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="/me">Me</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/donate">Donate</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
             <div class="inner cover">
