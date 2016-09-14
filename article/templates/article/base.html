@@ -41,8 +41,9 @@
                 <ul class="nav">
                   <li class="nav-right" id="search">
                     <div id="social-search">
-                      <div class="search-button"><a href="https://facebook.com/"><img src="{% static 'article/images/search-Facebook.png' %}" alt="facebook"></a></div>
-                      <div class="search-button"><a href="https://twitter.com/drugsandmefacts"><img src="{% static 'article/images/search-Twitter.png' %}" alt="twitter"></a></div>
+                      <a class="" href="https://facebook.com/"><div class="nav-social-icon"><img class="img-responsive" src="{% static 'article/images/icons/social-icon-facebook.png' %}" alt="facebook"></div></a>
+                      <a class="" href="https://twitter.com/drugsandmefacts"><div class="nav-social-icon"><img class="img-responsive" id="twitter-social-icon" src="{% static 'article/images/icons/social-icon-twitter.png' %}" alt="twitter"></div></a>
+                      <a class="" href="https://linkdin.com/"><div class="nav-social-icon"><img class="img-responsive" src="{% static 'article/images/icons/social-icon-linkdin.png' %}" alt="linkdin"></div></a>
 
                     </div>
                     <!-- START SEARCH ----------------------------------------->
@@ -126,14 +127,16 @@
             <div class="visible-xs">
               <ul class="nav visible-xs">
                 <li class="pull-left">
-                  <a href="/"><img src="http://www.placekitten.com/55/50" alt="Drugs and Me" /> </a>
+                  <a href="/"><img id="mobile-nav-brain" src="{% static 'article/images/icons/brain.png' %}" alt="Drugs and Me" /> </a>
                 </li>
                 <li id="mobile-nav-buttons-right" class="pull-right">
-                  <div class="mobile-nav-button" id="mobile-nav-buttons-search">
-                    <img src="http://www.placekitten.com/50/50" alt="Search" />
+                  <div class="mobile-nav-button">
+                    <img class="img-responsive mobile-nav-button-search" id="mobile-nav-button-search" src="{% static 'article/images/icons/search.png' %}" alt="Search" />
+                    <img class="img-responsive mobile-nav-button-search mobile-nav-button-close hidden" id="mobile-nav-button-search-close" src="{% static 'article/images/icons/close.png' %}" alt="Close search" />
                   </div>
-                  <div class="mobile-nav-button" id="mobile-nav-buttons-menu">
-                    <img src="http://www.placekitten.com/50/50" alt="Menu" />
+                  <div class="mobile-nav-button">
+                    <img class="img-responsive mobile-nav-button-menu" id="mobile-nav-button-menu" src="{% static 'article/images/icons/menu.png' %}" alt="Menu" />
+                    <img class="img-responsive mobile-nav-button-menu mobile-nav-button-close hidden" id="mobile-nav-button-menu-close" src="{% static 'article/images/icons/close.png' %}" alt="Close menu" />
                   </div>
                 </li>
               </ul>
@@ -217,7 +220,7 @@
                   <ul>
                     <li><a href="/">Home</a></li>
                     <li id="mobile-nav-collapse-menu-drugs-collapse" class="mobile-nav-collapse-menu-collapsible">
-                      <span>Drugs</span> <img src="http://placekitten.com/20/20" alt="" class="pull-right">
+                      <span>Drugs</span> <img src="{% static 'article/images/icons/down.png' %}" alt="" class="pull-right img-responsive">
                       <ul class="hidden">
                         <li><a href="/alcohol">Alcohol</a></li>
                         <li><a href="/cannabis">Cannabis</a></li>

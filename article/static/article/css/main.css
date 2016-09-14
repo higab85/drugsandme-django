@@ -586,10 +586,17 @@ p{
 /*--- end all sections -----------------------------------------------*/
 /*--- navbar styles --------------------------------------------------*/
 
-
-.no-display{
-	display: none;
+.nav-social-icon{
+  height: 40px;
+  width: 40px;
+  border: 2px solid #000000;
+  margin-right: 5px;
 }
+#twitter-social-icon{
+  height: 65%;
+  margin-top: 7px;
+}
+
 .force-display{
 	display: inline-block;
 }
@@ -692,6 +699,9 @@ input:focus {
 #search,
 #search>div{
     display: inline-block;
+    vertical-align: middle;
+    background: #fff;
+    padding: 3px;
 }
 
 #search-bar>div{
@@ -700,13 +710,19 @@ input:focus {
 }
 
 #social-search{
-  width: 110px;
+  width: 150px;
   position: relative;
 }
-#social-search img{
-  line-height: 50px;
-  display: inline;
+.nav-social-icon img{
+  height: 80%;
+  margin-top: 4px;
 }
+
+#social-search a{
+  display: inline-block;
+  vertical-align: middle;
+}
+
 
 @-moz-document url-prefix() {
     #social-search img {
@@ -715,7 +731,7 @@ input:focus {
 }
 
 .search-button{
-  width: 32px;
+  /*width: 32px;*/
   display: inline-block;
 }
 
@@ -1109,6 +1125,25 @@ h4.funky{
     display: inline;
     border: 2px solid #000000;
     border-bottom: 2px solid #566470;
+}
+#mobile-nav-brain{
+  height: 40px;
+  margin: 5px;
+}
+#mobile-nav-buttons-right{
+  margin-top: 5px;
+}
+#mobile-nav-button-search{
+  height: 40px;
+  margin: 0px 10px;
+}
+#mobile-nav-button-menu{
+  height: 34px;
+  margin: 2px 10px;
+}
+.mobile-nav-button-close{
+  height: 34px;
+  margin: 3px 14px;
 }
 #mobile-item-picker{
   width: 100%;

@@ -215,36 +215,73 @@ $(document).ready(function(){
 
   // ------------- Mobile nav bar-----------
 
+  // collapses drug menu on navbar
   $('.mobile-nav-collapse-menu-collapsible').click(function(){
     $(this).find('img').toggleClass('box_rotate');
     $(this).find('ul').toggleClass('hidden');
   })
   // navbar buttons :
-    $('#mobile-nav-buttons-menu').click(function(){
+    $('.mobile-nav-button-menu').click(function(){
       if ($('#mobile-nav-collapse').hasClass('hidden')) {
+        // toggling close icons
+        $('#mobile-nav-button-menu').addClass('hidden');
+        $('#mobile-nav-button-menu-close').removeClass('hidden');
+        $('#mobile-nav-button-search').removeClass('hidden');
+        $('#mobile-nav-button-search-close').addClass('hidden');
+        // toggling correct collapse
         $('#mobile-nav-collapse').removeClass('hidden');
         $('#mobile-nav-collapse-menu').removeClass('hidden');
       }
       else if( $('#mobile-nav-collapse-search').hasClass('hidden') ){
+
+        $('#mobile-nav-button-menu').removeClass('hidden');
+        $('#mobile-nav-button-menu-close').addClass('hidden');
+        $('#mobile-nav-button-search').removeClass('hidden');
+        $('#mobile-nav-button-search-close').addClass('hidden');
+
         $('#mobile-nav-collapse-menu').addClass('hidden');
         $('#mobile-nav-collapse').addClass('hidden');
       }
       else if( $('#mobile-nav-collapse-menu').hasClass('hidden') ){
+
+        $('#mobile-nav-button-menu').addClass('hidden');
+        $('#mobile-nav-button-menu-close').removeClass('hidden');
+        $('#mobile-nav-button-search').removeClass('hidden');
+        $('#mobile-nav-button-search-close').addClass('hidden');
+
         $('#mobile-nav-collapse-search').addClass('hidden');
         $('#mobile-nav-collapse-menu').removeClass('hidden');
       }
     })
 
-    $('#mobile-nav-buttons-search').click(function(){
+    $('.mobile-nav-button-search').click(function(){
       if ($('#mobile-nav-collapse').hasClass('hidden')) {
+
+        $('#mobile-nav-button-search').addClass('hidden');
+        $('#mobile-nav-button-search-close').removeClass('hidden');
+        $('#mobile-nav-button-menu').removeClass('hidden');
+        $('#mobile-nav-button-menu-close').addClass('hidden');
+
         $('#mobile-nav-collapse').removeClass('hidden');
         $('#mobile-nav-collapse-search').removeClass('hidden');
       }
       else if( $('#mobile-nav-collapse-menu').hasClass('hidden') ){
+
+        $('#mobile-nav-button-search').removeClass('hidden');
+        $('#mobile-nav-button-search-close').addClass('hidden');
+        $('#mobile-nav-button-menu').removeClass('hidden');
+        $('#mobile-nav-button-menu-close').addClass('hidden');
+
         $('#mobile-nav-collapse-search').addClass('hidden');
         $('#mobile-nav-collapse').addClass('hidden');
       }
       else if( $('#mobile-nav-collapse-search').hasClass('hidden') ){
+
+        $('#mobile-nav-button-search').addClass('hidden');
+        $('#mobile-nav-button-search-close').removeClass('hidden');
+        $('#mobile-nav-button-menu').removeClass('hidden');
+        $('#mobile-nav-button-menu-close').addClass('hidden');
+
         $('#mobile-nav-collapse-menu').addClass('hidden');
         $('#mobile-nav-collapse-search').removeClass('hidden');
       }
