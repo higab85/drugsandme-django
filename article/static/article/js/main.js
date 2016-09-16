@@ -12,6 +12,19 @@ jQuery.expr[':'].icontains = function(a, i, m) {
 // $(function() {
 // });
 
+// will ckeck whether there is more to read on harm-reduction-stage-descriptions
+// and if not, will hide 'read more' button
+(function( $ ){
+   $.fn.parentSizeChecker = function() {
+
+     if($(this).find('div').first().height() < 300)
+       $(this).find('div:nth-child(2)').addClass('hidden');
+     else
+       $(this).find('div:nth-child(2)').removeClass('hidden');
+
+   };
+})( jQuery );
+
 $(document).ready(function(){
 
   var $currentDrug = $('meta[name=drug-name]').attr("content");
@@ -165,10 +178,35 @@ $(document).ready(function(){
     $(this).parents().children().removeClass('theme-light-bg');
     $(this).addClass('active');
     $(this).addClass('theme-light-bg');
-    $('#harm-reduction-stage-descriptions div').replaceWith("<div>" + $currentStage.find("div").html() + "</div>");
+    $('#harm-reduction-stage-descriptions').removeClass('full-length');
+    $('#harm-reduction-stage-descriptions:nth-child(2)').find('p').text('Read more');
+    $('#harm-reduction-stage-descriptions div').first().replaceWith("<div class='harm-reduction-stage-description'>" + $currentStage.find("div").html() + "</div>");
+    // will ckeck whether there is more to read on harm-reduction-stage-descriptions
+    // and if not, will hide 'read more' button
+
+    $('#harm-reduction-stage-descriptions').parentSizeChecker();
+
+    // if($('#harm-reduction-stage-descriptions div').first().height() < 300)
+    //   $('#harm-reduction-stage-descriptions div:nth-child(2)').addClass('hidden');
+    // else
+    //   $('#harm-reduction-stage-descriptions div:nth-child(2)').removeClass('hidden');
   })
   // gives harm-reduction "BEFORE" tab it's description
-  $('#harm-reduction-stage-descriptions div').first().replaceWith("<div>" + $('.harm-reduction-stage-indicator').first().find("div").html() + "</div>");
+  $('#harm-reduction-stage-descriptions div').first().replaceWith("<div class='harm-reduction-stage-description'>" + $('.harm-reduction-stage-indicator').first().find("div").html() + "</div>");
+  $('#harm-reduction-stage-descriptions').parentSizeChecker();
+
+  // makes read-more buttons expand table so rest of
+  // text is readable
+  $('.read-more').click(function(){
+    $(this).parent().toggleClass('full-length');
+    if ($(this).parent().hasClass('full-length')) {
+      $(this).find('p').text('Read less');
+    }
+    else{
+      $(this).find('p').text('Read more');
+    }
+    $('#harm-reduction-stage-descriptions').parentSizeChecker();
+  });
 
   // Makes first drug in #interactions-combo-addition the current drug
   $('.current-drug-name').text( $currentDrug);
@@ -176,6 +214,7 @@ $(document).ready(function(){
     var $category = $(this).find('p').attr('class');
     $(this).addClass($category);
   });
+
 
 
   // Selects drug in combo chart:

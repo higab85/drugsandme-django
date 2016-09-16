@@ -1052,6 +1052,9 @@ h4.funky{
   overflow-y: hidden;
   padding: 20px 10px;
 }
+.harm-reduction-stage-description{
+  margin-bottom: 60px;
+}
 #harm-reduction-timeline{
   display: inline-block;
   width: 100%;
@@ -1061,7 +1064,13 @@ h4.funky{
   position: absolute;
   bottom: 0px;
   margin-bottom: 15px;
+  margin-left: 40%;
 }
+
+.full-length{
+  height: 100% !important;
+}
+
 /*------------ Footer ----------------------------*/
 
 #footer{
