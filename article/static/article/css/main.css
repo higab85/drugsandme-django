@@ -20,10 +20,6 @@ a:hover {
   border: 1px solid #fff;
 }
 
-li{
-  list-style-type: none;
-}
-
 /*
  * Base structure
  */
@@ -1024,14 +1020,23 @@ h4.funky{
   color: black;
   text-align: center;
 }
-.dangerous{
-  background-color: #FF3C51;
+.drug-to-combine.interaction-dangerous{
+  background-color: #E70000;
 }
-.caution{
-  background-color: #FEE152;
+.drug-to-combine.interaction-unsafe{
+  background-color: #E78100;
 }
-.synergy{
-  background-color: #60CF6F;
+.drug-to-combine.interaction-caution{
+  background-color: #D5CD01;
+}
+.drug-to-combine.interaction-lowriskd{
+  background-color: #0068B7;
+}
+.drug-to-combine.interaction-lowriskns{
+  background-color: #00BC4C;
+}
+.drug-to-combine.interaction-lowrisks{
+  background-color: #00501F;
 }
 .combo-not-active{
   background-color: #fff !important;
@@ -1044,9 +1049,18 @@ h4.funky{
 }
 #harm-reduction-stage-descriptions{
   height: 350px;
+  overflow-y: hidden;
+  padding: 20px 10px;
 }
 #harm-reduction-timeline{
   display: inline-block;
+  width: 100%;
+}
+
+.read-more{
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 15px;
 }
 /*------------ Footer ----------------------------*/
 
@@ -1184,6 +1198,7 @@ h4.funky{
   border-bottom: 2px solid #5F707E;
   width: 102.5%;
   padding: 3px 0;
+  list-style-type: none;
   margin-left: 25px;
 }
 

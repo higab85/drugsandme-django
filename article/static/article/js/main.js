@@ -160,15 +160,23 @@ $(document).ready(function(){
 
   // Toggles stages on harm-reduction table
   $('.harm-reduction-stage-indicator').click(function(){
+    var $currentStage = $(this);
     $(this).parents().children().removeClass('active');
     $(this).parents().children().removeClass('theme-light-bg');
     $(this).addClass('active');
     $(this).addClass('theme-light-bg');
-    $('#harm-reduction-stage-descriptions p').text( $(this).find("p").html());
+    $('#harm-reduction-stage-descriptions div').replaceWith("<div>" + $currentStage.find("div").html() + "</div>");
   })
+  // gives harm-reduction "BEFORE" tab it's description
+  $('#harm-reduction-stage-descriptions div').first().replaceWith("<div>" + $('.harm-reduction-stage-indicator').first().find("div").html() + "</div>");
 
   // Makes first drug in #interactions-combo-addition the current drug
   $('.current-drug-name').text( $currentDrug);
+  $('#interactions-table>a').each(function(){
+    var $category = $(this).find('p').attr('class');
+    $(this).addClass($category);
+  });
+
 
   // Selects drug in combo chart:
   // - makes selected drug background-color change to color
