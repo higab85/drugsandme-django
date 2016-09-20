@@ -12,3 +12,7 @@ def alcohol(request):
 def mdma(request):
     # context = {}
     return render(request, 'article/mdma.html')
+
+def me(request):
+    # context = {}
+    return render(request, 'article/me.html')

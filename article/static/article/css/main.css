@@ -9,7 +9,14 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
-
+p>a,
+p>a:hover
+{
+  color: #6B7A88;
+}
+p>a:hover{
+  font-weight: bold;
+}
 /* Custom default button */
 .btn-default,
 .btn-default:hover,
@@ -524,6 +531,7 @@ h3 .small{
   }
   .col-md-10>div{
     padding-right: 11vw;
+    padding-left: 10vw;
   }
   #interactions-interactive {
       width: 57vw;
@@ -876,6 +884,8 @@ input:focus {
 #content{
   padding: 50px 0;
   text-align: left;
+  margin-left: 0;
+
 }
 
 #home-buttons>li{
@@ -1002,11 +1012,15 @@ h4.funky{
 
 #interactions-combo-result{
   text-align: left;
-  height: 220px;
+  height: 250px;
   width: 267px;
   margin: 0 auto;
 }
+#interactions-combo-result p{
+  font-size: 14px;
+  padding: 10px;
 
+}
 #interactions-table{
   padding: 5px;
   display: inline-block;
