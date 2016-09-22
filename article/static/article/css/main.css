@@ -9,8 +9,10 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
-p>a,
-p>a:hover
+p a,
+p a:hover,
+span a,
+span a:hover
 {
   color: #6B7A88;
 }
@@ -521,6 +523,24 @@ h3 .small{
   #site-index .cover-container{
     height: 684px;
   }
+
+  .side-note{
+    width: 180px;
+    position: absolute;
+    right: -16px;
+    color: #687A89;
+    border-width: 0 0 0 4px;
+    border-color: #687A89;
+    border-style: solid;
+    padding: 0 0 0 4px;
+  }
+  .side-note a{
+    color: #000000;
+    font-weight: bold;
+  }
+  .side-note p{
+    margin: 0;
+  }
 }
 
 @media (min-width: 992px) {
@@ -873,7 +893,7 @@ input:focus {
   box-shadow: 2px 2px 1px #6B7A88;
   border-radius: 0px;
 }
-.boxed p{
+.boxed>p{
   padding: 15px;
 }
 .searchbarbox{
@@ -997,6 +1017,10 @@ h4.funky{
 
 .effects > li > span {
   color: black;
+}
+/*--- Dose and Onset ---*/
+ul.no-decorate-list>li{
+  list-style: none;
 }
 /*--- Interactions --- */
 

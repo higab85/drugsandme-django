@@ -42,10 +42,6 @@
      consumed for centuries, however, recent advances in neuroscience show the
      severe consequences of alcohol intoxication.
   </p>
-  <p>
-    Please read <a href="/me">ME</a> for more general information about
-    recreational drugs.
-  </p>
 {% endblock %}
 
 {% block intro-content-1 %}
@@ -112,32 +108,32 @@
 {% endblock %}
 
 {% block dose-and-onset-content %}
+  <h3>How? How Much? When? For how Long?</h3>
   <p>
-    <h3>How? How Much? When? For how Long?</h3>
-    <p>
-      As with any drug, the correct dose for you depends on factors such as
-      weight, gender, metabolism, whether you have taken the drug recently or
-      not, amongst many others. Read our section on dosing and tolerance in
-      <a href="/me">ME</a> for more information.
-      <h3>How you take it matters...</h3>
-      <p>
-        The most common method to alcohol consumption is oral, however, recently
-        people have been inhaling alcohol as well. If you want to learn more
-        about how the method of administration affects you, read
-        <a href="/me">ME</a>.
-      </p>
+    As with any drug, the correct dose for you depends on factors such as
+    weight, gender, metabolism, whether you have taken the drug recently or
+    not, amongst many others. Read our section on dosing and tolerance in
+    <a href="/me">ME</a> for more information.
+  </p>
+  <h3>How you take it matters...</h3>
+  <p>
+    The most common method to alcohol consumption is oral, however, recently
+    people have been inhaling alcohol as well. If you want to learn more
+    about how the method of administration affects you, read
+    <a href="/me">ME</a>.
+  </p>
 
-    <h3>How much?</h3>
-    <p>
-      Alcohol is metabolised relatively fast, however, it is more difficult for
-      the body to get rid of the toxins with increasing doses. Therefore, we
-      suggest to limit your dose if you want to be on the safe side!
-    </p>
-    <p>
-      Men and women are advised not to regularly drink more than <br>14 units a week</br>.
-      Spread your drinking over three days or more if you drink as much as 14 units a
-      week.
-    </p>
+  <h3>How much?</h3>
+  <p>
+    Alcohol is metabolised relatively fast, however, it is more difficult for
+    the body to get rid of the toxins with increasing doses. Therefore, we
+    suggest to limit your dose if you want to be on the safe side!
+  </p>
+  <p>
+    Men and women are advised not to regularly drink more than <strong>14 units a week</strong>.
+    Spread your drinking over three days or more if you drink as much as 14 units a
+    week.
+  </p>
   <h3>What is a unit in the UK?</h3>
   <div class="text-center">
     <img class="img-responsive" src="{% static 'article/images/alcohol/alcohol-units.png' %}" alt="effects graph">
@@ -254,6 +250,12 @@
 {% block combo-LSD %}
 <h4 class="funky">LOW RISK & DECREASE</h4>
 <p class="interaction-lowriskd">TEXT E</p>
+{% endblock %}
+
+{% block combo-MDMA %}
+<h4 class="funky">CAUTION</h4>
+<p class="interaction-caution">
+</p>
 {% endblock %}
 
 {% block combo-MAOIs %}
@@ -373,7 +375,7 @@
   </li>
 </ul>
 <p>
-  <br>Important:</br>Remember, only time will help to sober a person who is
+  <strong>Important:</strong>Remember, only time will help to sober a person who is
   intoxicated. Walking, black coffee or a cold shower will not help. Drink
   plenty of water to avoid dehydration, and reduce the hangover.
 </p>
@@ -485,7 +487,7 @@
 {% endblock %}
 
 {% block more-info-content %}
-  <h3>Myths</h3>
+  <h3>FAQS</h3>
   <h4>Should I consume alcohol to protect from heart problems?</h4>
   <p>
     There is evidence to suggest that low and moderate drinking (i.e., within

@@ -16,3 +16,7 @@ def mdma(request):
 def me(request):
     # context = {}
     return render(request, 'article/me.html')
+
+def me(request):
+    # context = {}
+    return render(request, 'article/lsd.html')

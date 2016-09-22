@@ -1,0 +1,1364 @@
+{% extends 'article/drug.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - LSD
+{% endblock %}
+
+{% block header %}
+  <style>
+    .theme-bg{
+      background-color:#F4CF6A !important;
+    }
+    .theme-color{
+      color: #F4CF6A !important;
+    }
+    .theme-light-bg{
+      background-color: #F4CF6A !important;
+    }
+    .theme-light-color{
+      color:#F4CF6A !important;
+    }
+  </style>
+
+  <meta name="drug-name" content="LSD">
+{% endblock %}
+
+
+{% block cover-contents %}
+  <img class="img-responsive" style="width: 300px;"src="{% static 'article/images/lsd/lsd-illustration.png' %}" alt="lsd">
+  <div id="cover-text">
+    <h1>LSD</h1>
+    <a href="http://thethirdwave.co/blog/lsd-street-names"><h4>Acid, Tab, Lucy, Lysergic acid diethylamide</h4></a>
+  </div>
+{% endblock %}
+
+{% block intro-content %}
+  <p><strong>In collaboration with <a href="http://beckleyfoundation.org/">The Beckley Foundation</a></strong><p>
+  <p>
+    Lysergic acid diethylamide is a psychedelic drug that was first synthesized in
+    1938 by Albert Hofmann. LSD literally takes you in a ‘trip’ to the deepest
+    parts of human consciousness. People can have a spiritual-experience, time
+    perception is altered, music feels like heaven, all sensations are heightened.
+    However, bad thoughts can also turn to be extremely disturbing,
+    <a href="#harm-reduction">read more below</a>  to avoid this!
+  </p>
+  <p>
+    <a href="http://beckleyfoundation.org/science/substances-methods/lsd/">The Beckley Foundation</a>
+    is a pioneer institution conducting cutting-edge research on the therapeutic
+    potential of this psychedelic. Their <a href="https://www.youtube.com/watch?v=MZIaTaNR3gk">scientists</a>
+    also believe LSD is a master key to unravel the inner workings of
+    consciousness.
+  </p>
+{% endblock %}
+
+{% block intro-content-1 %}
+  <h3 class="funky">Set and setting</h3>
+  <p class="hidden">
+    Plan your <a href="#LSD-trip">trip</a> carefully to enhance the
+    experience and to avoid bad ‘trips’
+  </p>
+{% endblock %}
+{% block intro-content-2 %}
+  <h3 class="funky">Have a tripsitter</h3>
+  <p class="hidden">
+    Try to have a trip-sitter (ideally someone who remains sober, had previous
+    psychedelic experience and has read this guide!) or let someone you trust
+    know when and where you are planning to take it.
+  </p>
+{% endblock %}
+{% block intro-content-3 %}
+  <h3 class="funky">Dose sensibly</h3>
+  <p class="hidden">
+    Although LSD doesn’t cause dependence or addiction, our advice is not to up
+    your doses far from what we recommend and spare your trips for special and
+    meaningful occasions.
+  </p>
+{% endblock %}
+
+
+{% block effects-content %}
+  <p>
+    Here are the most common effects, not everyone necessarily experiences all
+    of them every time they consume the drug and other effects not listed might
+    be felt.
+  </p>
+  <p>
+    Many of the effects labelled as neutral and/or experienced as negative at
+    the time can actually have positive consequences <a href="#harm-reduction-timeline">
+    if you understand them and know how to manage them</a>.
+  </p>
+{% endblock %}
+
+{% block effects-list-positive %}
+  <li><span>Euphoria (Ref. Carhart-Harris paradox, 2016)</span></li>
+  <li><span>Positive mood</span></li>
+  <li><span>Wonder, Transcendence, Power and Tenderness Ref Kaelen 2015</span></li>
+{% endblock %}
+
+{% block effects-list-neutral %}
+  <li><span><a href="#LSD-loss-of-ego">Loss of the sense of self</a></span></li>
+  <li><span>
+    Distortions and hallucinations (visual, even with closed eyes; tactile,
+    olfactory and auditory)
+  </span></li>
+  <li><span>Changes in consciousness</span></li>
+  <li><span>
+    <a href="#LSD-suggestibility">Suggestibility</a> (Ref Carhart-Harris sugge, 2016)
+  </span></li>
+  <li><span>Spiritual or mystical experiences (entheogenic)</span></li>
+  <li><span>Unexpected emotions</span></li>
+  <li><span>
+    <a href="#LSD-synaesthesia">Synaesthesia-like experiences</a>
+  </span></li>
+  <li><span>
+    <a href="#LSD-visual-hallucinations">Visual hallucinations</a>
+  </span></li>
+  <li><span>
+    <a href="LSD-time">Time travelling/time distortions</a>
+  </span></li>
+{% endblock %}
+{% block effects-list-negative %}
+  <li><span>
+    Confusion
+  </span></li>
+  <li><span>Disorientation</span></li>
+  <li><span><a href="#LSD-bad-trip">Psychosis-like symptoms</a></span></li>
+  <li><span><a href="#LSD-bad-trip">Unpleasant feeling </a></span></li>
+  <li><span>Paranoid delusions*</span></li>
+  <li><span>
+    Anxiety* (Ref. Carhart-Harris paradox, 2016)
+  </span></li>
+{% endblock %}
+
+
+
+{% block dose-and-onset-content %}
+  <h3>How? How much? When? For how long?</h3>
+  <div class="side-note">
+    <p>
+      Read our section on dosing and tolerance in <a href="/me">ME</a> for more
+      information.
+    </p>
+  </div>
+  <p>
+    As with any drug, the correct dose for you depends on factors such as
+    weight, gender, metabolism, whether you have taken the drug recently or
+    not, amongst many others.
+  </p>
+  <h3>How you take it matters...</h3>
+  <p>
+    LSD is always taken orally and it is only injected for research purposes.
+    It is more often dissolved in blotting paper that can be broken down into
+    tabs. <a href="https://www.erowid.org/chemicals/lsd/lsd_dose.shtml">Liquid LSD and gelatin</a>
+    are other, less common, ways of taking this psychedelic.
+  </p>
+  <p>
+    You should place the tab under your tongue for around 10 minutes, after
+    that, you can safely swallow the tab.
+  </p>
+  <p>
+    If you are going to try LSD for your first time or you are using new
+    source, we encourage you to titration <h1>WHAT LINK</h1> to avoid a bad trip
+  </p>
+  <h3>How much?</h3>
+  <ul class="no-decorate-list">
+    <li>
+      <h5>Low:</h5>
+      <p>25 -100 µg. (People report to feel some effects with as little as 20 µg)</p>
+    </li>
+    <li>
+      <h5>Medium (common):</h5>
+      <p>65-175 µg</p>
+    </li>
+    <li>
+      <h5>High:</h5>
+      <p>175-250 µg</p>
+    </li>
+    <li>
+      <h5>Heavy:</h5>
+      <p>250+ µg</p>
+    </li>
+  </ul>
+  <h1>make this brain science</h1>
+  <p class="brain-science">
+    LSD is a very potent drug. A common dose of cannabis (smoked) is around 150
+    <strong>milli</strong>grams, whereas a common dose of LSD is around 150
+    <strong>micro</strong>grams (100 times more!). However, accidental overdoses are
+    very rare because LSD has a very high safety window (the ratio of the
+    typical lethal dose to the effective dose). There isn’t an exact lethal
+    amount, since it depends on many variables such as the person and context.
+    Moreover, products sold as LSD can contain other hallucinogens with a
+    smaller safety window, <strong>test it!</strong> Our personal advice is not to up
+    your doses far from what we recommend and spare your trips for special and
+    meaningful occasions.
+  </p>
+  <h3>When do the effect kick in and for how long?</h3>
+  <p>
+    The ‘START’ time below is when you will usually begin to feel the effects
+    of the cocaine from the time when you first consumed it. The ‘DURATION’ is
+    roughly the length of time you will experience the effects, after which the
+    effects will start to wind off and you might start to feel the calm down
+    effects.
+  </p>
+  <ul>
+    <li>
+      <h5>Start:</h5>
+      <p>30-90 min</p>
+    </li>
+    <li>
+      <h5>Peak:</h5>
+      <p>2-3 hours</p>
+    </li>
+    <li>
+      <h5>Duration:</h5>
+      <p>9-14 hours</p>
+    </li>
+  </ul>
+  <p>
+    It depends a lot on the person and her/his state. Factors such as heart
+    rate and blood pressure or the presence of other drugs in the blood affect
+    the time the drug will take to have an effect. A higher heart rate and blood
+    pressure than normal would make the effects to kick in faster. Varies with
+    how much you have taken, the higher the dose the longer it will last.
+  </p>
+{% endblock %}
+
+
+{% block interactions-content %}
+  <p>
+    As a rule, it is better not to mix different drugs, as the interactions
+    might be unique for each person. This is especially important for the first
+    time users of LSD, as mixing drugs could result in a negative experience.
+  </p>
+  <p>
+    For example, combining LSD with cannabis can go either way because cannabis
+    has unexpectedly strong and somewhat unpredictable synergy with
+    psychedelics.
+  </p>
+  <p class="side-note">
+     Read our section on dosing and tolerance in <a href="/me">ME</a> for more
+     information.
+  </p>
+  <p>
+    Most of classic psychedelics (except for DMT) induce cross-tolerance.
+    This mean that if you take mushrooms one day, and LSD the next, the effects
+    of LSD will be reduced. After about 3 days the effects will be very small
+    or non-existent. That is one of the reasons why it’s good to have breaks
+    between trips.
+  </p>
+{% endblock %}
+
+{% block combo-2C-X %}
+  <h4 class="funky">LOW RISK & SYNERGY</h4>
+  <p class="interaction-lowrisks">
+    These drugs work together to cause an effect greater than the sum of its parts,
+    and they aren't likely to cause an adverse or undesirable reaction when used
+    carefully. Additional research should always be done before combining drugs.
+  </p>
+{% endblock %}
+
+{% block combo-Alcohol %}
+  <h4 class="funky">LOW RISK & DECREASE</h4>
+  <p class="interaction-lowriskd">
+
+  </p>
+{% endblock %}
+
+{% block combo-Amphetamines %}
+  <h4 class="funky">CAUTION</h4>
+  <p class="interaction-caution">
+    Psychedelics have some stimulant effects. Agitation, restlessness and
+    anxiety are common feelings that start and carry on during a bad trip.
+    Mixing stimulants with LSD can stress your system increasing the chances of
+    these unpleasant sensations among others such as palpitations and chest
+    pain.
+  </p>
+{% endblock %}
+
+{% block combo-Benzos %}
+  <h4 class="funky">LOW RISK AND DECREASE</h4>
+  <p class="interaction-lowriskd">
+    MAOIs, SSRIs and benzodiazepines are the drugs medics administer to
+    people with bad trips to calm them down.
+  </p>
+{% endblock %}
+
+{% block combo-Caffeine %}
+  <h4 class="funky">LOW RISK & NO SYNERGY</h4>
+  <p class="interaction-lowriskns">
+    Effects are just additive. The combination is unlikely to cause any adverse or
+    undesirable reaction beyond those that might ordinarily be expected from these
+    drugs.
+  </p>
+{% endblock %}
+
+{% block combo-Cannabis %}
+<h4 class="funky">CAUTION</h4>
+<p class="interaction-caution">
+  These combinations are not usually physically harmful, but may produce
+  undesirable effects, such as physical discomfort or overstimulation. Extreme
+  use may cause physical health issues. Synergistic effects may be unpredictable.
+  Care should be taken when choosing to use this combination.
+</p>
+{% endblock %}
+
+{% block combo-Cocaine %}
+<h4 class="funky">CAUTION</h4>
+<p class="interaction-caution">
+  Psychedelics have some stimulant effects. Agitation, restlessness and anxiety
+  are common feelings that start and carry on during a bad trip. Mixing
+  stimulants with LSD can stress your system increasing the chances of these
+  unpleasant sensations among others such as palpitations and chest pain.
+</p>
+{% endblock %}
+
+{% block combo-DMT %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-DXM %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-Ketamine %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-LSD %}
+<h4 class="funky">LSD</h4>
+<p class="">
+  Please read our <a href="doses">doses</a> section for more info.
+</p>
+{% endblock %}
+
+{% block combo-MDMA %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  (AKA Candyflipping)
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-MAOIs %}
+<h4 class="funky">LOW RISK & DECREASE</h4>
+<p class="interaction-lowriskd">
+  MAOIs, SSRIs and benzodiazepines are the drugs medics administer to
+  people with bad trips to calm them down.
+</p>
+{% endblock %}
+
+{% block combo-Mushrooms %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-nos %}
+<h4 class="funky">LOW RISK & SYNERGY</h4>
+<p class="interaction-lowrisks">
+  These drugs work together to cause an effect greater than the sum of its parts,
+  and they aren't likely to cause an adverse or undesirable reaction when used
+  carefully. Additional research should always be done before combining drugs.
+</p>
+{% endblock %}
+
+{% block combo-Opioids %}
+<h4 class="funky">LOW RISK & NO SYNERGY</h4>
+<p class="interaction-lowriskns">
+  Effects are just additive. The combination is unlikely to cause any adverse or
+  undesirable reaction beyond those that might ordinarily be expected from these
+  drugs.
+</p>
+{% endblock %}
+
+{% block combo-SSRIs %}
+<h4 class="funky">LOW RISK & DECREASE</h4>
+<p class="interaction-lowriskd">
+  MAOIs, SSRIs and benzodiazepines are the drugs medics administer to
+  people with bad trips to calm them down.
+</p>
+
+{% endblock %}
+
+{% block interactions-second-content %}
+<p>
+  <a href="https://erowid.org/chemicals/lsd/lsd_interactions.shtml">Lithium</a>
+  or tricyclics (like Amitriptyline, Anafranil, Asendin, Aventyl,
+  Elavil, Endep, Norfranil, Norpramin, Pamelor, Sinequan, Surmontil, Tipramine,
+  Tofranil, Vivactil) are fairly consistently reported as being very bad in
+  combination with LSD. People attempting this combination are unable to
+  communicate with others, they go into "fugue states" where they end up in
+  other places and don't know how they got there, and they are generally in a
+  terrible place psychologically. Life-threatening seizures and at least one
+  death have been reported to be triggered by the combination of LSD and
+  lithium.
+</p>
+<p>
+  Also, if you are prescribed lithium for mental health problems, it is not a
+  good idea to try LSD outside of a supervised medical setting, as it might
+  worsen the symptoms.
+</p>
+<p>
+  <strong>Tramadol</strong> Tramadol can result in seizures, as tromadol lowers seizure
+  threshold.
+</p>
+{% endblock %}
+
+{% block harm-reduction-content %}
+  <p class="side-note">
+    Head over to our <a href="/me">ME</a> section if you would like to know
+    more about harm reduction.
+  </p>
+  <p>
+    There are certain precautions you should take before doing LSD. The advice
+    below helps you to be physically and mentally prepared before doing it.
+    Furthermore, we want you to be safe and enjoy your experience as much as
+    possible, and just in case you have a bad experience or some of the
+    unwanted side effects associated with cocaine, we have also provided
+    information on how to take care of yourself when you are in full swing.
+    Finally, there are those uncomfortable or undesirable effects after the
+    high have worn out, we will provide you with some practical tips on how
+    to have a better calm down and help you to reduce the harm done to your
+    body and brain.
+  </p>
+{% endblock %}
+
+{% block harm-reduction-stage-1 %}
+<h4>Every feeling is enhanced with LSD, this is why you want to plan your trip carefully.</h4>
+<ul>
+  <li>
+    <p>
+      ther hallucinogens with a smaller safety window (the ratio of the
+      typical lethal dose to the effective dose) can be sometimes sold as
+      LSD, test it!
+    </p>
+  </li>
+  <li>
+    <p>
+      Don´t try LSD if you are having a bad time and feel a bit down. You
+      shouldn´t take any drug when you are feeling low, but taking psychedelics
+      is probably the worst idea. You can easily fall down into a very
+      unpleasant rabbit hole.
+    </p>
+  </li>
+  <li>
+    <p>
+      Try to have a trip-sitter (ideally someone who remains sober, had
+      previous psychedelic experience and has read this guide!) or let someone
+      you trust know when and where you are planning to take it.
+    </p>
+  </li>
+  <li>
+    <p>
+      Always take it with people and, whenever it is possible, with familiar
+      and kind  faces. Experienced users might start trying it out on their own
+      seeking for artistic or intellectual inspiration.
+    </p>
+  </li>
+  <li>
+    <p>
+      Set and setting. The spot you choose to take LSD is extremely important.
+      It should be a familiar place, if it isn't at least avoid places with
+      negative feelings for you and make sure a friend you trust has nicely
+      prepared the site.
+    </p>
+  </li>
+  <li>
+    <p>
+      Prepare your music list. Check <a href="#LSD-what-listen">What should I listen to</a> for more information.
+    </p>
+  </li>
+  <li>
+    <p>
+      Bring together books, videos, objects… whatever (safe) item you want to
+      experiment with while on LSD
+    </p>
+  </li>
+</ul>
+<p>
+  Scientists, writers, doctors and gurus have written a lot about strategies,
+  ideas and mindsets one should take into account to enhance the experience
+  beyond the limits of your consciousness. Check the links in
+  <a href="#LSD-set-and-setting">Set and setting</a>
+  for more information, we'll keep updating it!
+</p>
+{% endblock %}
+
+{% block harm-reduction-stage-2 %}
+<h3>People have tried to divide the LSD experience in different stages</h3>
+<ol>
+  <li>
+    <h5><strong>Initial effects (come-up)</strong></h5>
+    <p>
+      Slight visual changes, sense of intoxication, uncontrollable need to
+      laugh, euphoria, anxiety...
+    </p>
+  </li>
+  <li>
+    <h5><strong>The peak and plateau</strong></h5>
+    <p>
+      Increase of visuals, time distortion, synaesthesia, loss of the sense of
+      self, spiritual-experience, suggestibility...
+    </p>
+  </li>
+  <li>
+    <h5><strong>The come-down</strong></h5>
+    <p>
+      Gradual decrease of physical and psychological effects, insomnia
+    </p>
+  </li>
+</ol>
+<p>
+  Check this popular video that explains the stages of the LSD experience
+</p>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kIFlWe1oYlw"></iframe>
+</div>
+{% endblock %}
+
+{% block harm-reduction-stage-3 %}
+<p>
+  The LSD experience, even when positive, is often experienced as emotionally
+  and physically draining. Many people like to have a free day after taking
+  LSD, not to recover from the hangover, but so they can reflect on the
+  experience. Ref Neptune They say it helps you to gain an even greater
+  insight from the trip. Know yourself!
+</p>
+<h4>Hangover?</h4>
+<p>
+  You might feel an afterglow for some hours or days or you might feel a bit
+  off. People vary a lot on their feelings and mood after the ‘trip’. If you
+  avoid a ‘bad trip’ and get <strong>enough sleep, drink plenty of water
+  </strong> and <strong>eat a sensible amount of food</strong> you should wake
+  up in your usual state.
+</p>
+<p>
+  You might still feel that the world looks a bit weird after the trip, so
+  avoid driving, cycling or doing any risky activities, celebrates the
+  discovery of LSD!). Wait around 24 hours to be safe before doing anything
+  that requires your full attention.
+</p>
+<p>
+  <a href="http://www.abc.net.au/news/2016-04-19/bicycle-day-albert-hoffman-lsd-psychotherapy-research/7336712">Bicycle Day on the 18th April</a>
+</p>
+<p>
+(Ref. Carhart-Harris paradox, 2016)
+</p>
+{% endblock %}
+{% block harm-reduction-second-content %}
+<h3 id="LSD-trip">The trip</h3>
+<h4 id="LSD-bad-trip">Bad trip</h4>
+<p>
+  As with positive feelings, negative ones are also enhanced; they can be very
+  overwhelming and unpleasant. ‘Acid’ has also been shown to strongly increase
+  psychotic-like symptoms Ref Carhart-Harris et al., 2016.
+</p>
+<p>
+  Even though the ‘bad trip’ can be absolutely terrifying at the time, it is
+  likely to have beneficial consequences long-term, when people process and
+  integrate it. It is a teaching and healing experience, that is not pleasant
+  but is important and valuable. Cite: Carbonaro et al., 2016. In a survey of
+  about ‘bad trips’, 39% of users who had them said that the experience was
+  among the top 5 challenging experiences of their lifetime. Despite having
+  those difficulties, 84% reported having benefited from the experience and
+  76% reported increased well-being afterwards.
+</p>
+<p>
+  Taking LSD can be very dangerous to people with pre-existing psychotic
+  illness or those with high risk for developing psychosis. Research had shown
+  that LSD makes the existing psychotic symptoms worse and can trigger the onset
+  of the full-blown psychotic episode Ref Murray
+</p>
+<p>
+  A bad trip can occur when taking a low/medium dose, but the chances
+  increase with higher doses. Both beginners and experienced users can suffer
+  a bad trip, so always take the appropriate preventions.
+</p>
+<p>You might feel:</p>
+<ul>
+  <li>
+    <p>Anxiety</p>
+  </li>
+  <li>
+    <p>Fear/panic</p>
+  </li>
+  <li>
+    <p>Dysphoria</p>
+  </li>
+  <li>
+    <p>Paranoia</p>
+  </li>
+  <li>
+    <p>Confusion</p>
+  </li>
+  <li>
+    <p>Disorientation</p>
+  </li>
+  <li>
+    <p>Unwanted thoughts, emotions and memories</p>
+  </li>
+  <li>
+    <p>Frightening perceptions</p>
+  </li>
+  <li>
+    <p>Distressing awareness of physiological processes</p>
+  </li>
+  <li>
+    <p>Feelings about evil forces/existential crisis</p>
+  </li>
+  <li>
+    <p>Headache</p>
+  </li>
+</ul>
+<p>Ref Neptune</p>
+<p>
+  Each person might find their way of escaping a bad trip: listening to a
+  particular song, talking to a certain person, looking at a pleasant painting…
+  We personally recommend to lie down in a place without disturbances, close
+  your eyes and breathe deeply until you come back where you enjoy being.
+</p>
+<p>Check out this video that explains how to use biofeedback to work with the fear</p>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/urlQyUEaylM"></iframe>
+</div>
+<h4>Helping a friend out</h4>
+<p>
+  If you are taking care of your friends, keep in mind the following:
+</p>
+<ul>
+  <li>
+    <p>Be patient, listen and observe. Ref MAPS, Ref Kosmicare UK</p>
+  </li>
+  <li>
+    <p>Empathise and express understanding of their fears</p>
+  </li>
+  <li>
+    <p>
+      Don´t try to guide them, listen to them and talk them through their
+      experience without imposing your own ideas of what ‘should’ be
+    </p>
+  </li>
+  <li>
+    <p>
+      Find a more peaceful spot. Ref Neptune
+    </p>
+  </li>
+  <li>
+    <p>
+      Tell them that their bad feelings will pass. It can happen and many
+      people before have suffered it.
+    </p>
+  </li>
+</ul>
+Manual: <a href="http://www.maps.org/resources/responding-to-difficult-psychedelic-experiences/101-how-to-work-with-difficult-psychedelic-experiences">How to Work with Difficult Psychedelic Experiences</a>
+
+<p class="brain-science">
+  LSD increases connectivity between different brain areas and consequently
+  decreases the independence of different brain networks. Consciousness is
+  pushed towards a more unconstrained, chaotic state. This is thought to be
+  responsible for psychosis-like symptoms and altered perception in the short
+  term. However, the same ‘loosening’ of brain networks results in more
+  flexible patterns of thinking, which may improve well-being in the longer
+  term.
+</p>
+<h4>Overdose</h4>
+<p>
+  Accidental overdoses are very rare because LSD has a very high safety window
+  (the ratio of the typical lethal dose to the effective dose). There isn’t an
+  exact lethal amount, since it depends on many variables such as the person
+  and context. Estimates of <a href="https://erowid.org/chemicals/lsd/lsd_death.shtml">lethal doses of LSD</a>
+  are higher than 10 milligrams (10,000 micrograms) administered orally, more
+  than 100 times a normal moderate dose of LSD (100 micrograms).
+</p>
+<p>Seek medical attention if:</p>
+<ul>
+  <li>
+    <p>The person collapses</p>
+  </li>
+  <li>
+    <p>Breathing is irregular and/or shallow</p>
+  </li>
+  <li>
+    <p>The person is too warm</p>
+  </li>
+  <li>
+    <p>Blood in vomit. Ref Neptune</p>
+  </li>
+</ul>
+<p>
+  Do not doubt to call a paramedic if you feel any of these symptoms. You will
+  not get into trouble.
+</p>
+<p>
+  There has been only one human case where the death has been attributed to LSD
+  toxicity alone. The quantity of LSD in the blood indicated that 320 milligrams
+  (320,000 micrograms) had been injected intravenously. Very rare LSD-related
+  fatalities usually result from people committing suicide or accidental deaths.
+  Contrary to all the media scary stories around, such as jumping out of the
+  windows after LSD.
+</p>
+<h4>Understand the trip…</h4>
+<p>
+  In this section <a href="http://www.beckleyfoundation.org">The Beckley Foundation</a>
+  and Drugsand.me provide you with a lot of neuroscientific information.
+  Let us know what else you want to know about!
+</p>
+<p>
+  A discovery the recent Beckley/Imperial studies have revealed and we would
+  like you to learn is the shift in the overall connectivity of the brain.
+  The connectivity within the networks decreases and the connectivity between
+  the networks increases. The whole brain becomes more integrated, allowing new
+  functional connections to be formed between brain areas which which normally
+  do not ‘speak to each other’.
+</p>
+<img class="img-responsive" src="http://blogs.discovermagazine.com/d-brief/files/2014/10/brain-networks.jpg" alt="">
+<h4>Music</h4>
+<p>
+  LSD enhances your emotional response to music, increasing wonder,
+  transcendence, power and tenderness of it Kaelen et al., 2015, LSD and music
+  work together to change how your neurons talk to each other, that correlate
+  with the long lasting change in personality, such as increased openness and
+  optimism (Lebedev et al., 2016).
+</p>
+<p>
+  LSD intensifies the quality and significance of melodies and lyrics and
+  affects the perception of the basic musical features such as pitch, tempo and
+  timbre. LSD and music together increase the flow of personal memories,
+  allowing the vivid experience of ‘visions of the past’ Kaelen et al., 2016.
+  This research by Mendel Kaelen, undertaken as part of the Beckley/Imperial
+  Research Programme is the first to shed light on how the brain processes
+  music under LSD, and provide a basis for understanding the therapeutic
+  effects of music.
+</p>
+<h4 id="#LSD-what-listen">What should I listen to?</h4>
+<p>
+  The powerful influence that music has on your trip can enhance it or make it
+  really bad, this is why you should pick carefully the music you listen to
+  while on LSD. There isn't a standardized playlist suitable for everyone.
+  Follow this advice and adapt it to your taste and the experience you are
+  looking for!
+</p>
+<p>
+  Below we provide examples of the tracks used by the scientists in
+  <a href="http://beckleyfoundation.org/science/collaborations/beckley-imperial-research-programme/">the Beckley/Imperial research programme</a>
+  working on incorporating music to psychedelic therapy
+</p>
+<p>
+  Before it kicks in you might want to listen to
+  <a href="reassuring and calming music with melodic strings and clear melody line">https://www.youtube.com/watch?v=VUt0-JnOIdg</a>.
+</p>
+<p>
+  For the onset you might want <a href="https://www.youtube.com/watch?v=zKk-w_0SpSw">more emotionally evocative music</a>
+</p>
+<p>
+  For the peak you will surely enjoy <a href="https://www.youtube.com/watch?v=5L9V4t4YPnY ">a mixture of music with different rhythms and emotional intensities.</a>
+</p>
+<p> Other recommendations:</p>
+<ul>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=lgOWsdcWSVc">https://www.youtube.com/watch?v=lgOWsdcWSVc</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.youtube.com/watch?v=l50rxRzqPUY">https://www.youtube.com/watch?v=l50rxRzqPUY</a></p>
+  </li>
+</ul>
+<p>
+  Have a look to the playlist of another research team doing research on
+  psychedelics.
+  <a href="https://www.reddit.com/r/shrooms/comments/40xu0t/johns_hopkins_releases_official_music_playlist/">John Hopkins’ playlist</a>
+</p>
+<p>
+  Do want to discover why it is called <a href="https://www.youtube.com/watch?v=xxaOItEmu3U">psychedelic rock</a>?
+</p>
+<div class="brain-science">
+  <p>
+    Research from the Beckley/Imperial Research Programme has focused on
+    understanding how brain processes music under LSD.
+  </p>
+  <p>
+    The first discovery was the influence of music in the activity of the
+    parahippocampal cortex. This region lies on the inferior part of the brain
+    and runs approximately from your ears to the back part where the area
+    involved in vision is. It is involved in emotion, memory and ego/self
+    functions.
+  </p>
+  <img class="img-responsive" src="https://en.wikipedia.org/wiki/Parahippocampal_gyrus#/media/File:Parahippocampal_gyrus_animation.gif" alt="Parahippocampal gyrus animation">
+  <p>
+    The parahippocampal cortex is part of the
+    <a href="#default-mode-network">Default Mode Network</a>. Psychedelics decrease PHC is
+    highly connected with the Default Mode Network (DMN), which exerts top-down
+    control over the PHC. Psychedelics decrease this DMN control, resulting in
+    altered consciousness.
+  </p>
+  <p>
+    LSD and music allows the PHC to interact more freely with the visual
+    system. The input of memories to the visual system – a ‘flip’ in the normal
+    direction of information flow – may underlie the reported visions.
+    Consequently, there is an increase in mental imagery of autobiographical
+    nature.
+  </p>
+  <p>
+    Music also increases the chaotic brain activity when on LSD, leading to
+    sustained improvements in well-being and life satisfaction and an increase
+    in openness after several weeks (Ref. Lebedev, 2016)
+  </p>
+  <p>
+    There is much more to investigate here, and analyses are underway to
+    understand neurophysiological processing of distinct acoustic features
+    (such as pitch, tempo and timbre) in music under LSD, as well the
+    relationship to increased music-evoked emotion. The results are coming soon!
+  </p>
+  <h4 id="default-mode-network">Default Mode Network</h4>
+  <p>
+    Normally (without psychedelics) the brain functions in a very organized
+    manner, with brain areas forming distinct networks doing their separate
+    tasks. There are also higher order networks, one of which is the Default
+    Mode Network.
+  </p>
+  <p>
+    The DMN is very important for the conscious experience. It is involved in
+    such crucial functions as the introspection, autobiographical memory
+    retrieval and maintaining the sense of self. The DMN includes 2 key ‘hub’
+    areas (areas that are highly interconnected with other brain regions): the
+    <a href="https://en.wikipedia.org/wiki/Posterior_cingulate">Posterior Cingulate Cortex (PCC)</a>
+    and the
+    <a href="https://en.wikipedia.org/wiki/Prefrontal_cortex">medial prefrontal cortex (mPFC)</a>.
+  </p>
+  <p>
+    Hyperactivity of the DMN has been associated with several mental illnesses
+    such as anxiety, depression and obsessive compulsive disorder. Psychedelics
+    disrupt the connectivity within this network (aka network integrity), and
+    the degree of this disruption is mirrored in the experience of
+    ego-dissolution, a loss of sense of self. Another piece of evidence, from
+    the Beckley/Imperial results, underlining the importance of this network
+    for maintaining the sense of self, is the fact that the degree of neural
+    synchrony within the Posterior Cingulate Cortex correlates with the ratings
+    of ego-dissolution. Other areas involved in memory and perception show also
+    a decreased connectivity. This correlates with individuals’ ratings of
+    “ego-dissolution” and “altered meaning”.
+  </p>
+  <p>
+    In short, psychedelics reduce DMN’s activity and integrity, which results
+    in reduction of its repressive grip over the rest of the brain, allowing
+    a more flexible state of consciousness.
+  </p>
+</div>
+<h4 id="LSD-time">Time</h4>
+<p>
+  Mental time travel refers to the ability to think about future or past, to
+  recollect aspects of past autobiographical episodes or imagine future
+  experiences. LSD seems to tune you with the present and it enhances any
+  stimuli in your environment. This is why the context where you decide to take
+  LSD is extremely important to ensure you have a good trip and avoid a bad
+  experience.
+</p>
+<div class="brain-science">
+  <p>
+  Again, the disintegration of the <a href="#default-mode-network">Default Mode Network</a>
+  dictates your ability to think (travel) about the past or future on LSD. The
+  stronger the disintegration of this network, the fewer thoughts you will have
+  about your past. The inability of thinking about your own past can explain
+  the experience of ego-dissolution, or a loss of the sense of self when you
+  are on 'acid'.  (Ref. Speth, 2016)
+  </p>
+  <p>
+    Personal memories are an integral part of ‘narrative self’- a personal
+    story that unfolds throughout one’s lifetime, involving past memories,
+    perceived present and imagined future. So, in a sense, if you are forced
+    to ‘stay in the present’ then your ego-boundaries dissolve and it becomes
+    possible to experience oneness or unity with the world – something that
+    successful meditators achieve after years of practice.
+  </p>
+</div>
+<h4 id="LSD-suggestibility">Suggestibility</h4>
+<p>
+  Suggestibility is the susceptibility or response to suggestion. LSD strongly
+  enhances suggestibility. This means that the realism or vividness of
+  suggested situations or scenarios is stronger when you are under LSD.
+</p>
+<p>
+  Why does this matter to you? Again, this is another reason of the importance
+  of prior expectations (set) and environment (setting) in determining the
+  nature of your experience. You may want to hide or avoid any object or place
+  that arises any negative feeling or memory. Similarly, you probably want to
+  have around things that already calm you down or bring you good vibes in a
+  normal state.
+</p>
+<p>
+  Timothy Leary described it as a ‘period of increased reactivity to stimuli,
+  both from within and without, there is an increase in suggestibility’
+  (Ref. Leary 1966; Carhart-Harris et.al suggestability paper)
+</p>
+<h4 id="LSD-loss-of-ego">Ego-dissolution</h4>
+<p>
+  Ego-dissolution is the loss of the sense of 'self' and the feeling of
+  belongingness to the world.
+</p>
+<div class="brain-science">
+  <p>
+    LSD increases connectivity between different brain areas and consequently
+    decreases the independence of different brain networks. This results in the
+    blurring of the borders between the self and environment. In other words,
+    there is a loss of integrity/stability of brain networks. This is observed
+    even at a cellular level, this means that neurons that are normally active
+    at the same time lose this synchronisation. At the same time, there is an
+    increased connectivity between brain networks. A clear example happens in
+    the <a href="#LSD-visual-hallucinations">'visual network'</a>.(Ref. Carhart-Harris, 2016)
+  </p>
+  <p>
+    The areas in the brain in charge of <a href="#default-mode-network">the sense of self</a>,
+    switching between tasks (salience network link?) and attention/information
+    access are in the regions of the brain which show the highest increase of
+    activity and connectivity on LSD (Ref. Tagliazucchi, 2016, Ref.
+    Carhart-Harris, 2016). The chaotic and interconnected activity of our brain
+    on LSD resembles the subjective feeling towards the world.
+  </p>
+</div>
+<h4 id="LSD-visual-hallucinations">Visual hallucinations</h4>
+<p>
+  A <a href="https://www.reviewofoptometry.com/ce/an-overview-of-hallucinations">visual hallucination</a>
+  is the vivid perception of an external visual stimulus that does not exist.
+  Trippers usually see a distortion of what they are seeing. Fractals
+  (repeated patterns) are a common form of distortion.
+</p>
+<div class="brain-science">
+  <p>
+    The first ever study on the effects of LSD on the human brain by
+    <a href="http://www.beckleyfoundation.org">The Beckley Foundation</a>
+    explained how people hallucinating with their eyes closed report to see.
+    The connectivity of the brain region involved in vision increases its
+    activity while on LSD, resulting in an increased connectivity and influence
+    of this region with others (Ref. Carhart-Harris, 2016). Moreover, it was
+    observed that the visual region of the brain behaves and shows a pattern of
+    activity as if it was receiving external visual information - ‘seeing with
+    the eyes shut’ (Ref. Roseman, 2016).
+  </p>
+</div>
+<h4 id="LSD-synaesthisia">Synaesthesia</h4>
+<p>
+  <a href="http://www.nhs.uk/Conditions/synaesthesia/Pages/Introduction.aspx">Synaesthesia</a>
+  is a psychological experience in which two or more senses that are normally
+  experienced separately are constantly and spontaneously felt together. For
+  example, the word 'Friday' makes the person to see the colour red. The painter
+  <a href="https://en.wikipedia.org/wiki/Synesthesia_in_art">Kandinsky</a> is a
+  famous example of a synaesthete (person with these experience in their daily
+  life).
+</p>
+<div class="science-brain">
+  <p>
+    LSD triggers synaesthesia-like experiences. This means that even if you are
+    not a synaesthete you may experience a similar sensation. However, the
+    experience is different as there is no consistency and specificity in the
+    pairing of stimulus-sensation. This means that you might suddenly taste the
+    sweetness of the word 'love' once, but not ever again and you might feel
+    afterwards how another unrelated word tastes sweet as well. (Ref. Terhune,
+    2016) In the contrary, a synaesthete constantly tastes sweet when he/she
+    hears the word 'love' and only this word would trigger the sensation of
+    sweetness (besides actual sweet food/drink).
+  </p>
+</div>
+<p>
+  Don't be afraid when you see a noise and enjoy the mind-blowing experience!
+</p>
+<p>
+  If you avoid a <a href="#LSD-bad-trip">bad trip</a>, some particular positive
+  feelings seem to be enhanced the most.
+</p>
+<h4>Language processing</h4>
+<p>
+  To investigate the effects of LSD on language, done as part of the
+  Beckley/Imperial Research Programme, a team asked participants to name the
+  pictures immediately after seeing them. Although the reaction times were the
+  same as on placebo, study volunteers made more mistakes in naming the
+  pictures. For example, when shown the picture of a bus, they were more likely
+  to call it a ‘truck’ or a ‘car’. The mistakes were from the similar semantic
+  category as the correct answer, but not exactly right. This research explains
+  how LSD affects semantic networks and the way the brain draws connections
+  between different words or concepts. "The effects of LSD on language can
+  result in a cascade of associations that allow quicker access to far way
+  concepts stored in the mind," said Family.
+</p>
+<p>
+  Psychedelics help to notice associations people wouldn´t normally pay
+  attention to, or help form new connections – this has implications for
+  enhancing creativity. Ref Family et al., 2016
+</p>
+<h4>Pro-social effects of LSD</h4>
+<p>
+  Under the effects of LSD people report a feeling of belongingness to the
+  environment, as well as a connection with those who are with them. LSD
+  changes the way you read people’s expressions and feelings. Consequently,
+  these are internalised differently and your reaction in social context
+  differs from your sober state.
+</p>
+<p>
+  To measure the social behavioural changes on LSD, a group of people were
+  given LSD while they undertook a series of tasks. The scientists aimed to
+  test some traits that influence our social behaviour such as empathy,
+  prosociality, emotional response to faces and subjective mood. These were
+  assessed twice per individual during the ‘trip’ since it lasts for several
+  hours. Ref Dolder et al., 2016
+</p>
+{% endblock %}
+
+{% block risks-content %}
+<h3>Dependence and abuse?</h3>
+<p>
+  LSD doesn’t cause dependence or addiction, no physical withdrawal symptoms
+  have been described (Ref. Rang and Dale; Ref Nichols 2016).). Scientific
+  literature has also reported subtle or nonsignificant changes in the
+  personality, attitudes, and creativity of people that have repeatedly
+  tried this psychedelic. Ref Strassman
+</p>
+<p>
+  <a href="/me#tolerance">Tolerance</a> develops quickly for LSD compared to
+  other recreational drugs. Moreover, there is cross-tolerance between LSD and
+  all the other psychedelics (except for DMT) REF Halberstadt, 2016. This can
+  be problematic as the user needs to take higher doses to achieve the same
+  effect.
+</p>
+<p>
+  Our personal advice is not to increase your doses far from what we advise and
+  spare your trips for special and meaningful occasions. At the very least it
+  makes sense to leave a couple of weeks between the trips.
+</p>
+<p>
+  <a href="http://beckleyfoundation.org/science/substances-methods/lsd/">Much more research needs to be done!</a>
+</p>
+<h3>Long-term effects...</h3>
+<h4>The good</h4>
+<p>
+  Research by <a href="http://www.beckleyfoundation.org">The Beckley Foundation</a>
+  has shown that psilocybin and LSD increase openness (imagination, aesthetic
+  appreciation, non-conformity, creativity) and optimism weeks after the
+  psychedelic experience Ref . Psychedelics are thought to be an 'existential
+  shock' therapy and can certainly lead to a change in behaviour and outlook.
+  After 2 weeks of the experience, the positive effects continue, whereas
+  the psychosis-like effects don't (Ref. Carhart-Harris paradox, 2016)
+</p>
+<p>
+  This a good reason to take your time to prepare the material and place you'll
+  be when you try this drug. You might get much more than just a fun time.
+</p>
+<div class="brain-science">
+  <p>
+    LSD disrupts the <a href="#default-mode-network">Default Mode Network</a>
+    or similarly, it increases the <a href="http://blogs.discovermagazine.com/d-brief/2014/10/29/brain-psychedelic-drugs/#.V3fH2flVhBc">randomness in the connections between
+    different brain regions</a>.
+  </p>
+  <p>
+    The more chaotic the brain activity during the experience, the more you
+    openness will increase after the experience. Importantly,
+    <a href="#LSD-music">music</a> has shown to help increasing the randomness
+    – so, boosting openness. (Ref. Lebedev, 2016)
+  </p>
+</div>
+<p>
+  Many people rate the experience as one of the most meaningful of their life
+  REF Griffiths, and this experience can catalyse many positive changes, for
+  example quit smoking REF Johnson, 2014.
+</p>
+<p>
+  Recent studies Ref Krebs and Johansen (2013), Johansen and Krebs (2015);
+  Hendricks et al. (2015) found that psychedelic use was associated with lower
+  rate of mental health problems. Of course that is correlation and not
+  causation and there are many other factors involved…
+</p>
+<h4>The ugly</h4>
+<h5><strong>Hallucinogen persisting perceptual disorder/Flashbacks</strong></h5>
+<p>
+  Scientists still don´t agree if Hallucinogen Persisting Perceptual Disorder
+  (HPPD) and flashbacks are the same or different things; we need more
+  research! HPPD is a legitimate disorder featuring in DSM-V, but nevertheless,
+  this condition still remains poorly defined and studied. We still do not know
+  how many people suffer from it, and what makes people vulnerable or optimal
+  ways to treat it, as was recently summarised here: <a href="http://www.ncbi.nlm.nih.gov/pubmed/26421858">
+  HPPD and Flashback Phenomena – Differential Diagnosis and Explanation Models
+  </a>
+</p>
+<p>
+  Both result in a re-experiencing of one or more of the psychedelic effects
+  time after trying this drug (months or years). The main difference between
+  HPPD and flashbacks is that the former is a distressing medical condition,
+  while the latter can be experienced as either positive or negative. People
+  with HPPD experience visualizations  that are frequent, and impinge upon
+  their daily lives. Flashbacks are meant to be intermittent, infrequent
+  experiences, whereas HPPD are described as more persistent states. However
+  often both terms are used interchangeably.
+</p>
+<p>
+  As you might understand if you decide to try this drug, this can be very
+  disturbing in your everyday life. Visual effects seem to be more prominent
+  (geometrical hallucinations, flashes or intensification of colour, movements,
+  afterimages, trails and haloes).
+</p>
+<p>
+  If you think you have HPPD/flashbacks, don´t hesitate to look for medical help.
+</p>
+<p>
+  Ref DSM-V and Ref Neptune
+</p>
+
+<h3>Microdosing</h3>
+<p>
+  Courtesy of <a href="http://www.jamesfadiman.com/">Dr. James Fadiman</a> and Sophia Korb.
+  Get Dr. Fadiman´s <a href="http://www.psychedelicexplorersguide.com/">‘The
+  Psychedelic explorer´s guide’</a> for the ultimate guide on psychedelics!
+</p>
+{% endblock %}
+
+{% block the-law-content %}
+<h3>Europe</h3>
+<ul>
+  <li>
+    <h4>UK</h4>
+    <p><a href="https://www.gov.uk/penalties-drug-possession-dealing">Illegal</a>. Class A drug.</p>
+  </li>
+  <li>
+    <h4>Germany</h4>
+    <p><a href="http://www.strafverteidiger-schueller.de/schwerpunkte/drogen-von-a-z/lsd-btmg-strafe-geringe-menge-fahrerlaubnis/">Illegal</a></p>
+  </li>
+  <li>
+    <h4>France</h4>
+    <p>Illegal</p>
+  </li>
+  <li>
+    <h4>Netherlands</h4>
+    <p>
+      llegal. To possess, distribute, and produce without a license. Personal
+      consumption is legal
+    </p>
+  </li>
+  <li>
+    <h4>Spain</h4>
+    <p>
+      Illegal. To possess, distribute, and produce without a license. Personal
+      consumption is legal.
+    </p>
+  </li>
+  <li>
+    <h4>Russia</h4>
+    <p>Illegal. To possess, distribute, and produce without a license</p>
+  </li>
+</ul>
+<h3>America</h3>
+<ul>
+  <li>
+    <h4>USA</h4>
+    <p>
+      <a href="https://www.dea.gov/druginfo/ds.shtml">Illegal</a> to
+      manufacture, buy, possess or distribute without a DEA license. Schedule I
+      drug.
+    </p>
+  </li>
+  <li>
+    <h4>Canada</h4>
+    <p>
+      <a href="http://web.archive.org/web/20131215170432/http://laws-lois.justice.gc.ca/eng/acts/C-38.8/page-26.html">Illegal</a>
+      to possess, distribute, and produce without a license.  Schedule III drug.
+    </p>
+  </li>
+  <li>
+    <h4>Mexico</h4>
+    <p>Illegal. Personal possession of up to 15 µg is decriminalised.</p>
+  </li>
+</ul>
+<h3>Asia</h3>
+<ul>
+  <li>
+    <h4>Hong Kong</h4>
+    <p>
+      Illegal. Schedule 1. To manufacture, buy, possess, distribute or consume.
+      Can only be used legally by health professionals and for university
+      research purposes.
+    </p>
+  </li>
+  <li>
+    <h4>Singapore</h4>
+    <p>
+      <a href="http://www.cnb.gov.sg/drugs/bannedsubstance/lysergide.aspx">Illegal</a>
+      To possess, consume, import, export and use.
+    </p>
+  </li>
+  <li>
+    <h4>Israel</h4>
+    <p>Illegal.  To possess, manufacture, sell, distribute and use.</p>
+  </li>
+</ul>
+<h3>Africa</h3>
+<ul>
+  <li>
+    <h4>South Africa</h4>
+    <p>Illegal. To manufacture, possess, consume, import, export and use.</p>
+  </li>
+</ul>
+<h3>Australasia</h3>
+<ul>
+  <li>
+    <h4>New Zealand</h4>
+    <p>
+      <a href="https://www.drugfoundation.org.nz/lsd/law-and-penalities ">Illegal</a>
+      to manufacture, sale and use. Class A drug.
+    </p>
+  </li>
+  <li>
+    <h4>Australia</h4>
+    <p>Illegal  To manufacture, possess, use and supply</p>
+  </li>
+</ul>
+{% endblock %}
+
+{% block more-info-content %}
+<h3>FAQs (Frequently Asked Questions)</h3>
+<ol>
+  <li>
+    <h4>‘Trippers’ peel off their skin or whoever they are with,
+      <a href="http://uk.complex.com/life/2016/05/acid-turn-people-into-orange-juice-urban-legend">
+        thinking they are oranges.
+      </a></h4>
+    <p>
+      Fear and paranoid delusions lead in very rare occasions to erratic
+      behaviour and potential aggression against self and others Ref Neptune
+    </p>
+    <p>
+      More orange juice and LSD myths
+      <a href="http://uk.complex.com/life/2016/05/acid-turn-people-into-orange-juice-urban-legend">here</a>.
+    </p>
+  </li>
+  <li>
+    <h4>If you try LSD once you´ll experience
+      <a href="http://io9.gizmodo.com/5951972/could-you-actually-have-an-lsd-flashback-decades-taking-the-drug">
+        flashbacks for the rest of your life
+      </a></h4>
+    <p>
+      <strong>Simply not true</strong>. As we mentioned in this section,
+      scientists still don´t agree with what HPPD and flashbacks are, but some
+      studies suggest that the chances of developing these symptoms is around
+      4% of users.
+    </p>
+  </li>
+  <li>
+    <h4>You´ll end mad after trying it.</h4>
+    <p><a href="http://www.nature.com/news/no-link-found-between-psychedelics-and-psychosis-1.16968">Too much evidence to refute</a>
+       this myth…. It is actually one of the safest drugs.
+       <ul>
+         <li>
+           <p><a href="https://mic.com/articles/118716/5-harmful-myths-we-need-to-stop-telling-about-lsd#.8WjAKH0w0">
+            5 Harmful Myths We Need to Stop Telling About LSD
+           </a></p>
+         </li>
+         <li>
+           <p><a href="http://www.seeker.com/is-lsd-really-that-dangerous-1792644634.html">
+            Is LSD Really That Dangerous?
+           </a></p>
+         </li>
+       </ul>
+    </p>
+  </li>
+</ol>
+
+<h3>Useful links</h3>
+<h4>How to LSD</h4>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1g0KThAbkjU"></iframe>
+</div>
+<h4 id="#LSD-set-and-setting">Set and setting</h4>
+<ul>
+  <li>
+    <p><a href="https://www.erowid.org/psychoactives/writings/stolaroff_using.shtml">Using psychedelics wisely</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.ami-bonnymethod.org/">Bonny Method of Guided Imagery and Music and its adaptations</a></p>
+  </li>
+  <li>
+    <p><a href="http://motherboard.vice.com/read/how-to-pick-music-for-people-on-lsd-from-a-scientist-whose-job-that-is">How to Pick Music for People on LSD, From a Scientist Whose Job That Is</a></p>
+  </li>
+</ul>
+<h4>Neuroscience</h4>
+<ul>
+  <li>
+    <p>(VIDEO) <a href="https://www.youtube.com/watch?v=AmuuS4gxOVc">How do psychedelics work? Meet the serotonin 2A receptor</a></p>
+  </li>
+  <li>
+    <p><a href="http://bigthink.com/philip-perry/hallucinogens-a-way-to-soothe-mental-illness-and-even-get-ahead">Hallucinogens a way to soothe mental illness</a></p>
+  </li>
+  <li>
+    <p>(VIDEO) <a href="https://www.youtube.com/watch?v=MZIaTaNR3gk">Psychedelics: Lifting the veil</li>
+</ul>
+
+<h4>Clinical stuff</h4>
+<p>
+  <a href="http://neptune-clinical-guidance.co.uk/">NEPTUNE</a>
+</p>
+
+<h4>Microdosing</h4>
+<ul>
+  <li>
+    <p><a href="http://www.telegraph.co.uk/news/newstopics/howaboutthat/12019140/Silicon-Valley-professionals-are-taking-LSD-at-work-to-increase-productivity.html">http://www.telegraph.co.uk/news/newstopics/howaboutthat/12019140/Silicon-Valley-professionals-are-taking-LSD-at-work-to-increase-productivity.html</a></p>
+  </li>
+  <li>
+    <p>(SPANISH) <a href="https://elestadomental.com/diario/bienvenidos-la-segunda-revolucion-psicodelica">https://elestadomental.com/diario/bienvenidos-la-segunda-revolucion-psicodelica</a></p>
+  </li>
+</ul>
+
+<h4>Other harm reduction initiatives</h4>
+<ul>
+  <li>
+    <p><a href=" http://www.zendoproject.org/education/">Zendo project</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.maps.org/">MAPS</a></p>
+  </li>
+  <li>
+    <p><a href="http://psychsitter.com/">The manual of psychedelic support. A practical guide to establishing and facilitating care services at music festivals and Other events</a></p>
+  </li>
+  <li>
+    <p><a href="http://www.kosmicareuk.org/">Kosmicare UK</a></p>
+  </li>
+</ul>
+
+<h3>References</h3>
+<ul>
+  <li><span>Kaelen, M., Barrett, F. S., Roseman, L., Lorenz, R., Family, N., Bolstridge, M., ... & Carhart-Harris, R. L. (2015). LSD enhances the emotional response to music. Psychopharmacology, 232(19), 3607-3614.</span></li>
+<li><span>Kaelen, M., Roseman, L., Kahan, J., Santos-Ribeiro, A., Orban, C., Lorenz, R., ... & Wall, M. B. (2016). LSD modulates music-induced imagery via changes in parahippocampal connectivity. European Neuropsychopharmacology.</span></li>
+<li><span>Speth, J., Speth, C., Kaelen, M., Schloerscheidt, A. M., Feilding, A., Nutt, D. J., & Carhart-Harris, R. L. (2016). Decreased mental time travel to the past correlates with default-mode network disintegration under lysergic acid diethylamide. Journal of Psychopharmacology, 30(4), 344-353.</span></li>
+<li><span>Terhune, D. B., Luke, D. P., Kaelen, M., Bolstridge, M., Feilding, A., Nutt, D., ... & Ward, J. (2016). A placebo-controlled investigation of synaesthesia-like experiences under LSD. Neuropsychologia.</span></li>
+<li><span>Lebedev, A. V., Kaelen, M., Lövdén, M., Nilsson, J., Feilding, A., Nutt, D. J., & Carhart‐Harris, R. L. (2016). LSD‐induced entropic brain activity predicts subsequent personality change. Human brain mapping.</span></li>
+<li><span>Tagliazucchi, E., Roseman, L., Kaelen, M., Orban, C., Muthukumaraswamy, S. D., Murphy, K., ... & Bullmore, E. (2016). Increased global functional connectivity correlates with LSD-Induced ego dissolution. Current Biology,26(8), 1043-1050.</span></li>
+<li><span>Carhart-Harris, R. L., Muthukumaraswamy, S., Roseman, L., Kaelen, M., Droog, W., Murphy, K., ... & Leech, R. (2016). Neural correlates of the LSD experience revealed by multimodal neuroimaging. Proceedings of the National Academy of Sciences, 113(17), 4853-4858.</span></li>
+<li><span>Carhart-Harris, R. L., Kaelen, M., Bolstridge, M., Williams, T. M., Williams, L. T., Underwood, R., ... & Nutt, D. J. (2016). The paradoxical psychological effects of lysergic acid diethylamide (LSD). Psychological medicine, 46(07), 1379-1390.</span></li>
+<li><span>Roseman, L., Sereno, M. I., Leech, R., Kaelen, M., Orban, C., McGonigle, J., ... & Carhart‐Harris, R. L. (2016). LSD alters eyes‐closed functional connectivity within the early visual cortex in a retinotopic fashion. Human brain mapping.</span></li>
+<li><span>Leary, T., Metzner, R., & Dass, R. (1966). The psychedelic experience. Smithsonian Folkways Recordings.</span></li>
+<li><span>Network, N. P. T. U. Guidance on the clinical management of acute and chronic harms of club drugs and novel psychoactive substances. 2015 http://neptune-clinical-guidance. co. uk/wp-content/uploads/2015/03.NEPTUNE-Guidance-March-2015. Pdf.</span></li>
+<li><span>Murray, R. M., Paparelli, A., Morrison, P. D., Marconi, A., & Di Forti, M. (2013). What can we learn about schizophrenia from studying the human model, drug‐induced psychosis?. American Journal of Medical Genetics Part B: Neuropsychiatric Genetics, 162(7), 661-670.</span></li>
+<li><span>Family, N., Vinson, D., Vigliocco, G., Kaelen, M., Bolstridge, M., Nutt, D. J., & Carhart-Harris, R. L. (2016). Semantic activation in LSD: evidence from picture naming. Language, Cognition and Neuroscience, 1-8.</span></li>
+<li><span>Halberstadt, A. L. (2015). Recent advances in the neuropsychopharmacology of serotonergic hallucinogens. Behavioural brain research, 277, 99-120.</span></li>
+<li><span>Nichols, D. E. (2016). Psychedelics.Pharmacological reviews, 68(2), 264-355.</span></li>
+<li><span>Johnson, M. W., Garcia-Romeu, A., Cosimano, M. P., & Griffiths, R. R. (2014). Pilot study of the 5-HT2AR agonist psilocybin in the treatment of tobacco addiction. Journal of Psychopharmacology, 0269881114548296</span></li>
+<li><span>Garcia-Romeu, A., R Griffiths, R., & W Johnson, M. (2014). Psilocybin-occasioned mystical experiences in the treatment of tobacco addiction. Current drug abuse reviews, 7(3), 157-164.</span></li>
+<li><span>Krebs, T. S., & Johansen, P. Ø. (2013). Psychedelics and mental health: a population study.PloS one, 8(8), e63972.</span></li>
+<li><span>Hendricks, P. S., Thorne, C. B., Clark, C. B., Coombs, D. W., & Johnson, M. W. (2015). Classic psychedelic use is associated with reduced psychological distress and suicidality in the United States adult population. Journal of Psychopharmacology, 29(3), 280-288.</span></li>
+<li><span>Johansen, P. Ø., & Krebs, T. S. (2015). Psychedelics not linked to mental health problems or suicidal behavior: A population study. Journal of Psychopharmacology, 0269881114568039.</span></li>
+</ul>
+{% endblock %}

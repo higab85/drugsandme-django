@@ -43,12 +43,20 @@
           {% block intro-content-3 %} {% endblock %}
         </div>
       </div>
+      <p>
+        Please read <a href="/me">ME</a> for more general information about
+        recreational drugs.
+      </p>
     </div>
     <div id="effects">
       <h2 class="section-title"> Effects</h2>
 
       {% block effects-content %} {% endblock %}
-      <h4>The effects entail (from <span style="color: #26E224">positive</span> to <span style="color: #E50000">negative</span>):</h4>
+      <h4>
+        The effects entail (from <span style="color: #26E224">positive</span>
+        to <span style="color: #E50000">negative</span>):
+        <small>*Much more common among first-time users</small>
+      </h4>
       <ul class="effects" id="effects-positive">
         {% block effects-list-positive %} {% endblock %}
       </ul>
@@ -93,6 +101,7 @@
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>DXM</h5><div class="hidden">{% block combo-DXM %}{% endblock %}</div></a>
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Ketamine</h5><div class="hidden">{% block combo-Ketamine %}{% endblock %}</div></a>
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>LSD</h5><div class="hidden">{% block combo-LSD %}{% endblock %}</div></a>
+          <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>MDMA</h5><div class="hidden">{% block combo-MDMA %}{% endblock %}</div></a>
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>MAOIs</h5><div class="hidden">{% block combo-MAOIs %}{% endblock %}</div></a>
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Mushrooms</h5><div class="hidden">{% block combo-Mushrooms %}{% endblock %}</div></a>
           <a href="javascript:;" class="drug-to-combine boxed combo-not-active"><h5>Nitrous</h5><div class="hidden">{% block combo-nos %}{% endblock %}</div></a>
@@ -101,6 +110,10 @@
 
 
         </div>
+        <p>
+          Source: <a href="http://wiki.tripsit.me/images/3/3a/Combo_2.png">tripsit.me</a>
+        </p>
+        {% block interactions-second-content %} {% endblock %}
       </div>
     </div>
     <div id="harm-reduction">
@@ -139,6 +152,7 @@
         </div>
 
       </div>
+      {% block harm-reduction-second-content %} {% endblock %}
     </div>
 
     <div id="risks">
