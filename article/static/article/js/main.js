@@ -74,13 +74,13 @@ $(document).ready(function(){
           $displacedMarginLeft = "57.9vw";
           $displacedMarginTop = "1.5vw";
         }
-      $("#title-me-collapse").stop().removeClass("hidden");
-      $("#title-me-collapse").stop().animate({
-        opacity: 1
-      }, $animationSpeed);
+      // $("#title-me-collapse").stop().removeClass("hidden");
+      // $("#title-me-collapse").stop().animate({
+      //   opacity: 1
+      // }, $animationSpeed);
       $('#title-me-button').stop().animate({
         marginTop: $displacedMarginTop,
-        marginLeft: $displacedMarginLeft
+        marginLeft: $displacedMarginLeft,
       }, $animationSpeed);
       return false;
     },function(){
@@ -90,15 +90,15 @@ $(document).ready(function(){
           $originalMarginLeft = "56.5vw";
           $originalMarginTop = "0vw";
         }
-      $("#title-me-collapse").stop().animate({
-        opacity: 0
-      }, $animationSpeed, function(){
-        $("#title-me-collapse").stop().addClass("hidden");
-        return false;
-    });
+      // $("#title-me-collapse").stop().animate({
+      //   opacity: 0
+      // }, $animationSpeed, function(){
+      //   $("#title-me-collapse").stop().addClass("hidden");
+      //   return false;
+      // });
       $('#title-me-button').stop().animate({
         marginTop: $originalMarginTop,
-        marginLeft: $originalMarginLeft
+        marginLeft: $originalMarginLeft,
       }, $animationSpeed, function(){
         $('#title-me-button').stop().removeAttr('style');
       });

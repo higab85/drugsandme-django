@@ -28,3 +28,19 @@ def about(request):
 def ketamine(request):
     # context = {}
     return render(request, 'article/ketamine.html')
+
+def cocaine(request):
+    # context = {}
+    return render(request, 'article/cocaine.html')
+
+def cannabis(request):
+    # context = {}
+    return render(request, 'article/cannabis.html')
+
+def donate(request):
+    # context = {}
+    return render(request, 'article/donate.html')
+
+def disclaimer(request):
+    # context = {}
+    return render(request, 'article/disclaimer.html')

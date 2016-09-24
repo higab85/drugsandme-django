@@ -1,0 +1,101 @@
+{% extends 'article/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - Disclaimer
+{% endblock %}
+
+
+{% block header %}
+<style>
+  .theme-bg{
+    background-color:#F6D85B !important;
+  }
+  .theme-color{
+    color: #F6D85B !important;
+  }
+  .theme-light-bg{
+    background-color: #F6D85B !important;
+  }
+  .theme-light-color{
+    color:#F6D85B !important;
+  }
+</style>
+
+{% endblock %}
+
+
+{% block cover %}
+<div id="cover" class="col-xs-12 col-md-9" style="background-color: #F6D85B">
+  <div id="cover-text">
+    <h1>Disclaimer</h1>
+  </div>
+</div>
+{% endblock %}
+
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-md-10" role="main">
+    <div class="content">
+      <h2>
+        Drugsand.me Disclaimer (Adapted from Erowid.org Disclaimer with Thanks)
+      </h2>
+      <h4>YOU MUST TAKE RESPONSIBILITY FOR YOUR OWN ACTIONS.</h4>
+      <p>
+        It is your responsibility to evaluate the accuracy, completeness or usefulness
+        of any information, opinion, advice, statement, or other content available
+        through the Drugsand.me site. Though we do our best to provide accurate
+        information, the user of the domain agrees to assume all risk as to the quality
+        and/or accuracy of the information supplied. All material is provided "as is"
+        without warranty of any kind and should be double-checked and verified through
+        other sources. Please seek the advice of professionals (lawyers, physicians,
+        psychiatrists, chemists etc.) as appropriate, regarding the evaluation of any
+        specific piece of information.
+      </p>
+      <p>
+        In no event will Drugsand.me or any person or entity involved in creating,
+        producing, or distributing information through Drugsand.me be liable for any
+        direct, indirect, incidental, punitive, special or consequential damages
+        arising out of the use of or inability to use Drugsand.me. You agree to
+        indemnify and hold harmless Drugsand.me, its domain maintainers, server
+        administrators, directors, officers, agents, employees, and contributors
+        from and against all liability, claims, damages, costs and expenses,
+        including legal fees, that arise directly or indirectly from the use
+        of any part of the Drugsand.me.
+      </p>
+      <p>
+        Neither the domain maintainers nor any contributors can be held liable
+        in any way for any information made available, or omitted from
+        information distributed through this server. There is no warranty that
+        Drugsand.me will remain uninterrupted or error free, and we cannot be
+        held liable for any failure of performance, error, omission,
+        interruption, deletion, defect, or delay in operation or transmission.
+      </p>
+      <p>
+        Some of the articles contained herein describe illegal activities,
+        which may not be clearly identified as being illegal. It is the
+        responsibility of the individual reader to verify the legality of any
+        actions described in these files. It is not recommended that any of the
+        activities described actually be carried out. These files are provided
+        FOR EDUCATION and INFORMATION ONLY.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-2" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <div class="bigger-sidebar-boxes boxed about-us">
+        <h3 class=""><a href="/about">About us</a></h3>
+      </div>
+      <div class="bigger-sidebar-boxes boxed donate">
+        <h3 class=""><a href="/donate">Donate</a></h3>
+      </div>
+    </nav>
+  </div>
+</div>
+
+{% endblock %}

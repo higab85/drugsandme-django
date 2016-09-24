@@ -1,0 +1,72 @@
+{% extends 'article/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - About us
+{% endblock %}
+
+
+{% block header %}
+<style>
+  .theme-bg{
+    background-color:#F6D85B !important;
+  }
+  .theme-color{
+    color: #F6D85B !important;
+  }
+  .theme-light-bg{
+    background-color: #F6D85B !important;
+  }
+  .theme-light-color{
+    color:#F6D85B !important;
+  }
+</style>
+
+{% endblock %}
+
+
+{% block cover %}
+<div id="cover" class="col-xs-12 col-md-9" style="background-color: #F6D85B">
+
+  <img src="{% static 'article/images/other-pages/donate-illustration.png' %}" style="height:300px;" alt="donate">
+  <div id="cover-text">
+    <h1>Donate</h1>
+  </div>
+</div>
+{% endblock %}
+
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+
+  <div class="col-md-10" role="main">
+    <div class="content">
+      <p>
+        <strong>drugsand.me</strong> is a not-for-profit service, run by
+        students who are passionate about harm reduction advocacy. We rely on
+        your donations and support to improve the sitre and reach more people.
+        If you support our work, please donate. We’d love to talk to you if you
+        would like to learn more about the project and get involved in any way.
+        Thank you.
+      </p>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="ECCYVGYUZK8K2">
+        <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+  </div>
+  <div class="col-md-2" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <div class="bigger-sidebar-boxes boxed about-us">
+        <h3 class=""><a href="/about">About us</a></h3>
+      </div>
+    </nav>
+  </div>
+</div>
+
+{% endblock %}

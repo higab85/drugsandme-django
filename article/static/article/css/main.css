@@ -12,11 +12,16 @@ a:hover {
 p a,
 p a:hover,
 span a,
-span a:hover
+span a:hover,
+blockquote a,
+blockquote a:hover
 {
   color: #6B7A88;
 }
-p>a:hover{
+p>a:hover,
+span>a:hover,
+blockquote a:hover
+{
   font-weight: bold;
 }
 /* Custom default button */
@@ -287,6 +292,7 @@ h3 .small{
     width: 24.5vw;
   }
 
+
   .title-button{
     height: 17vw;
     border: 0.7vw solid black;
@@ -371,6 +377,21 @@ h3 .small{
   }
   #site-index .cover-container{
     height: 80vw;
+  }
+  .side-note{
+    color: #687A89;
+    border-width: 0 0 0 4px;
+    border-color: #687A89;
+    border-style: solid;
+    padding: 0 0 0 4px !important;
+    margin-left: 10px;
+  }
+  .side-note a{
+    color: #000000;
+    font-weight: bold;
+  }
+  .side-note p{
+    margin: 0;
   }
  }
 
@@ -532,7 +553,7 @@ h3 .small{
     border-width: 0 0 0 4px;
     border-color: #687A89;
     border-style: solid;
-    padding: 0 0 0 4px;
+    padding: 0 0 0 4px !important;
   }
   .side-note a{
     color: #000000;
@@ -553,6 +574,13 @@ h3 .small{
     padding-right: 11vw;
     padding-left: 10vw;
   }
+    /*#me-content > div {
+      padding: 0;
+    }
+  #me-content > div > * {
+    padding-left: 10vw;
+    padding-right: 11vw;
+  }*/
   #interactions-interactive {
       width: 57vw;
   }
@@ -813,7 +841,7 @@ input:focus {
 
 .alcohol{
   color: #000;
-  background-color: #7CCAD0;
+  background-color: #00D7E8;
   transition: 0.1s ease-in-out;
 }
 
@@ -854,6 +882,29 @@ input:focus {
   color: #fff;
   background-color: #36434C;
 }
+
+.ketamine{
+  color: #000;
+  background-color: #BDC3C7;
+  transition: 0.1s ease-in-out;
+}
+
+.ketamine:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+
+.lsd{
+  color: #000;
+  background-color: #F4CF6A;
+  transition: 0.1s ease-in-out;
+}
+
+.lsd:hover{
+  color: #fff;
+  background-color: #36434C;
+}
+
 
 /*--- end page linking styles ---------------------------------------*/
 
@@ -972,6 +1023,9 @@ h2.title{
 .donate{
   background-color: #F6DA5C;
 }
+.donate h4{
+  color: #000000;
+}
 
 .thing-to-take{
   width: 200px;
@@ -1048,7 +1102,7 @@ ul.no-decorate-list>li{
 }
 #interactions-combo-result p{
   font-size: 14px;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
 
 }
 #interactions-table{
@@ -1166,6 +1220,53 @@ ul.no-decorate-list>li{
 .partners-logos a{
   margin: 0 20px;
 }
+
+
+/*-- Other stlyes --------------------------*/
+
+blockquote{
+  border-left: 5px solid #ddd !important;
+}
+.bigger-sidebar-boxes{
+  width: 200px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.bigger-sidebar-boxes a{
+  vertical-align: super;
+  color: #000000;
+}
+#title-me-button{
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-transition: background-color ease 1s;
+  -moz-transition: background-color ease 1s;
+  -o-transition: background-color ease 1s;
+  transition: background-color ease 1s;
+}
+
+#title-me-button:hover{
+  background-color: #36434C !important;
+  -webkit-transition: background-color ease 1s;
+  -moz-transition: background-color ease 1s;
+  -o-transition: background-color ease 1s;
+  transition: background-color ease 1s;
+}
+#title-me-button:hover a{
+  color: #ffffff !important;
+  -webkit-transition: color ease 1s;
+  -moz-transition: color ease 1s;
+  -o-transition: color ease 1s;
+  transition: color ease 1s;
+}
+#title-me-button a{
+  color: #000000 !important;
+  -webkit-transition: color ease 1s;
+  -moz-transition: color ease 1s;
+  -o-transition: color ease 1s;
+  transition: color ease 1s;
+}
+
 
 /*-- Mobile styles ----------------------------------------------------------*/
 

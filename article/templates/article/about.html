@@ -2,14 +2,23 @@
 {% load staticfiles %}
 
 {% block title %}
-  Drugs and Me - Me
+  Drugs and Me - About us
 {% endblock %}
 
 
 {% block header %}
 <style>
   .theme-bg{
-    background-color:#50f !important;
+    background-color:#EF6767 !important;
+  }
+  .theme-color{
+    color: #EF6767 !important;
+  }
+  .theme-light-bg{
+    background-color: #EF6767 !important;
+  }
+  .theme-light-color{
+    color:#EF6767 !important;
   }
 </style>
 
@@ -17,12 +26,11 @@
 
 
 {% block cover %}
-<div id="cover" class="col-xs-12 col-md-9" style="background-color: #50f">
+<div id="cover" class="col-xs-12 col-md-9" style="background-color: #EF6767">
 
-  <!-- <img src="{% static 'article/images/mdma/mdma-illustration.png' %}" alt="mdma"> -->
+  <img src="{% static 'article/images/other-pages/about-illustration.png' %}" style="height:300px;" alt="mdma">
   <div id="cover-text">
-    <h2>Drugs and</h2>
-    <h1>me</h1>
+    <h1>About us</h1>
   </div>
 </div>
 {% endblock %}
@@ -33,182 +41,104 @@
 
 {% block content %}
 <div class="row">
-
   <div class="col-md-10" role="main" id="me-content">
-
     <div class='' id="intro">
-      <h2>YOU take the drugs</h2>
-      <h3>So find out how to make sure they don’t get the better of you.</h3>
-        <p>
-          In this section we introduce you to concepts like drug tolerance and
-          cover general information about drugs and how they can affect you like
-          why you should never re-dose, ways to avoid getting bad drugs and
-          substance abuse. We really encourage you to read on and provide you
-          with links and references to make up your own mind on the issue. Feel
-          free to get in touch with us if you have any top tips to
-          share/important information you think should really be present on this
-          page. Stay safe.
-        </p>
-    </div>
-
-    <div id="essentials">
-      <div class="fancy-title">
-        <h2>Essentials</h2>
-        <h3>The starter pack</h3>
-        <p>
-          A set of our top tips that we’ve extracted from all the following
-          sections for those in a bit of a rush.
-        </p>
-        <p>
-          All the important stuff without any of the fluff! This makes for a
-          handy list to help keep you and your friends safe. Remember, harm
-          reduction is also about those around you! Do come back later to read
-          the more in-depth sections and try some of the further reading on
-          topics that interest you; it’s the best way to reinforce the
-          information in your brain!
-        </p>
-        <h1>MISSING INFORMATION</h1>
-      </div>
       <p>
+        Drugsand.me is an educational website that teaches about the existing
+        harm reduction methods for drug users. We do not promote drug use, but
+        we do encourage to be safe if you are thinking of taking any kind of
+        drug. This website was inspired by the thousands of deaths that occur
+        in the UK due lack of correct drug education. Existing websites provide
+        excellent information on drugs, but have a falsely optimistic approach
+        thinking that the people reading those sites will become discouraged
+        after reading about the effects or potential health risks. This is not
+        the reality.
       </p>
-
-      <div id="getting-them">
-        <div class="fancy-title">
-          <h2>Getting 'em</h2>
-          <h3>Don't get conned</h3>
-        </div>
+      <blockquote cite="http://">
         <p>
-          You've set your heart on a drug, here's about gettting it to ensure
-          a maximal chance of getting what you asked for.
+          "People will always use drugs. They always have used drugs. We must
+          learn to live with this fact."
         </p>
-        <div>
-          <img src="http://placekitten.com/100/100" alt="">
-          <h3>Plan ahead</h3>
-          <p>
-            It’s best to get your drugs ahead of time to avoid rash decisions and
-            buying from random unknown suppliers.
-          </p>
-        </div>
-        <div>
-          <img src="http://placekitten.com/100/100" alt="">
-          <h3>Know your supplier</h3>
-          <p>
-            If you’ve never bought from them yourself, at least make sure they
-            come recommended from someone you know. The optimum scenario is buying
-            from a tried and tested supplier; be wary of new sources. It just
-            means that you’re less likely to be ripped off be it quantity or
-            quality/purity wise. This also means that you should be careful of how
-            much you take with a new supplier as outlined in the
-            <a href="#dosing">dosing section</a>.
-          </p>
-        </div>
-        <div>
-          <img src="http://placekitten.com/100/100" alt="">
-          <h3>Know the product</h3>
-          <p>
-            Get an idea of what the product looks like, talk to friends, visit our
-            page on the drug, use resources like google images so that you can
-            make a preliminary assessment of the drug upon purchase and be able to
-            know if you’re being sold tea instead of cannabis.
-          </p>
-        </div>
-        <div>
-          <img src="http://placekitten.com/100/100" alt="">
-          <h3>Know the price</h3>
-          <p>
-            Get a handle on current prices, again using peers and online
-            resources so that you know vaguely what to expect. Too much drugs for
-            too little money is just as suspicious as too little.
-          </p>
-        </div>
+        <footer>
+          <a href="http://www.drcarlhart.com/">Dr Carl Hart</a>
+        </footer>
+      </blockquote>
+      <p>
+        At Drugsand.me we aim to provide an informational hub where to find
+        information for drug users who would like to be safer. We want to
+        provide a simple website to find essential information from varied
+        sources, including scientists and the internet community. Although we
+        have done thorough research to find this information, you should not
+        count solely on this site and do your own research. As with everything,
+        you shouldn't trust the first source you bump into. We have a
+        bibliography that we encourage you to read.
+      </p>
+    </div>
+    <div id="a-word">
+      <h2 class="section-title">A word about the information in this website:</h2>
+      <p>
+        The content in this webpage is obtained, whenever information was
+        found, from scientific and evidence-based resources. However, there are
+        many gaps where a lot of research needs to be done, not because there
+        isn´t interest in the scientific literature, but because drug policies
+        limit controlled research on drugs considered as recreational ones.
+        Wherever scientific-based information was not found, as many as
+        possible resources were compared and contrasted to provide the most
+        accurate and useful piece of advice/information.
+      </p>
+      <p>
+        From drugsand.me we want to support researchers, institutes and
+        foundations that are investing time and money in scientific research
+        into psychoactive drugs, seeking for consciousness and health-oriented
+        drug policy reform.
+      </p>
+      <p>
+        Prior knowledge on drugs and other rewarding habits have been shown to
+        directly diminish the brain alluring by them, so (most probably) the
+        propensity to develop an addiction (
+        <a href="http://www.pnas.org/content/112/8/2539">Gut et al, 2015</a>,
+        <a href="http://journal.frontiersin.org/article/10.3389/fpsyg.2015.00090/abstract">
+          Kirk and Montague, 2015
+        </a>).
+      </p>
+    </div>
+    <div id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>
+        If you would like to provide feedback for the website or you think we
+        could add information from a certain source, please get in touch
+        with us by sending an email to <a href="mailto:contact@drugsand.me">contact@drugsand.me</a>
+      </p>
+      <p>
+        If you would like to stay updated about our events and new features of
+        the website please submit your email here:
+      </p>
+      <!-- Begin MailChimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+      	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+      	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+      	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+        <form action="//drugsand.us12.list-manage.com/subscribe/post?u=27eb6c7445633027c8160efd7&amp;id=63bf3101af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+          	<label for="mce-EMAIL">Subscribe to our mailing list</label>
+          	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_27eb6c7445633027c8160efd7_63bf3101af" tabindex="-1" value=""></div>
+            <div class="text-center clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+        </form>
       </div>
-
-      <div id="whats-inside">
-        <div class="fancy-title">
-          <h2>What's inside</h2>
-          <h3>Checks, checks, checks</h3>
-        </div>
-        <p>
-          Debitis veniam numquam sint voluptatem expedita est occaecati necessitatibus. Iure qui quia culpa. Eveniet quia eum natus consequatur quia accusantium. Et facere repellendus esse non maiores in natus. Temporibus nobis voluptate voluptas. Maxime vel omnis possimus expedita.
-
-      Dolores consectetur ratione et in tenetur voluptatibus ratione omnis. Aut rem debitis non. Mollitia sed nihil minima quae reprehenderit laudantium reiciendis minus. Omnis iure voluptate recusandae voluptatum cum nobis dolorem ut. Illo hic voluptas autem maxime ullam nesciunt.
-
-      Dolorum ullam autem velit. Esse facere ut ut veritatis in. Quos eos unde officiis aut et ut reiciendis. Voluptatem inventore ut odit laudantium asperiores consectetur sint. Qui id sunt quia temporibus odio.
-
-      Numquam sed sit ad architecto non laboriosam. Totam voluptatem veritatis modi possimus. Hic et sint ea.
-        </p>
-        <h3>Use testing kits</h3>
-        <p>
-          These will help you verify that what you have in hand is what you asked
-          for, its purity and the presence of cutting agents. These aren’t
-          fool-proof but it’s a start!
-        </p>
-        <p>
-          It is interesting to note that pills may be a safer option in the long
-          term, with official bodies becoming more aware of the actual dangers of
-          drugs there is better reporting of known dangers. What this means in
-          effect is that with a pill, which often has a recognisable mark upon it,
-          you can verify websites to see if the pill you have has been reported as
-          dangerous, whereas with a powder, there is no trace and it is hard to
-          get any idea of what actually is inside the baggie.
-        </p>
-        <img src="http://placekitten.com/200/300" alt="" />
-      </div>
-
-      <div id="dosing">
-        <div class="fancy-title">
-          <h2>Taking 'em</h2>
-          <h3>The last hurdle</h3>
-        </div>
-        <p>
-          You’re now baggie in hand and have done your best to make sure you’ve
-          got the right stuff; here’s some thoughts on how to take them.
-        </p>
-
-      </div>
-
-      <div id="getting-them">
-        <div class="fancy-title">
-          <h2>Buying them <small>Don't get conned</small></h2>
-        </div>
-        <p>
-        </p>
-      </div>
-      <div id="getting-them">
-        <div class="fancy-title">
-          <h2>Buying them <small>Don't get conned</small></h2>
-        </div>
-        <p>
-        </p>
-      </div>
-      <div id="getting-them">
-        <div class="fancy-title">
-          <h2>Buying them <small>Don't get conned</small></h2>
-        </div>
-        <p>
-        </p>
-      </div>
-      <div id="getting-them">
-        <div class="fancy-title">
-          <h2>Buying them <small>Don't get conned</small></h2>
-        </div>
-        <p>
-        </p>
-      </div>
+      <!--End mc_embed_signup-->
     </div>
   </div>
   <div class="col-md-2" role="complementary">
     <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
-      <ul class="nav">
-        <li><a href="#essentials">The Essentials</a></li>
-        <li><a href="#getting-them">Getting them</a></li>
-        <li><a href="#whats-inside">What's inside?</a></li>
-        <li><a href="#taking-them">Taking them</a></li>
-        <li><a href="#dosing">Dosing</a></li>
-        <li><a href="#risks">Risks</a></li>
-        <li><a href="#addiction-and-abuse">Addiction & Abuse</a></li>
-        <li><a href="#the-law">The Law</a></li>
-      </ul>
+      <div class="bigger-sidebar-boxes boxed donate">
+        <h3 class=""><a href="/donate">Donate</a></h3>
+      </donate>
     </nav>
   </div>
 </div>
