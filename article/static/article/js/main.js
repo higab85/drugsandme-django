@@ -333,6 +333,12 @@ $(document).ready(function(){
         $('#mobile-nav-collapse-search').removeClass('hidden');
       }
     })
+
+    // brain-science content expander
+    $('.brain-science>img').click(function(){
+      $(this).parent().find('.brain-science-content').toggleClass('hidden');
+      $(this).parent().find('.click-me-tip').toggleClass('hidden');
+    })
   // end navbar buttons
 //------------------ front page bottom buttons ------------------------------
 

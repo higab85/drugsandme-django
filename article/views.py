@@ -17,6 +17,14 @@ def me(request):
     # context = {}
     return render(request, 'article/me.html')
 
-def me(request):
+def lsd(request):
     # context = {}
     return render(request, 'article/lsd.html')
+
+def about(request):
+    # context = {}
+    return render(request, 'article/about.html')
+
+def ketamine(request):
+    # context = {}
+    return render(request, 'article/ketamine.html')

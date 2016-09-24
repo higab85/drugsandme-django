@@ -1022,6 +1022,12 @@ h4.funky{
 ul.no-decorate-list>li{
   list-style: none;
 }
+.brain-science>img{
+  height: 40px;
+}
+.brain-science>p{
+  padding: 10px;
+}
 /*--- Interactions --- */
 
 #interactions-combo{
