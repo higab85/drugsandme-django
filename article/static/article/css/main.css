@@ -9,6 +9,9 @@ a:hover {
   color: #fff;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
 p a,
 p a:hover,
 span a,
@@ -638,6 +641,11 @@ p{
 /*--- end all sections -----------------------------------------------*/
 /*--- navbar styles --------------------------------------------------*/
 
+#home-top-left{
+  height: 44px;
+  margin-top: -4px;
+}
+
 .nav-social-icon{
   height: 40px;
   width: 40px;
@@ -651,12 +659,6 @@ p{
 
 .force-display{
 	display: inline-block;
-}
-
-#search{
-	/*position: relative;*/
-  /*z-index: 5;
-  height: 50px;*/
 }
 
 #searchText{
@@ -752,7 +754,7 @@ input:focus {
 #search>div{
     display: inline-block;
     vertical-align: middle;
-    background: #fff;
+    /*background: #fff;*/
     padding: 3px;
 }
 
@@ -995,6 +997,10 @@ h2.title{
 
 .tab-content{
   border: 4px solid black;
+}
+.tab-pane p{
+  margin-bottom: 0;
+  min-height: 100px;
 }
 .tab-content h4{
   color: #fff;

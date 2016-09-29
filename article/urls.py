@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^about/$', views.about, name='about'),
     url(r'^donate/$', views.donate, name='donate'),
     url(r'^disclaimer/$', views.disclaimer, name='disclaimer'),
+
 ]

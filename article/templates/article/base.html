@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="description" content="    Drugsand.me is an educational website that teaches about the existing harm reduction methods for drug users. We do not promote drug use, but we do encourage to be safe if you are thinking of taking any kind of drug. This website was inspired by the thousands of deaths that occur in the UK due to lack of correct drug education.">
+    <meta name="keywords" content="Drugs and me, Drugs, drugsandme, harm reduction, Cannabis, Cocaine, MDMA, drug">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
@@ -11,9 +14,29 @@
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
     <title>{% block title %} {% endblock %}</title>
+    {% load staticfiles %}
+    <!--  START Favicons  -->
+
+   <link rel="apple-touch-icon" sizes="57x57" href="{% static 'article/images/favicons/apple-icon-57x57.png' %}">
+   <link rel="apple-touch-icon" sizes="60x60" href="{% static 'article/images/favicons/apple-icon-60x60.png' %}">
+   <link rel="apple-touch-icon" sizes="72x72" href="{% static 'article/images/favicons/apple-icon-72x72.png' %}">
+   <link rel="apple-touch-icon" sizes="76x76" href="{% static 'article/images/favicons/apple-icon-76x76.png' %}">
+   <link rel="apple-touch-icon" sizes="114x114" href="{% static 'article/images/favicons/apple-icon-114x114.png' %}">
+   <link rel="apple-touch-icon" sizes="120x120" href="{% static 'article/images/favicons/apple-icon-120x120.png' %}">
+   <link rel="apple-touch-icon" sizes="144x144" href="{% static 'article/images/favicons/apple-icon-144x144.png' %}">
+   <link rel="apple-touch-icon" sizes="152x152" href="{% static 'article/images/favicons/apple-icon-152x152.png' %}">
+   <link rel="apple-touch-icon" sizes="180x180" href="{% static 'article/images/favicons/apple-icon-180x180.png' %}">
+   <link rel="icon" type="image/png" sizes="32x32" href="{% static 'article/images/favicons/favicon-32x32.png' %}">
+   <link rel="shortcut icon" href="{% static 'article/images/favicons/favicon.ico' %}" type="image/x-icon">
+
+   <link rel="manifest" href="{% static 'article/images/favicons/manifest.json' %}">
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="{% static 'article/images/favicons/ms-icon-144x144.png' %}">
+   <meta name="theme-color" content="#ffffff">
+   <!--  END Favicons  -->
+
 
     <!-- Custom styles for this template -->
-    {% load staticfiles %}
     <link rel="stylesheet" href="{% static 'article/css/bootstrap.min.css'%}">
     <!-- <script src="{% static 'article/js/libraries/jquery.min.js' %}"> </script> -->
     <script src="{% static 'article/js/libraries/jquery.min.js' %}" charset="utf-8"></script>
@@ -26,6 +49,25 @@
         src: url({% static 'article/fonts/BebasNeue.otf' %});
       }
     </style>
+
+    <!--  Cookies Warning  -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/cookie-bar/1/cookiebar-latest.min.js?thirdparty=1&amp;always=1&amp;showNoConsent=1"></script>
+
+    <!-- Google analytics-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-73235857-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <link href="http://cdn.jsdelivr.net/cookie-bar/1/cookiebar.min.css" rel="stylesheet">
+
+      <!--  JS Libraries -->
+     <script src="//www.google-analytics.com/analytics.js" async=""></script>
+
     {% block header %} {% endblock %}
   </head>
 
@@ -39,6 +81,9 @@
             <div class="inner hidden-xs">
               <nav>
                 <ul class="nav">
+                  <li class="nav-left">
+                    <a href="/"><img id="home-top-left" src="{% static '/article/images/dnme-top-left.png' %}" alt="" /></a>
+                  </li>
                   <li class="nav-right" id="search">
                     <div id="social-search">
                       <a class="" href="https://facebook.com/"><div class="nav-social-icon boxed"><img class="img-responsive" src="{% static 'article/images/icons/social-icon-facebook.png' %}" alt="facebook"></div></a>

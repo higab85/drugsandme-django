@@ -44,3 +44,6 @@ def donate(request):
 def disclaimer(request):
     # context = {}
     return render(request, 'article/disclaimer.html')
+
+def custom_404(request):
+    return render(request, 'article/404.html')

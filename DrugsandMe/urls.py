@@ -24,3 +24,5 @@ urlpatterns = [
     url(r'^', include('article.urls')),
 
 ]
+
+handler404 = 'article.views.custom_404'

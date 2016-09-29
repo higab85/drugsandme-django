@@ -7,28 +7,27 @@
 
 
 {% block header %}
-<style>
-  .theme-bg{
-    background-color:#50f !important;
-  }
-</style>
-
 {% endblock %}
 
 
 {% block cover %}
-<div id="cover" class="col-xs-12 col-md-9" style="background-color: #50f">
+<div id="cover" class="col-xs-12 col-md-9">
 
   <!-- <img src="{% static 'article/images/mdma/mdma-illustration.png' %}" alt="mdma"> -->
   <div id="cover-text">
     <h2>Drugs and</h2>
-    <h1>me</h1>
+    <h1 style="
+    color: white;
+    font-size: 155px;
+    margin-top: -40px;
+    margin-left: -10px;
+    ">me</h1>
   </div>
 </div>
 {% endblock %}
 
 {% block cover_background %}
-  <div class="theme-bg">
+  <div style="background-image: url({% static '/article/images/other-pages/me/me-illustration.png' %}); background-repeat: repeat-y;">
 {% endblock %}
 
 {% block content %}
