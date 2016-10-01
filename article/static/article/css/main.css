@@ -95,9 +95,9 @@ body {
   /*position: absolute;*/
 }
 #cover img{
-  top: -250px;
+  top: -210px;
   position: absolute;
-  left: 0;
+  left: 300px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -1039,7 +1039,7 @@ h2.title{
   width: 200px;
   height: 200px;
   display: inline-block;
-  margin: 10px;
+  margin: 20px 10px 20px 10px;
   position: relative;
   vertical-align: middle;
 }
@@ -1103,10 +1103,11 @@ ul.no-decorate-list>li{
 }
 
 #interactions-combo-result{
-  text-align: left;
-  height: 250px;
+  text-align: center;
+  height: 262px;
   width: 267px;
-  margin: 0 auto;
+  margin: 0px 0px 5px 0px;
+  padding: 5px 5px 5px 5px;
 }
 #interactions-combo-result p{
   font-size: 14px;
@@ -1119,30 +1120,30 @@ ul.no-decorate-list>li{
 }
 .drug-to-combine{
   display: inline-block;
-  width: 120px;
-  margin: 5px;
+  width: 110px;
+  margin: 5px 1px 1px 1px;
 }
 .drug-to-combine h5{
   color: black;
   text-align: center;
 }
 .drug-to-combine.interaction-dangerous{
-  background-color: #E70000;
+  background-color: #F37A70;
 }
 .drug-to-combine.interaction-unsafe{
-  background-color: #E78100;
+  background-color: #F3B15D;
 }
 .drug-to-combine.interaction-caution{
-  background-color: #D5CD01;
+  background-color: #FBF67C;
 }
 .drug-to-combine.interaction-lowriskd{
-  background-color: #0068B7;
+  background-color: #8accd5;
 }
 .drug-to-combine.interaction-lowriskns{
-  background-color: #00BC4C;
+  background-color: #9BEA8B;
 }
 .drug-to-combine.interaction-lowrisks{
-  background-color: #00501F;
+  background-color: #5BCF88;
 }
 .combo-not-active{
   background-color: #fff !important;
@@ -1156,7 +1157,7 @@ ul.no-decorate-list>li{
 #harm-reduction-stage-descriptions{
   height: 350px;
   overflow-y: hidden;
-  padding: 20px 10px;
+  padding: 20px;
 }
 .harm-reduction-stage-description{
   margin-bottom: 60px;
@@ -1164,6 +1165,7 @@ ul.no-decorate-list>li{
 #harm-reduction-timeline{
   display: inline-block;
   width: 100%;
+  margin-top: 20px;
 }
 
 .read-more{

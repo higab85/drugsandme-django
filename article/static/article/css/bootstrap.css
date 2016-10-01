@@ -1124,6 +1124,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 10px 0px 10px 0px;
 }
 .img-rounded {
   border-radius: 6px;
@@ -1304,6 +1305,9 @@ p {
 small,
 .small {
   font-size: 85%;
+  font-style: italic;
+  color: #9f9f9f;
+
 }
 mark,
 .mark {
