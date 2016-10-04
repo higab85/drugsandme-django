@@ -384,11 +384,13 @@ h3 .small{
   }
   .side-note{
     color: #687A89;
-    border-width: 0 0 0 4px;
+    border-width: 0 0 0 3px;
     border-color: #687A89;
     border-style: solid;
-    padding: 0 0 0 4px !important;
-    margin-left: 10px;
+    padding: 0 0 0 10px !important;
+    margin: 10px 20px 10px 10px;
+    font-weight: 300;
+    letter-spacing: .1px;
   }
   .side-note a{
     color: #000000;
@@ -1051,7 +1053,12 @@ h2.title{
 
 .funky{
   padding: 2px 20px;
+  letter-spacing: .5px;
   font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.funky:hover{
+  text-decoration: underline;
 }
 
 h2.funky{
@@ -1085,7 +1092,11 @@ ul.no-decorate-list>li{
   list-style: none;
 }
 .brain-science>img{
-  height: 40px;
+  height: 70px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 0px #6B7A88;
 }
 .brain-science>p{
   padding: 10px;
