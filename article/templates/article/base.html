@@ -15,6 +15,8 @@
 
     <title>{% block title %} {% endblock %}</title>
     {% load staticfiles %}
+
+    <meta property="og:image" content="http://drugsand.me/static/article/images/dnme-top-left.png" />
     <!--  START Favicons  -->
 
    <link rel="apple-touch-icon" sizes="57x57" href="{% static 'article/images/favicons/apple-icon-57x57.png' %}">
@@ -193,7 +195,7 @@
             <div class="visible-xs">
               <ul class="nav visible-xs">
                 <li class="pull-left">
-                  <a href="/"><img id="mobile-nav-brain" src="{% static 'article/images/dnme-top-left.png' %}" alt="Drugs and Me" /> </a>
+                  <a href="/"><img id="mobile-nav-brain" src="{% static 'article/images/drug/brain.png' %}" alt="Drugs and Me" /> </a>
                 </li>
                 <li id="mobile-nav-buttons-right" class="pull-right">
                   <div class="mobile-nav-button">
@@ -307,12 +309,12 @@
                   <ul>
                     <li><a href="/">Home</a></li>
                     <li id="mobile-nav-collapse-menu-drugs-collapse" class="mobile-nav-collapse-menu-collapsible">
-                      <span>Drugs</span> <img src="{% static 'article/images/icons/down.png' %}" alt="" class="pull-right img-responsive">
+                      <span>Drugs</span> <img src="{% static 'article/images/icons/down.png' %}" alt="" class="pull-right">
                       <ul class="hidden">
                         <li><a href="/alcohol">Alcohol</a></li>
                         <li><a href="/cannabis">Cannabis</a></li>
                         <li><a href="/cocaine">Cocaine</a></li>
-                        <li><a href="/ketamin">Ketamin</a></li>
+                        <li><a href="/ketamine">Ketamine</a></li>
                         <li><a href="/lsd">LSD</a></li>
                         <li><a href="/mdma">MDMA</a></li>
                       </ul>

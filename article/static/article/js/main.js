@@ -25,7 +25,19 @@ jQuery.expr[':'].icontains = function(a, i, m) {
    };
 })( jQuery );
 
+
 $(document).ready(function(){
+
+  var docWidth = document.documentElement.offsetWidth;
+
+  [].forEach.call(
+    document.querySelectorAll('*'),
+    function(el) {
+      if (el.offsetWidth > docWidth) {
+        console.log(el);
+      }
+    }
+  );
 
   var $currentDrug = $('meta[name=drug-name]').attr("content");
 
@@ -339,7 +351,10 @@ $(document).ready(function(){
       $(this).parent().find('.brain-science-content').toggleClass('hidden');
       $(this).parent().find('.click-me-tip').toggleClass('hidden');
     })
-  // end navbar buttons
+    // end navbar buttons
+
+    // clickable elements' tooltips
+    $('.tooltips').tooltip();
 //------------------ front page bottom buttons ------------------------------
 
   // $('.home-button').click(function(){

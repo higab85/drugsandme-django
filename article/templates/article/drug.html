@@ -29,24 +29,24 @@
 
     <div id="intro">
       {% block intro-content %} {% endblock %}
+      <p class="side-note">
+        Please read <a href="/me">ME</a> for more general information about
+        recreational drugs.
+      </p>
       <div class="text-center">
-        <div class="thing-to-take boxed">
+        <div class="thing-to-take boxed tooltips" title="Click me!">
           <h2 class="funky theme-light-color">1</h2>
           {% block intro-content-1 %} {% endblock %}
         </div>
-        <div class="thing-to-take boxed">
+        <div class="thing-to-take boxed tooltips" title="Click me!">
           <h2 class="funky theme-light-color">2</h2>
           {% block intro-content-2 %} {% endblock %}
         </div>
-        <div class="thing-to-take boxed">
+        <div class="thing-to-take boxed tooltips" title="Click me!">
           <h2 class="funky theme-light-color">3</h2>
           {% block intro-content-3 %} {% endblock %}
         </div>
       </div>
-      <p>
-        Please read <a href="/me">ME</a> for more general information about
-        recreational drugs.
-      </p>
     </div>
     <div id="effects">
       <h2 class="section-title"> Effects</h2>
@@ -55,7 +55,6 @@
       <h4>
         The effects entail (from <span style="color: #26E224">positive</span>
         to <span style="color: #E50000">negative</span>):
-        <small>*Much more common among first-time users</small>
       </h4>
       <ul class="effects" id="effects-positive">
         {% block effects-list-positive %} {% endblock %}
@@ -66,6 +65,9 @@
       <ul class="effects" id="effects-negative">
         {% block effects-list-negative %} {% endblock %}
       </ul>
+      <p>
+        *Much more common among first-time users
+      </p>
     </div>
 
     <div id="dose-and-onset">
