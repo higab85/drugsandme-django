@@ -1316,6 +1316,15 @@ blockquote{
   transition: color ease 1s;
 }
 
+.click-me-tip{
+  font-style: italic;
+}
+
+small{
+  display: block;
+  padding-top: 5px;
+}
+
 
 /*-- Mobile styles ----------------------------------------------------------*/
 
