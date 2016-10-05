@@ -568,6 +568,9 @@ h3 .small{
   .side-note p{
     margin: 0;
   }
+  .lead{
+    font-size: 25px !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -603,8 +606,13 @@ h3 .small{
 /*--- Bootstrap overwrites ------------------------------------*/
 .img-responsive{
   display: inline-block;
+  margin: 10px 0;
 }
-
+small,
+.small{
+  font-style: italic;
+  color: #9f9f9f;
+}
 /*--- Globals -------------------------------------------------*/
 
 h1{
