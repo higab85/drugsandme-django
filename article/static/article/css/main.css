@@ -6,8 +6,9 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #BBBAD4;
   text-decoration: none;
+  font-weight: bold;
 }
 a:hover{
   text-decoration: underline;
@@ -19,13 +20,14 @@ span a:hover,
 blockquote a,
 blockquote a:hover
 {
-  color: #6B7A88;
+  color: #8bbded;
 }
 p>a:hover,
 span>a:hover,
 blockquote a:hover
 {
   font-weight: bold;
+  max-height: 300px;
 }
 /* Custom default button */
 .btn-default,
@@ -66,7 +68,7 @@ body {
   /*display: table-cell;*/
   /* MY EDIT */
   vertical-align: middle;
-  margin: 0 10%;
+  margin: 0 0;
   text-align: center;
   display: inline-block;
 
@@ -94,9 +96,9 @@ body {
   /*position: absolute;*/
 }
 #cover img{
-  top: -250px;
+  top: -210px;
   position: absolute;
-  left: 0;
+  left: 300px;
   right: 0;
   margin-left: auto;
   margin-right: auto;
@@ -167,6 +169,7 @@ body {
 
 h3 .small{
   color: black;
+  margin-top: 5px;
 }
 #search>div h3{
   margin: 0;
@@ -383,14 +386,16 @@ h3 .small{
   }
   .side-note{
     color: #687A89;
-    border-width: 0 0 0 4px;
+    border-width: 0 0 0 3px;
     border-color: #687A89;
     border-style: solid;
-    padding: 0 0 0 4px !important;
-    margin-left: 10px;
+    padding: 0 0 0 10px !important;
+    margin: 10px 20px 10px 10px;
+    font-weight: 300;
+    letter-spacing: .1px;
   }
   .side-note a{
-    color: #000000;
+    color: #6397CC;
     font-weight: bold;
   }
   .side-note p{
@@ -501,8 +506,8 @@ h3 .small{
 
   .title-collapse div{
     box-shadow: none;
-    padding: 0 20px 8px 20px;
-    margin: 0 -4px;
+    padding: 0 26px 11px 26px;
+    margin: -2px -4px;
     display: inline-block;
     border: 4px solid black;
     transition: background-color 0.1s;
@@ -545,18 +550,16 @@ h3 .small{
     left: 345px;
   }
   #site-index .cover-container{
-    height: 684px;
+    height: 600px;
   }
 
   .side-note{
-    width: 180px;
-    position: absolute;
-    right: -16px;
     color: #687A89;
-    border-width: 0 0 0 4px;
+    border-width: 0 0 0 3px;
     border-color: #687A89;
     border-style: solid;
-    padding: 0 0 0 4px !important;
+    padding: 1px 1px 1px 10px !important;
+    margin-left: 10px;
   }
   .side-note a{
     color: #000000;
@@ -564,6 +567,9 @@ h3 .small{
   }
   .side-note p{
     margin: 0;
+  }
+  .lead{
+    font-size: 25px !important;
   }
 }
 
@@ -600,8 +606,13 @@ h3 .small{
 /*--- Bootstrap overwrites ------------------------------------*/
 .img-responsive{
   display: inline-block;
+  margin: 10px 0;
 }
-
+small,
+.small{
+  font-style: italic;
+  color: #9f9f9f;
+}
 /*--- Globals -------------------------------------------------*/
 
 h1{
@@ -680,7 +691,7 @@ p{
 
 #item-picker{
   width: 140px;
-  box-shadow: 2px 2px 1px #6B7A88;
+  box-shadow: 2px 2px 0px #6B7A88;
   position: absolute;
 }
 
@@ -768,7 +779,7 @@ input:focus {
   position: relative;
 }
 .nav-social-icon img{
-  height: 80%;
+  height: 70%;
   margin-top: 4px;
 }
 
@@ -843,7 +854,7 @@ input:focus {
 
 .alcohol{
   color: #000;
-  background-color: #00D7E8;
+  background-color: ##8accd5;
   transition: 0.1s ease-in-out;
 }
 
@@ -876,7 +887,7 @@ input:focus {
 
 .mdma{
   color: #000;
-  background-color: #D6797A;
+  background-color: #EC96BA;
   transition: 0.1s ease-in-out;
 }
 
@@ -943,7 +954,7 @@ input:focus {
   border: 2px solid black;
   padding: 3px 0;
   background-color: #fff;
-  box-shadow: 2px 2px 1px #6B7A88;
+  box-shadow: 2px 2px 0px #6B7A88;
   border-radius: 0px;
 }
 .boxed>p{
@@ -962,16 +973,16 @@ input:focus {
 }
 
 #home-buttons>li{
-  border: 4px solid black;
-  margin: -4px -4px -4px 0;
+  border: 3px solid black;
+  margin: 0px -3px -3px 0;
 }
 #home-buttons>li.active{
   border-bottom: 0px;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 
 #home-buttons h3{
-  margin: 5px 0;
+  margin: 2px -1px 2px 0px;
 }
 
 h2.title{
@@ -996,7 +1007,8 @@ h2.title{
 }
 
 .tab-content{
-  border: 4px solid black;
+  border: 3px solid black;
+  box-shadow: 2px 2px 0px #6B7A88;
 }
 .tab-pane p{
   margin-bottom: 0;
@@ -1004,7 +1016,7 @@ h2.title{
 }
 .tab-content h4{
   color: #fff;
-  margin: 0px;
+  margin: 0px 0px 0px 8px;
   font-weight: normal;
   padding: 10px;
 }
@@ -1037,7 +1049,7 @@ h2.title{
   width: 200px;
   height: 200px;
   display: inline-block;
-  margin: 10px;
+  margin: 20px 10px 20px 10px;
   position: relative;
   vertical-align: middle;
 }
@@ -1049,7 +1061,12 @@ h2.title{
 
 .funky{
   padding: 2px 20px;
+  letter-spacing: .5px;
   font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.funky:hover{
+  text-decoration: underline;
 }
 
 h2.funky{
@@ -1083,7 +1100,11 @@ ul.no-decorate-list>li{
   list-style: none;
 }
 .brain-science>img{
-  height: 40px;
+  height: 70px;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 2px 2px 0px #6B7A88;
 }
 .brain-science>p{
   padding: 10px;
@@ -1101,10 +1122,11 @@ ul.no-decorate-list>li{
 }
 
 #interactions-combo-result{
-  text-align: left;
-  height: 250px;
+  text-align: center;
+  height: 262px;
   width: 267px;
-  margin: 0 auto;
+  margin: 0px 0px 5px 0px;
+  padding: 5px 5px 5px 5px;
 }
 #interactions-combo-result p{
   font-size: 14px;
@@ -1117,30 +1139,30 @@ ul.no-decorate-list>li{
 }
 .drug-to-combine{
   display: inline-block;
-  width: 120px;
-  margin: 5px;
+  width: 110px;
+  margin: 5px 1px 1px 1px;
 }
 .drug-to-combine h5{
   color: black;
   text-align: center;
 }
 .drug-to-combine.interaction-dangerous{
-  background-color: #E70000;
+  background-color: #F37A70;
 }
 .drug-to-combine.interaction-unsafe{
-  background-color: #E78100;
+  background-color: #F3B15D;
 }
 .drug-to-combine.interaction-caution{
-  background-color: #D5CD01;
+  background-color: #FBF67C;
 }
 .drug-to-combine.interaction-lowriskd{
-  background-color: #0068B7;
+  background-color: #8accd5;
 }
 .drug-to-combine.interaction-lowriskns{
-  background-color: #00BC4C;
+  background-color: #9BEA8B;
 }
 .drug-to-combine.interaction-lowrisks{
-  background-color: #00501F;
+  background-color: #5BCF88;
 }
 .combo-not-active{
   background-color: #fff !important;
@@ -1154,7 +1176,7 @@ ul.no-decorate-list>li{
 #harm-reduction-stage-descriptions{
   height: 350px;
   overflow-y: hidden;
-  padding: 20px 10px;
+  padding: 20px;
 }
 .harm-reduction-stage-description{
   margin-bottom: 60px;
@@ -1162,6 +1184,7 @@ ul.no-decorate-list>li{
 #harm-reduction-timeline{
   display: inline-block;
   width: 100%;
+  margin-top: 20px;
 }
 
 .read-more{
@@ -1193,7 +1216,7 @@ ul.no-decorate-list>li{
 /*--- Page specific ---------------------------------------------------------*/
 
 #site-index #content{
-  width: 70%;
+  width: 60%;
 }
 #mobile-info-boxes>div{
   margin: -2px 0;
