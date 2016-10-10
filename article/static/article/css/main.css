@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #BBBAD4;
   text-decoration: none;
   font-weight: bold;
 }
@@ -20,13 +20,14 @@ span a:hover,
 blockquote a,
 blockquote a:hover
 {
-  color: #2516c7;
+  color: #8bbded;
 }
 p>a:hover,
 span>a:hover,
 blockquote a:hover
 {
-  text-decoration: underline;
+  font-weight: bold;
+  max-height: 300px;
 }
 /* Custom default button */
 .btn-default,
@@ -170,6 +171,7 @@ body {
 
 h3 .small{
   color: black;
+  margin-top: 5px;
 }
 #search>div h3{
   margin: 0;
@@ -398,7 +400,7 @@ h3 .small{
     letter-spacing: .1px;
   }
   .side-note a{
-    color: #000000;
+    color: #6397CC;
     font-weight: bold;
   }
   .side-note p{
@@ -566,6 +568,14 @@ h3 .small{
     height: 600px;
   }
 
+  .side-note{
+    color: #687A89;
+    border-width: 0 0 0 3px;
+    border-color: #687A89;
+    border-style: solid;
+    padding: 1px 1px 1px 10px !important;
+    margin-left: 10px;
+  }
   .side-note a{
     color: #000000;
     font-weight: bold;
@@ -928,7 +938,7 @@ input:focus {
 
 .mdma{
   color: #000;
-  background-color: #D6797A;
+  background-color: #EC96BA;
   transition: 0.1s ease-in-out;
 }
 
@@ -1014,12 +1024,12 @@ input:focus {
 }
 
 #home-buttons>li{
-  border: 2px solid black;
-  margin: 0px -2px -2px 0;
+  border: 3px solid black;
+  margin: 0px -3px -3px 0;
 }
 #home-buttons>li.active{
   border-bottom: 0px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 #home-buttons h3{
