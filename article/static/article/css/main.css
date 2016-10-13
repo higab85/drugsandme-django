@@ -1044,6 +1044,11 @@ h2.title{
   margin-bottom: 30px;
 }
 
+h2.small{
+  font-size: 65%;
+  margin-top: 10px;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover{
@@ -1093,6 +1098,14 @@ h2.title{
   background-color: #F6DA5C;
 }
 .donate h4{
+  color: #000000;
+}
+
+.donate h3{
+  color: #000000;
+}
+
+.donate a{
   color: #000000;
 }
 
@@ -1283,16 +1296,32 @@ ul.no-decorate-list>li{
 #mobile-info-boxes p,
 #mobile-info-boxes h5{
   padding: 0 10px;
+  color: #fff;
 }
 #mobile-info-boxes h5{
   display: inline-block;
   font-weight: bold;
+  color: white;
 }
 #mobile-info-boxes .active h5{
   color: #fff;
 }
+
+#mobile-info-boxes .donate h5{
+  color: #000;
+}
+
+#mobile-info-boxes .donate p{
+  color: #000;
+}
+
+#mobile-info-boxes .donate a{
+  color: #000;
+}
+
 #mobile-info-boxes .partners{
   padding: 15px 10px;
+  color: black;
 }
 #mobile-info-boxes .partners img{
   height: 50px;
