@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #fff;
+  color: #BBBAD4;
   text-decoration: none;
   font-weight: bold;
 }
@@ -20,13 +20,14 @@ span a:hover,
 blockquote a,
 blockquote a:hover
 {
-  color: #2516c7;
+  color: #8bbded;
 }
 p>a:hover,
 span>a:hover,
 blockquote a:hover
 {
-  text-decoration: underline;
+  font-weight: bold;
+  max-height: 300px;
 }
 /* Custom default button */
 .btn-default,
@@ -60,6 +61,7 @@ body {
   height: 100%; /* For at least Firefox */
   min-height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
   /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
 }
@@ -169,6 +171,7 @@ body {
 
 h3 .small{
   color: black;
+  margin-top: 5px;
 }
 #search>div h3{
   margin: 0;
@@ -397,7 +400,7 @@ h3 .small{
     letter-spacing: .1px;
   }
   .side-note a{
-    color: #000000;
+    color: #6397CC;
     font-weight: bold;
   }
   .side-note p{
@@ -565,6 +568,14 @@ h3 .small{
     height: 600px;
   }
 
+  .side-note{
+    color: #687A89;
+    border-width: 0 0 0 3px;
+    border-color: #687A89;
+    border-style: solid;
+    padding: 1px 1px 1px 10px !important;
+    margin-left: 10px;
+  }
   .side-note a{
     color: #000000;
     font-weight: bold;
@@ -654,7 +665,7 @@ h1{
 }
 
 h4{
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 17px;
   font-weight: bolder;
 }
@@ -927,7 +938,7 @@ input:focus {
 
 .mdma{
   color: #000;
-  background-color: #D6797A;
+  background-color: #EC96BA;
   transition: 0.1s ease-in-out;
 }
 
@@ -1013,12 +1024,12 @@ input:focus {
 }
 
 #home-buttons>li{
-  border: 2px solid black;
-  margin: 0px -2px -2px 0;
+  border: 3px solid black;
+  margin: 0px -3px -3px 0;
 }
 #home-buttons>li.active{
   border-bottom: 0px;
-  padding-bottom: 2px;
+  padding-bottom: 3px;
 }
 
 #home-buttons h3{
@@ -1031,6 +1042,11 @@ h2.title{
   padding-top: 40px;
   padding-bottom: 20px;
   margin-bottom: 30px;
+}
+
+h2.small{
+  font-size: 65%;
+  margin-top: 10px;
 }
 
 .nav-pills > li.active > a,
@@ -1082,6 +1098,14 @@ h2.title{
   background-color: #F6DA5C;
 }
 .donate h4{
+  color: #000000;
+}
+
+.donate h3{
+  color: #000000;
+}
+
+.donate a{
   color: #000000;
 }
 
@@ -1145,7 +1169,7 @@ ul.no-decorate-list>li{
 .brain-science>img{
   height: 70px;
   border: 2px solid black;
-  padding: 10px;
+  padding: 0px 10px 0px 0px;
   margin: 10px;
   box-shadow: 2px 2px 0px #6B7A88;
 }
@@ -1272,16 +1296,32 @@ ul.no-decorate-list>li{
 #mobile-info-boxes p,
 #mobile-info-boxes h5{
   padding: 0 10px;
+  color: #fff;
 }
 #mobile-info-boxes h5{
   display: inline-block;
   font-weight: bold;
+  color: white;
 }
 #mobile-info-boxes .active h5{
   color: #fff;
 }
+
+#mobile-info-boxes .donate h5{
+  color: #000;
+}
+
+#mobile-info-boxes .donate p{
+  color: #000;
+}
+
+#mobile-info-boxes .donate a{
+  color: #000;
+}
+
 #mobile-info-boxes .partners{
   padding: 15px 10px;
+  color: black;
 }
 #mobile-info-boxes .partners img{
   height: 50px;
