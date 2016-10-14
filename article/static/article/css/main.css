@@ -665,7 +665,7 @@ h1{
 }
 
 h4{
-  padding: 20px 0;
+  padding: 10px 0;
   font-size: 17px;
   font-weight: bolder;
 }
@@ -1044,6 +1044,11 @@ h2.title{
   margin-bottom: 30px;
 }
 
+h2.small{
+  font-size: 65%;
+  margin-top: 10px;
+}
+
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:focus,
 .nav-pills > li.active > a:hover{
@@ -1093,6 +1098,14 @@ h2.title{
   background-color: #F6DA5C;
 }
 .donate h4{
+  color: #000000;
+}
+
+.donate h3{
+  color: #000000;
+}
+
+.donate a{
   color: #000000;
 }
 
@@ -1156,7 +1169,7 @@ ul.no-decorate-list>li{
 .brain-science>img{
   height: 70px;
   border: 2px solid black;
-  padding: 10px;
+  padding: 0px 10px 0px 0px;
   margin: 10px;
   box-shadow: 2px 2px 0px #6B7A88;
 }
@@ -1283,16 +1296,32 @@ ul.no-decorate-list>li{
 #mobile-info-boxes p,
 #mobile-info-boxes h5{
   padding: 0 10px;
+  color: #fff;
 }
 #mobile-info-boxes h5{
   display: inline-block;
   font-weight: bold;
+  color: white;
 }
 #mobile-info-boxes .active h5{
   color: #fff;
 }
+
+#mobile-info-boxes .donate h5{
+  color: #000;
+}
+
+#mobile-info-boxes .donate p{
+  color: #000;
+}
+
+#mobile-info-boxes .donate a{
+  color: #000;
+}
+
 #mobile-info-boxes .partners{
   padding: 15px 10px;
+  color: black;
 }
 #mobile-info-boxes .partners img{
   height: 50px;
