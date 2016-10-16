@@ -6,7 +6,7 @@
 a,
 a:focus,
 a:hover {
-  color: #BBBAD4;
+  color: ##8bbded;
   text-decoration: none;
   font-weight: bold;
 }
@@ -105,7 +105,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-height: 350px;
-max-width: 500px;
+  max-width: 500px;
 }
 #cover-text{
   top: 30px;
@@ -209,6 +209,7 @@ h3 .small{
  */
 
  @media (max-width: 767px) {
+
 
  /*Beginning of moble nav bar */
   #navbar{
@@ -398,7 +399,7 @@ h3 .small{
     border-style: solid;
     padding: 0 0 0 10px !important;
     margin: 10px 20px 10px 10px;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: .1px;
   }
   .side-note a{
@@ -613,7 +614,7 @@ h3 .small{
     width: 85vw;
   }
   .col-md-10>div{
-    padding-right: 11vw;
+    padding-right: 15vw;
     padding-left: 10vw;
   }
     /*#me-content > div {
@@ -632,8 +633,8 @@ h3 .small{
     border-color: #687A89;
     border-style: solid;
     padding: 0 0 0 4px !important;
-    right: -1vw;
-    width: 11vw;
+    right: 0vw;
+    width: 13vw;
 
   }
 
@@ -714,6 +715,7 @@ p{
   width: 40px;
   border: 2px solid #000000;
   margin-right: 5px;
+  padding: 4px;
 }
 #twitter-social-icon{
   height: 65%;
@@ -993,10 +995,10 @@ input:focus {
 .bs-docs-sidebar .nav>li>a:hover,
 .bs-docs-sidebar .nav>li>a:focus {
   border: 2px solid black;
-  box-shadow: 2px 2px 1px #6B7A88;
+  box-shadow: 2px 2px 0px #6B7A88;
   background-color: #fff;
-  font-size: 18px;
-  width: 200px;
+  font-size: 17px;
+  width: 180px;
 }
 /*--- End sidebar styles -------------------------------------*/
 
@@ -1005,7 +1007,7 @@ input:focus {
 .boxed,
 .boxed:focus{
   border: 2px solid black;
-  padding: 3px 0;
+  padding: 0px;
   background-color: #fff;
   box-shadow: 2px 2px 0px #6B7A88;
   border-radius: 0px;
@@ -1087,6 +1089,9 @@ h2.small{
 .about-us{
   background-color: #EF6767;
 }
+.about-us a{
+  color: #fff7cb;
+}
 .partners{
   padding: 0 20px;
   margin-top: 20px;
@@ -1110,6 +1115,16 @@ h2.small{
 .donate a{
   color: #000000;
 }
+.donate input{
+  height: 90px;
+  border: 2px solid black;
+  padding: 13px 30px;
+  box-shadow: 2px 2px 0px #6B7A88;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
 
 .thing-to-take{
   width: 200px;
@@ -1126,7 +1141,7 @@ h2.small{
 }
 
 .funky{
-  padding: 2px 20px;
+  padding: 2px 10px;
   letter-spacing: .5px;
   font-family: "Bebas Neue", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
@@ -1255,7 +1270,9 @@ ul.no-decorate-list>li{
   width: 100%;
   margin: 0 auto;
 }
-
+.harm-reduction-stage-description ul{
+  margin-left: -20px;
+}
 .read-more{
   position: absolute;
   bottom: 0px;
@@ -1348,7 +1365,7 @@ blockquote{
   border-left: 5px solid #ddd !important;
 }
 .bigger-sidebar-boxes{
-  width: 200px;
+  width: 180px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1356,6 +1373,27 @@ blockquote{
   vertical-align: super;
   color: #000000;
 }
+.drugs-sidebar-boxes{
+  width: 180px;
+  text-align: center;
+  margin-bottom: 10px;
+  height: 37px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0px #6B7A88;
+  border-radius: 0px;
+  }
+.drugs-sidebar-boxes a{
+      color: ##000;
+      font-weight: 300;
+  }
+.drugs-sidebar-boxes a:hover{
+    color: ##fff;
+  }
+.drugs-sidebar-boxes h4{
+  font-size: 16px;
+  padding: 0;
+  color: black;
+  }
 #title-me-button{
   background-color: #ffffff;
   color: #000000;
@@ -1467,11 +1505,14 @@ small{
   position: relative;
   width: 100%;
   display: inline-block;
+  color: white;
+  font-weight: 400;
 }
 #mobile-nav-collapse-menu>ul>li span{
   padding-top: 7px;
   position: relative;
   display: inline-block;
+  font-weight: 800;
 }
 .mobile-nav-collapse-menu-collapsible ul{
   background-color: #687A89;
