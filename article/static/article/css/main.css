@@ -6,12 +6,12 @@
 a,
 a:focus,
 a:hover {
-  color: ##8bbded;
+  color: ##6397CC;
   text-decoration: none;
   font-weight: bold;
 }
 a:hover{
-  /*text-decoration: underline;*/
+  text-decoration: underline;
 }
 p a,
 p a:hover,
@@ -20,7 +20,7 @@ span a:hover,
 blockquote a,
 blockquote a:hover
 {
-  color: #8bbded;
+  color: #6397CC;
 }
 p>a:hover,
 span>a:hover,
@@ -167,6 +167,7 @@ body {
 h3 .small{
   color: black;
   margin-top: 5px;
+  line-height: 1.5;
 }
 #search>div h3{
   margin: 0;
@@ -217,6 +218,9 @@ h3 .small{
     padding: 0;
   }
 
+  .lead {
+    font-size: 22px;
+  }
 
    /* Pull out the header and footer */
    .masthead {
@@ -243,8 +247,13 @@ h3 .small{
   }
 
    #interactions-table{
-     text-align: center;
+     text-align: left;
    }
+
+   .funky {
+    padding: 6px 10px;
+  }
+
    .harm-reduction-stage-indicator {
     width: 30%;
     margin-top: -2px;
@@ -302,7 +311,7 @@ h3 .small{
 
   .title-button{
     height: 17vw;
-    border: 0.7vw solid black;
+    border: 0.5vw solid black;
     background: white;
     position: absolute;
   }
@@ -327,7 +336,7 @@ h3 .small{
     width: 100%;
     margin: -2px 0;
     display: inline-block;
-    border: 0.7vw solid black;
+    border: 0.5vw solid black;
     transition: background-color 0.1s;
   }
   .title-collapse h3{
@@ -349,7 +358,7 @@ h3 .small{
     padding: 0 20px 8px 20px;
     margin: -1px -2px -4px -2px;
     display: inline-block;
-    border: 0.7vw solid black;
+    border: 0.5vw solid black;
   }
   #title-static{
 
@@ -365,7 +374,7 @@ h3 .small{
     top: 1.5vw;
     left: 1.5vw;
     background-color: #687A89;
-    border: 0.7vw solid #000;
+    border: 0.5vw solid #000;
   }
 
   #title-drugs-background{
@@ -390,14 +399,26 @@ h3 .small{
     display: inline-block;
     width: 100%;
   }
+
   h1{
-    font-size: 15vw;
+    font-size: 10vw;
   }
 
   #content{
     width: 93%;
   }
- }
+
+  #cover img{
+    top: -200px;
+    position: absolute;
+    left: 150px;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 300px;
+    max-width: 300px;
+  }
+
 
 @media (min-width: 768px) {
 
@@ -560,6 +581,10 @@ h3 .small{
   #content>div{
     margin: 0 auto;
   }
+
+  #site-index #content {
+    width: 80%;
+}
 }
 @media (min-width: 992px) {
   .masthead,
@@ -623,6 +648,9 @@ h4{
   padding: 10px 0;
   font-size: 17px;
   font-weight: bolder;
+}
+h4:hover{
+  color: #fff;
 }
 p{
   font-size: 15px;
@@ -984,7 +1012,8 @@ input:focus {
 }
 
 #home-buttons h3{
-  margin: 2px -1px 2px 0px;
+  margin: 3px -2px 0px 0px;
+  font-size: 22px;
 }
 
 h2.title{
@@ -1030,6 +1059,9 @@ h2.small{
 .harm-reduction{
   background-color: #6C7B8A;
 }
+.harm-reduction a{
+  color: #d0e8ff;
+}
 .news{
   background-color: #F1924D;
 }
@@ -1037,7 +1069,7 @@ h2.small{
   background-color: #EF6767;
 }
 .about-us a{
-  color: #fff7cb;
+  color: #d0e8ff;
 }
 .partners{
   padding: 0 20px;
@@ -1045,8 +1077,8 @@ h2.small{
 }
 
 .partners a img{
-  height: 140px;
-  padding: 20px;
+  height: 120px;
+  padding: 10px 0px;
 }
 .donate{
   background-color: #F6DA5C;
@@ -1134,7 +1166,7 @@ ul.no-decorate-list>li{
   height: 70px;
   border: 2px solid black;
   padding: 10px;
-  margin: 10px;
+  margin: 10px 15px 10px 0px;
   box-shadow: 2px 2px 0px #6B7A88;
 }
 .brain-science>p{
@@ -1215,7 +1247,7 @@ ul.no-decorate-list>li{
 #harm-reduction-timeline{
   display: inline-block;
   width: 100%;
-  margin: 0 auto;
+  margin: 20px 0px 0px 0px;
 }
 .harm-reduction-stage-description ul{
   margin-left: -20px;
@@ -1268,6 +1300,7 @@ ul.no-decorate-list>li{
   display: inline-block;
   font-weight: bold;
   color: white;
+  font-size: 17px;
 }
 #mobile-info-boxes .active h5{
   color: #fff;
@@ -1297,6 +1330,8 @@ ul.no-decorate-list>li{
 #mobile-info-boxes .partners h5{
   display: block;
   margin-left: -10px;
+  margin-top: 0px;
+  color: #000;
 }
 .partners-logos{
   text-align: center;
