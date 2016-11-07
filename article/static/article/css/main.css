@@ -650,7 +650,7 @@ h4{
   font-size: 17px;
   font-weight: bolder;
 }
-h4:hover{
+.drugs-sidebar-boxes h4:hover{
   color: #fff;
 }
 p{
