@@ -650,9 +650,6 @@ h4{
   font-size: 17px;
   font-weight: bolder;
 }
-.drugs-sidebar-boxes h4:hover{
-  color: #fff;
-}
 p{
   font-size: 15px;
 }
@@ -1365,6 +1362,9 @@ blockquote{
   box-shadow: 2px 2px 0px #6B7A88;
   border-radius: 0px;
   }
+.drugs-sidebar-boxes:hover{
+  background-color: #36434C;
+}
 .drugs-sidebar-boxes a{
       color: ##000;
       font-weight: 300;
@@ -1376,6 +1376,9 @@ blockquote{
   font-size: 16px;
   padding: 0;
   color: black;
+  }
+  .drugs-sidebar-boxes h4:hover{
+    color: #fff;
   }
 #title-me-button{
   background-color: #ffffff;
