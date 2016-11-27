@@ -45,5 +45,9 @@ def disclaimer(request):
     # context = {}
     return render(request, 'article/disclaimer.html')
 
+def news(request):
+    # context = {}
+    return render(request, 'article/news.html')
+
 def custom_404(request):
     return render(request, 'article/404.html')

@@ -1,0 +1,101 @@
+{% extends 'article/base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+  Drugs and Me - News
+{% endblock %}
+
+
+{% block header %}
+<style>
+  .theme-bg{
+    background-color:#EF6767 !important;
+  }
+  .theme-color{
+    color: #EF6767 !important;
+  }
+  .theme-light-bg{
+    background-color: #EF6767 !important;
+  }
+  .theme-light-color{
+    color:#EF6767 !important;
+  }
+</style>
+
+{% endblock %}
+
+
+{% block cover %}
+<div id="cover" class="col-xs-12 col-md-9" style="background-color: #EF6767">
+
+  <img src="{% static 'article/images/non-drugs/about/about-illustration.png' %}" style="height:250px; top: -200px;" alt="about">
+  <div id="cover-text">
+    <h1>About us</h1>
+    <h4>About the project and the team</h4>
+  </div>
+</div>
+{% endblock %}
+
+{% block cover_background %}
+  <div class="theme-bg">
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-10" role="main" id="me-content">
+    <div class="blog-post">
+      <h2 class="small"> 03/03/2016</h2>
+      <h2 class='section-title'> Dark net matters </h2>
+      <div class="featuring">
+        <h4>Dr Adam</h4>
+        <h4>Professor at UCL</h4>
+        <h4>Has a wife and kids</h4>
+      </div>
+      <p>
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+
+      </p>
+
+    </div>
+  </div>
+  <div class="col-md-2" role="complementary">
+    <nav id="sidebar" class="nav nav-stacked affix bs-docs-sidebar hidden-print hidden-sm hidden-xs">
+      <div class="bigger-sidebar-boxes boxed donate">
+        <h3 class=""><a href="/donate">Donate</a></h3>
+      </div>
+      <br>
+      <div class="alcohol drugs-sidebar-boxes">
+        <a href="/alcohol">
+          <h4>Alcohol</h4>
+        </a>
+      </div>
+      <div class="cannabis drugs-sidebar-boxes">
+        <a href="/cannabis">
+          <h4>Cannabis</h4>
+        </a>
+      </div>
+      <div class="cocaine drugs-sidebar-boxes">
+        <a href="/cocaine">
+          <h4>Cocaine</h4>
+        </a>
+      </div>
+      <div class="ketamine drugs-sidebar-boxes">
+        <a href="/ketamine">
+          <h4>Ketamine</h4>
+        </a>
+      </div>
+      <div class="lsd drugs-sidebar-boxes">
+        <a href="/lsd">
+          <h4>LSD</h4>
+        </a>
+      </div>
+      <div class="mdma drugs-sidebar-boxes">
+        <a href="/mdma">
+          <h4>MDMA</h4>
+        </a>
+      </div>
+    </nav>
+  </div>
+</div>
+
+{% endblock %}

@@ -26,7 +26,7 @@ SECRET_KEY = '#(97cjmq+4!f)qm#4+0s+g-q)67l#99eh8pdp=c3prw$o6fq49'
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['drugsand.me', '185.139.238.136']
+ALLOWED_HOSTS = ['drugsand.me', '185.139.238.136', '127.0.0.1']
 
 
 # Application definition
