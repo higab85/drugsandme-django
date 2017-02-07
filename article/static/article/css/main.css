@@ -953,6 +953,7 @@ input:focus {
 
 #sidebar{
   top: 40px;
+  z-index: -1;
 }
 
 /* all links */
